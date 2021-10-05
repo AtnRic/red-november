@@ -1,0 +1,19 @@
+body{
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    display: inline-block;
+    border-style: none;
+    padding-top: 12%;
+    padding-left: 20% ;
+    padding-right: 20%;
+
+    
+    margin: auto;
+    text-align: justify;
+    font-size: 15pt;
+}
+
+
