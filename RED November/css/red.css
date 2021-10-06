@@ -17,7 +17,7 @@ h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
     color: red;
-    letter-spacing: .20em;
+    letter-spacing: .30em;
     /*margin: 0 auto; à choisir si avec ou sans*/
     overflow: hidden;
     white-space: nowrap;
