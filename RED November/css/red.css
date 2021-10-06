@@ -22,7 +22,7 @@ h1{
     overflow: hidden;
     white-space: nowrap;
     border-right: .17em solid red;
-    animation: typing 2.5s steps(13, end), blinking-cursor .9s step-end infinite;
+    animation: typing 2.5s steps(13, end), blinking-cursor 1s step-end infinite;
 }
 
 .button{
