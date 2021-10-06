@@ -1,13 +1,18 @@
 html, body{
+    height: 100%;
     background-color: white;
     font-family: 'Courier New', Courier, monospace;
     overflow: hidden;
-    height: 100%;
-    margin: 0;
-    
+    scroll-behavior: smooth; 
 }
 
+.page1 {
+    height: 100%;
+}
 
+#page2 {
+    height: 100%;
+}
 
 .init{
     display: inline-block;
