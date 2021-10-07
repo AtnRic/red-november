@@ -61,12 +61,12 @@ html, body{
     .init {padding-left: 5% ;}
     .init {padding-right: 5%;}
     .init {text-align: center;}
-
-      }
+    }
+    
   @media only screen and (min-width: 600px) {
     /* For desktop: */
     .init {padding-top: 12%;}
     .init {padding-left: 20% ;}
     .init {padding-right: 20%;}
     .init{text-align: justify;}
-      }
+    }
