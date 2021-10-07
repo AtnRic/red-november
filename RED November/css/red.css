@@ -139,16 +139,8 @@ h1{
   }
 }
 
-
 @keyframes transition {
   0%   { opacity:0; }
   100% { opacity:1; }
 }
-.button {opacity:0;animation: transition 2.5s ease-in-out 4.5s forwards;}
-
-
-@keyframes opacity {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-.button { animation: transition 2.5s ease-in-out 4.5s, opacity 2.0s ease-in-out 4.5s forwards; }
+.button {opacity:0;animation: transition 2.5s ease-in-out 5s forwards;}
