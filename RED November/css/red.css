@@ -22,7 +22,7 @@ h1{
     overflow: hidden;
     white-space: nowrap;
     border-right: .17em solid red;
-    animation: typing2 4s, blinking-cursor 1s step-end infinite; /*la fonction "step" n'a pas été utilisée pour l'animation typing car elle n'était pas assez précise (chaque lettre ne faisant pas exactement la même taille) */
+    animation: typing2 4.5s, blinking-cursor 1s step-end infinite; /*la fonction "step" n'a pas été utilisée pour l'animation typing car elle n'était pas assez précise (chaque lettre ne faisant pas exactement la même taille) */
 }
 
 .button{
@@ -83,8 +83,8 @@ h1{
   to {
     width: 100%
   }
-  0%{width: 0%;}
 
+  0%{width: 0%;}
 /*R*/
   5.44%{width: 0%;}
   5.45%{width: 6.7%;}
