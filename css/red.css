@@ -40,13 +40,15 @@ h1{
     height: 25x;
     width: 150px;
     transition: padding 0.6s;
+    transition: background-color 0.8s;
+    transition: color 0.8s;
     
   }
 
 .button:hover{
     color: #1d2630;
     background-color: white;
-    border-color: #1d2630;
+    border-color: white;
   }
 
 .button:active{
