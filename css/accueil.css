@@ -64,10 +64,10 @@ html, body{
     .init{font-size: 13pt;}
     }
     
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 700px) {
     /* For desktop: */
     .init {padding-top: 12%;}
     .init {padding-left: 20% ;}
     .init {padding-right: 20%;}
     .init{text-align: justify;}
-    }
+}
