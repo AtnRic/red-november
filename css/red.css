@@ -8,9 +8,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
     text-align: center;
-    
+    overflow: hidden;
 }
 
 h1{
@@ -145,3 +144,24 @@ h1{
   100% { opacity:1; }
 }
 .button {opacity:0;animation: transition 2.5s ease-in-out 5s forwards;}
+
+@media only screen and (min-width: 300px) {
+  /* For tablets: */
+  h1{font-size: 20px;}
+  button{height: 20x;}
+  button{width: 100px;}
+  }
+
+@media only screen and (min-width: 400px) {
+  /* For tablets: */
+  h1{font-size: 30px;}
+  button{height: 20x;}
+  button{width: 100px;}
+  }
+  
+@media only screen and (min-width: 600px) {
+  /* For desktop: */
+  h1{font-size: 50px;}
+  button{height: 25x;}
+  button{width: 150px;}
+  }
