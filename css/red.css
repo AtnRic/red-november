@@ -145,23 +145,19 @@ h1{
 }
 .button {opacity:0;animation: transition 2.5s ease-in-out 5s forwards;}
 
-@media only screen and (min-width: 300px) {
-  /* For tablets: */
-  h1{font-size: 20px;}
-  button{height: 20x;}
-  button{width: 100px;}
-  }
 
-@media only screen and (min-width: 400px) {
-  /* For tablets: */
+
+/***********************************************************
+************************************************************/
+
+/*responsive*/
+
+@media only screen and (min-width: 320px) {
+  /* For phones */
   h1{font-size: 30px;}
-  button{height: 20x;}
-  button{width: 100px;}
-  }
-  
+}
+
 @media only screen and (min-width: 600px) {
-  /* For desktop: */
+  /* For tablets (vertical): */
   h1{font-size: 50px;}
-  button{height: 25x;}
-  button{width: 150px;}
-  }
+}
