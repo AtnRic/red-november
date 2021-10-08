@@ -55,12 +55,13 @@ html, body{
     .button_scroll { animation: transition 2.5s ease-in-out 3.0s, opacity 2.0s ease-in-out 1s forwards; }
     
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 320px) {
     /* For tablets: */
-    .init {padding-top: 3%;}
+    .init {padding-top: 5%;}
     .init {padding-left: 5% ;}
     .init {padding-right: 5%;}
     .init {text-align: center;}
+    .init{font-size: 13pt;}
     }
     
   @media only screen and (min-width: 600px) {
