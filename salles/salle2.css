@@ -1,0 +1,32 @@
+:root{
+    --bgc:#1d2630;
+}
+
+body {
+    background-color: var(--bgc);
+    overflow: hidden;
+}
+
+span {
+    width:100%;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-family: 'Courier New';
+}
+
+iframe{
+    margin: auto;
+    width: 100%;
+    position: static;
+}
+
+h1:hover{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    content: "affligeant.";
+    font-family: 'Courier New';
+}
+
