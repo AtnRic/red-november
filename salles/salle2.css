@@ -30,3 +30,8 @@ h1:hover{
     font-family: 'Courier New';
 }
 
+#scroll{
+    width: 10%;
+    height: 20%;
+    overflow: scroll;
+}
