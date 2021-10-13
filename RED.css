@@ -1,0 +1,105 @@
+body{
+    background-color: #1D2630;
+}
+
+.bef {
+    padding-left: 5%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10%;
+    max-width: 50%;
+    color: #f6d731;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: black;
+    font-weight: bold;
+    font-size: 200px;
+    overflow: hidden;
+    margin: auto;
+}
+.bombe {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    padding5%;
+    padding: 5%;
+}
+.cadre {
+    width: 50%;
+    display: flex;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: black;
+    font-weight: bold;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 30px;
+    border-radius: 100px;
+    border-right: -150px;
+    border-color: #f6d731;
+    margin: auto;
+}
+
+    .bef::before,
+    .bef::after {
+        content: "";
+        width: 1ch;
+        animation: countdown 1000s step-end infinite;
+    }
+    .bef2::before {
+    content: "";
+    width: 1ch;
+    animation: countdown 100s step-end infinite;
+    }
+    .bef::after {
+        animation-duration: 10s;
+    }
+
+@keyframes countdown {
+    0% {
+        content: "9";
+    }
+
+    10% {
+        content: "8";
+    }
+
+    20% {
+        content: "7";
+    }
+
+    30% {
+        content: "6";
+    }
+
+    40% {
+        content: "5";
+    }
+
+    50% {
+        content: "4";
+    }
+
+    60% {
+        content: "3";
+    }
+
+    70% {
+        content: "2";
+    }
+
+    80% {
+        content: "1";
+    }
+
+    90% {
+        content: "0";
+    }
+
+    100% {
+        content: "0";
+    }
+}
