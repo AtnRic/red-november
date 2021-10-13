@@ -144,7 +144,7 @@ h1{
   0%   { opacity:0; }
   100% { opacity:1; }
 }
-.button {opacity:0;animation: transition 2.5s ease-in-out 5s forwards;}
+.button {opacity:0;animation: transition 2.5s ease-in-out 7s forwards;}
 
 
 /****************************************************************************************************
