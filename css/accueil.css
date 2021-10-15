@@ -63,6 +63,7 @@ html, body{
     .init {padding-right: 5%;}
     .init {text-align: center;}
     .init{font-size: 13pt;}
+    .button_scroll{width: 50px;}
     }
     
   @media only screen and (min-width: 700px) {
