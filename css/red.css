@@ -200,3 +200,7 @@ h1{
   /* For tablets (vertical): */
   h1{font-size: 50px;}
 }
+
+@media only screen and (min-width: 700px) {
+  .button {opacity:0;animation: transition 2.5s ease-in-out 7s forwards;}
+}
