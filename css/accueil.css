@@ -30,13 +30,15 @@ html, body{
     height: 100%;
 }
 
+img{
+    width: 50px;
+    height: 50px;
+}
 
 .button_scroll{
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 50px;
-    height: 50px;
     margin-top: 45px;
     padding-top: 20px;
     transition: padding-top 0.8s;
@@ -102,7 +104,7 @@ html, body{
     100% {background-image: url(transition/21.png); background-position: center;}
 }
 
-.page1{background-image: url(transition/22.png); animation: transition1 0.4s; background-position: center;}
+.page1{background-image: url(transition/22.png); animation: transition1 0.5s; background-position: center;}
 
 
     
