@@ -1,3 +1,7 @@
+:root{
+    --bgc:#1d2630;
+}
+
 html, body{
     height: 100%;
     background-color: white;
@@ -8,6 +12,7 @@ html, body{
 
 .page1 {
     height: 100%;
+    background-color: var(--bgc);
 }
 
 #page2 {
@@ -42,18 +47,64 @@ html, body{
 }
 
 
-@keyframes opening {
-    0%   {opacity:0; }
-    100% {opacity:1; }
-    }
-    .button_scroll {opacity:0;animation: transition 2.5s ease-in-out 3s forwards;}
-
-
 @keyframes opacity {
     0%   { opacity: 0; }
     100% { opacity: 1; }
-    }
-    .button_scroll { animation: transition 2.5s ease-in-out 3.0s, opacity 2.0s ease-in-out 1s forwards; }
+}
+.button_scroll {opacity:0;animation: opacity 2.5s ease-in-out 3s forwards;}
+.page1 p {opacity: 0; animation: opacity 1.5s ease-in-out 1s forwards;}
+
+@-webkit-keyframes transition1 {
+    0% {background-image: url(transition/1.png); background-position: center;}
+    5% {background-image: url(transition/2.png); background-position: center;}
+    10% {background-image: url(transition/3.png); background-position: center;}
+    15% {background-image: url(transition/4.png); background-position: center;}
+    20% {background-image: url(transition/5.png); background-position: center;}
+    25% {background-image: url(transition/6.png); background-position: center;}
+    30% {background-image: url(transition/7.png); background-position: center;}
+    35% {background-image: url(transition/8.png); background-position: center;}
+    40% {background-image: url(transition/9.png); background-position: center;}
+    45% {background-image: url(transition/10.png); background-position: center;}
+    50% {background-image: url(transition/11.png); background-position: center;}
+    55% {background-image: url(transition/12.png); background-position: center;}
+    60% {background-image: url(transition/13.png); background-position: center;}
+    65% {background-image: url(transition/14.png); background-position: center;}
+    70% {background-image: url(transition/15.png); background-position: center;}
+    75% {background-image: url(transition/16.png); background-position: center;}
+    80% {background-image: url(transition/17.png); background-position: center;}
+    85% {background-image: url(transition/18.png); background-position: center;}
+    90% {background-image: url(transition/19.png); background-position: center;}
+    95% {background-image: url(transition/20.png); background-position: center;}
+    100% {background-image: url(transition/21.png); background-position: center;}
+} 
+
+@keyframes transition1 {
+    0% {background-image: url(transition/1.png); background-position: center;}
+    5% {background-image: url(transition/2.png); background-position: center;}
+    10% {background-image: url(transition/3.png); background-position: center;}
+    15% {background-image: url(transition/4.png); background-position: center;}
+    20% {background-image: url(transition/5.png); background-position: center;}
+    25% {background-image: url(transition/6.png); background-position: center;}
+    30% {background-image: url(transition/7.png); background-position: center;}
+    35% {background-image: url(transition/8.png); background-position: center;}
+    40% {background-image: url(transition/9.png); background-position: center;}
+    45% {background-image: url(transition/10.png); background-position: center;}
+    50% {background-image: url(transition/11.png); background-position: center;}
+    55% {background-image: url(transition/12.png); background-position: center;}
+    60% {background-image: url(transition/13.png); background-position: center;}
+    65% {background-image: url(transition/14.png); background-position: center;}
+    70% {background-image: url(transition/15.png); background-position: center;}
+    75% {background-image: url(transition/16.png); background-position: center;}
+    80% {background-image: url(transition/17.png); background-position: center;}
+    85% {background-image: url(transition/18.png); background-position: center;}
+    90% {background-image: url(transition/19.png); background-position: center;}
+    95% {background-image: url(transition/20.png); background-position: center;}
+    100% {background-image: url(transition/21.png); background-position: center;}
+}
+
+.page1{background-image: url(transition/22.png); animation: transition1 0.5s; background-position: center;}
+
+
     
 
 @media only screen and (min-width: 320px) {

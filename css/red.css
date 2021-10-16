@@ -25,7 +25,6 @@ h1{
 }
 
 .button{
-    
     text-decoration: none;
     padding: 3px 10px 3px 10px;
     text-align: center;
@@ -39,7 +38,7 @@ h1{
     border-color: white;
     height: 25x;
     width: 150px;
-    transition: padding 0.6s;
+    transition: padding 1s;
     transition: background-color 0.8s;
     transition: color 0.8s; 
   }
@@ -50,14 +49,7 @@ h1{
     border-color: white;
   }
 
-.button:active{
-    color: #1d2630;
-    background-color: white;
-    border-color: #1d2630;
-    color:white;
-    padding: 500px 890px 300px 890px;
-    border-radius: 100px;
-}
+
 
 
 /*pour animation sans délai avant le point*/
@@ -75,7 +67,7 @@ h1{
 }*/
 
 
-/*chaque lettre est séparé (en temps et espace) pour avoir une animation la plus précise possible*/
+/*chaque lettre est séparé (dans le temps et l'espace) pour avoir une animation la plus précise possible*/
 @keyframes typing2{
   from {
     width: 0
