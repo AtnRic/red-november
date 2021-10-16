@@ -4,33 +4,37 @@
 
 html, body{
     height: 100%;
-    background-color:white;
+    background-color:var(--bgc);
     font-family: 'Courier New', Courier, monospace;
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin: 0;;
     scroll-behavior: smooth; 
 }
 
 #transition{
-    position: fixed;
-    margin: 0 0 0 0;
-    min-width: 100%;
-    min-height: 100%;
+    position: absolute;
+    max-width: 100%;
+    /*max-height:100%;*/
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 
 
 .page1 {
     height: 100%;
-}
-
-#page2 {
-    height: 100%;
+    background-color: var(--bgc);
+    z-index: 1;
 }
 
 #page2{
-    z-index: 2;
+    height: 100%;
+    background-color: white;
+    z-index: 3;
+    
 }
+
+
 
 .init{
     display: inline-block;
@@ -41,7 +45,7 @@ html, body{
     text-align: justify;
     font-size: 15pt;
     height: 100%;
-    background: white;
+    background-color: white;
 }
 
 img{
