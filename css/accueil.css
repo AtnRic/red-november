@@ -102,7 +102,7 @@ html, body{
     100% {background-image: url(transition/21.png); background-position: center;}
 }
 
-.page1{background-image: url(transition/22.png); animation: transition1 0.5s; background-position: center;}
+.page1{background-image: url(transition/22.png); animation: transition1 0.4s; background-position: center;}
 
 
     
