@@ -4,7 +4,8 @@
 
 body {
     background-color: var(--bgc);
-    overflow: hidden;
+    
+
 }
 
 span {
@@ -30,8 +31,13 @@ h1:hover{
     font-family: 'Courier New';
 }
 
-#scroll{
-    width: 10%;
-    height: 20%;
-    overflow: scroll;
+.scroll{
+    position: static;
+    max-width: 150px;
+    height: 70px;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 20px;
+    color: white;
 }
