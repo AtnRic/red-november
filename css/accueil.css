@@ -11,6 +11,26 @@ html, body{
     scroll-behavior: smooth; 
 }
 
+audio{
+    margin-left: -200px;
+}
+
+/*.bufferBar, .progressBar, .scrubber, .volumeControl {
+    bottom: 0;
+    color: inherit;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    border-radius: calc(var(--track-size) / 2);
+    margin: 0;
+    background: none;
+    outline: none;
+    visibility: hidden;
+}*/
+
 /* animation/ transition*/
 /*#transition{
     position: absolute;
