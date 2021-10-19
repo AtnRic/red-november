@@ -6,7 +6,7 @@ html, body{
     height: 100%;
     background-color:var(--bgc);
     font-family: 'Courier New', Courier, monospace;
-    /*overflow: hidden;*/
+    overflow: hidden;
     margin: 0;;
     scroll-behavior: smooth; 
 }
@@ -29,7 +29,7 @@ html, body{
 
 #page2{
     height: 100%;
-    background-color: white;
+    background-color: var(--bgc);
     z-index: 3;
     
 }
@@ -45,7 +45,7 @@ html, body{
     text-align: justify;
     font-size: 15pt;
     height: 100%;
-    background-color: white;
+    background-color:var(--bgc);
 }
 
 img{
