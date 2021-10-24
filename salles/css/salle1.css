@@ -1,0 +1,141 @@
+:root{
+    --bgc:#1d2630;
+    --afficheur:#c8b89f;
+    --gris:#393c47; 
+}
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#tableau{
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+    margin: 2%;
+    max-width: 96%;
+    min-height: 76%;
+    background-color: var(--gris);
+}
+
+.screen{
+    display: flex;
+    float: left;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-left: 2%;
+    
+
+    width: 150px;
+    height: 100px;
+    background-color: var(--afficheur);
+}
+
+#last_screen{
+    margin-right: 2%;
+}
+
+.light_btn{
+    display: flex;
+}
+
+form{
+    display: grid;
+    grid-template-rows: auto auto;
+    /*border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;*/
+    margin-top: 2%;
+    width: 220px;
+    height: 100px;
+    background-color: var(--gris);
+}
+
+
+.button{
+    grid-row: 2;
+    margin: auto; 
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    padding: 5px 2px;
+    font-weight: bold;
+    color: black;
+    background-color: var(--afficheur);
+}
+
+.light{
+    grid-row: 1;
+    margin-left: 0%;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 100px;
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    background-color: white;
+}
+
+
+
+
+.btn{
+    display: none;
+}
+
+#btn1:checked ~ #light1 {
+    background-color:red;
+}
+#btn2:checked ~ #light2 {
+    background-color:red; 
+}
+#btn3:checked ~ #light3 {
+    background-color:red; 
+}
+#btn4:checked ~ #light4 {
+    background-color:red; 
+}
+#btn5:checked ~ #light5 {
+    background-color:red; 
+}
+#btn6:checked ~ #light6 {
+    background-color:red; 
+}
+#btn7:checked ~ #light7 {
+    background-color:red; 
+}
+#btn8:checked ~ #light8 {
+    background-color:red; 
+}
+
+
+.unlock{
+    color:black;
+    font-size: 20px ;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    width: 250px;
+    height: 100px;
+    padding: 1% 1%;
+    background-color: var(--afficheur);
+    
+}
+
+#unlock{
+    background-color: var(--afficheur);
+    margin: auto;
+}
+
+#trad{
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    width: 20%;
+    height: 10%;
+    background-color: var(--afficheur);
+}

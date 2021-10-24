@@ -117,7 +117,7 @@ body{
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;        
-    animation: made 1s forwards;
+    animation: made 10s forwards;
 
 }
 
@@ -146,8 +146,10 @@ body{
 
 .popup .close {
         position:relative;
-        top: 50%;
-        margin: auto;
+        /*float: right;*/
+        /*top: 50%;*/
+        /*margin: auto;*/
+        margin-left: 70%;
         padding: 10px;
         font-size: 20px;
         font-weight: bold;
