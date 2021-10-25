@@ -9,37 +9,60 @@
 
 #tableau{
     display: flex;
+    flex: right;
     flex-wrap: wrap;
     border-style: solid;
     border-width: 5px;
     border-radius: 20px;
-    margin: 2%;
-    max-width: 96%;
-    min-height: 76%;
+    margin: 1%;
+    max-width: 96vw;
+    min-height: 74vh;
     background-color: var(--gris);
+    justify-content: center;
 }
 
 .screen{
     display: flex;
-    float: left;
+    
     border-style: solid;
     border-width: 5px;
     border-radius: 10px;
-    margin-top: 2%;
-    margin-left: 2%;
-    
+    margin: 1% 1%;
+    width: 200px;
+    height: 110px;
+    background-image: url(images/galvanometre1.png);
+    background-color: var(--afficheur);
+    background-size: cover;
+}
 
-    width: 150px;
-    height: 100px;
+.screen img{
+    display: flex;
+
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    margin: 1% 1%;
+    width: 200px;
+    height: 110px;
     background-color: var(--afficheur);
 }
 
-#last_screen{
-    margin-right: 2%;
-}
+/*#last_screen{
+    margin-right: 0%;
+}*/
 
 .light_btn{
     display: flex;
+    
+    justify-content: center;
+    border-style: solid;
+    border-color: var(--gris);
+    border-width: 5px;
+    border-radius: 10px;
+    margin: 1% 1%;
+    width: 200px;
+    height: 110px;
+    
 }
 
 form{
@@ -48,9 +71,9 @@ form{
     /*border-style: solid;
     border-width: 5px;
     border-radius: 10px;*/
-    margin-top: 2%;
-    width: 220px;
-    height: 100px;
+    
+    /*width: 220px;
+    height: 100px;*/
     background-color: var(--gris);
 }
 
@@ -64,8 +87,15 @@ form{
     padding: 5px 2px;
     font-weight: bold;
     color: black;
+    font-size: 1em;
+    text-align: center;
     background-color: var(--afficheur);
+    margin-top: 1%;
+    width: 186px;
+    height: 37px;
 }
+
+
 
 .light{
     grid-row: 1;
@@ -79,7 +109,13 @@ form{
     background-color: white;
 }
 
-
+.light_btn p{
+    font-size: 2em;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
 
 
 .btn{
@@ -110,18 +146,58 @@ form{
 #btn8:checked ~ #light8 {
     background-color:red; 
 }
+#btn9:checked ~ #light9 {
+    background-color:red; 
+}
 
+
+#trad{
+    display: grid;
+    /*grid-template-columns: 50% 50%;*/
+    border-style: solid;
+    margin-bottom: 1%;
+    border-width: 5px;
+    border-radius: 10px;
+    width: 83vw;
+    background-color: var(--afficheur);
+}
+
+/*.russe{
+    grid-column: 1;
+}
+
+.french{
+    grid-column: 2;
+}
+
+.russe2{
+    grid-column: 3;
+}
+
+.french2{
+    grid-column: 4;
+}*/
+
+
+#trad p {
+    margin: 1%;
+    font-size: 1em;
+}
 
 .unlock{
     color:black;
     font-size: 20px ;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
     border-style: solid;
+    border-color: var(--gris);
     border-width: 5px;
     border-radius: 10px;
-    width: 250px;
-    height: 100px;
-    padding: 1% 1%;
+    margin: 1% 1%;
+    width: 200px;
+    height: 110px;
+    
     background-color: var(--afficheur);
     
 }
@@ -129,13 +205,4 @@ form{
 #unlock{
     background-color: var(--afficheur);
     margin: auto;
-}
-
-#trad{
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 10px;
-    width: 20%;
-    height: 10%;
-    background-color: var(--afficheur);
 }
