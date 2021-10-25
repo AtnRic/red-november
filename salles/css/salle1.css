@@ -149,7 +149,12 @@ form{
 #btn9:checked ~ #light9 {
     background-color:red; 
 }
-
+#btn10:checked ~ #light10 {
+    background-color:red; 
+}
+#btn11:checked ~ #light11 {
+    background-color:red; 
+}
 
 #trad{
     display: grid;
