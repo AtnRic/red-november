@@ -7,6 +7,70 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+
+.popupbtn {
+    margin: 70px auto;
+    color: #f6d731;
+    font-family: 'Courier New';
+    padding: 20px;
+    background-color: black;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    visibility: hidden;
+    /*transition: all 5s ease-in-out;*/
+}
+
+.popupbtn h2 {
+    margin-top: 0;
+    color: #f6d731;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.popupbtn .closebtn {
+    position:relative;
+    margin-left: 70%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f6d731;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100px;
+}
+.popupbtn .close:hover {
+    background-color: #f6d731;
+    color: black;
+    font-weight: bold;
+}
+
+.popupbtn .content {
+    overflow: hidden;
+}
+
+@keyframes made {
+    99% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
+}
+
+
+
 #tableau{
     display: flex;
     flex: right;
@@ -89,6 +153,7 @@ form{
     color: black;
     font-size: 1em;
     text-align: center;
+    vertical-align: center;
     background-color: var(--afficheur);
     margin-top: 1%;
     width: 186px;
@@ -107,6 +172,9 @@ form{
     height: 45px;
     margin: auto;
     background-color: white;
+    background-image: url(images/fresnel.png);
+    background-size: cover;
+    
 }
 
 .light_btn p{
@@ -115,6 +183,8 @@ form{
     text-align: center;
     font-weight: bold;
     color: white;
+    opacity: 0;
+    
 }
 
 
@@ -123,42 +193,89 @@ form{
 }
 
 #btn1:checked ~ #light1 {
-    background-color:red;
+    background-image: url(images/fresnel2.png);
+    background-size: cover;
 }
 #btn2:checked ~ #light2 {
-    background-color:red; 
+    background-image: url(images/fresnel2.png);
+    background-size: cover;
 }
 #btn3:checked ~ #light3 {
-    background-color:red; 
+    background-image: url(images/fresnel2.png);
+    background-size: cover; 
 }
 #btn4:checked ~ #light4 {
-    background-color:red; 
+    background-image: url(images/fresnel2.png);
+    background-size: cover; 
 }
 #btn5:checked ~ #light5 {
-    background-color:red; 
+    background-image: url(images/fresnel2.png);
+    background-size: cover; 
 }
 #btn6:checked ~ #light6 {
-    background-color:red; 
+    background-image: url(images/fresnel2.png);
+    background-size: cover;
 }
 #btn7:checked ~ #light7 {
-    background-color:red; 
+    background-image: url(images/fresnel2.png);
+    background-size: cover;
 }
 #btn8:checked ~ #light8 {
-    background-color:red; 
+    background-image: url(images/fresnel2.png);
+    background-size: cover;
 }
 #btn9:checked ~ #light9 {
-    background-color:red; 
+    background-image: url(images/fresnel2.png);
+    background-size: cover;
 }
 #btn10:checked ~ #light10 {
-    background-color:red; 
+    background-image: url(images/fresnel2.png);
+    background-size: cover;
 }
 #btn11:checked ~ #light11 {
-    background-color:red; 
+    background-image: url(images/fresnel2.png);
+    background-size: cover;
 }
 
+
+
+#btn1:checked ~ #light1 p{
+    opacity: 1;
+}
+#btn2:checked ~ #light2 p{
+    opacity: 1;
+}
+#btn3:checked ~ #light3 p{
+    opacity: 1;
+}
+#btn4:checked ~ #light4 p{
+    opacity: 1;
+}
+#btn5:checked ~ #light5 p{
+    opacity: 1;
+}
+#btn6:checked ~ #light6 p{
+    opacity: 1;
+}
+#btn7:checked ~ #light7 p{
+    opacity: 1;
+}
+#btn8:checked ~ #light8 p{
+    opacity: 1;
+}
+#btn9:checked ~ #light9 p{
+    opacity: 1;
+}
+#btn10:checked ~ #light10 p{
+    opacity: 1;
+}
+#btn11:checked ~ #light11 p{
+    opacity: 1;
+}
+
+
+
 #trad{
-    display: grid;
-    /*grid-template-columns: 50% 50%;*/
     border-style: solid;
     margin-bottom: 1%;
     border-width: 5px;
@@ -167,24 +284,11 @@ form{
     background-color: var(--afficheur);
 }
 
-/*.russe{
-    grid-column: 1;
-}
 
-.french{
-    grid-column: 2;
-}
-
-.russe2{
-    grid-column: 3;
-}
-
-.french2{
-    grid-column: 4;
-}*/
 
 
 #trad p {
+    display: inline-block;
     margin: 1%;
     font-size: 1em;
 }
@@ -196,7 +300,7 @@ form{
     display: flex;
     justify-content: center;
     border-style: solid;
-    border-color: var(--gris);
+    border-color: black;
     border-width: 5px;
     border-radius: 10px;
     margin: 1% 1%;
@@ -210,4 +314,29 @@ form{
 #unlock{
     background-color: var(--afficheur);
     margin: auto;
+}
+
+
+/*responsive*/
+
+@media only screen and (min-width: 320px) {
+  /* For phones*/
+  #trad{display: inline-block;}
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets (vertical): */
+  #trad{display: inline-block;}
+}
+
+@media only screen and (min-width: 700px) {
+    #trad{display: grid; grid-template-columns: 50% 50%;}
+    .col1{
+        grid-column: 1;
+    }
+    
+    .col2{
+        grid-column: 2;
+    }
+    
 }
