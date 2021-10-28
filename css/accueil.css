@@ -6,15 +6,31 @@ html, body{
     height: 100%;
     background-color: var(--bgc);
     font-family: 'Courier New', Courier, monospace;
-    /*overflow: hidden;*/
+    overflow: hidden;
     margin: 0;
     scroll-behavior: smooth; 
 }
 
-audio{
-    margin-left: -200px;
+.important{
+    font-weight:bold;
 }
 
+audio {
+    position: absolute;
+    margin-left: -200px;
+}
+.AudioTab {
+    border-style: solid;
+    border-width: 10px;
+}
+.AudioDesc {
+    color: black;
+    font-weight: bolder;
+    position: absolute;
+    left: 72px;
+    background-color: #f2f3f5;
+    padding: 18px;
+}
 #logo {
     text-align: center;
     margin: auto;
@@ -22,154 +38,93 @@ audio{
     width: 250px;
     height: 250px;
 }
+
 #plan {
     text-align: center;
+    display: inline-block;
     margin: auto;
     display: flex;
-    width: 900px;
-    height: 375px;
+    height: auto;
+    width: 50%;
+    border-style: dotted;
+    border-width: 5px;
+    border-radius: 50px;
 }
-/*.bufferBar, .progressBar, .scrubber, .volumeControl {
-    bottom: 0;
-    color: inherit;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    border: 0;
-    border-radius: calc(var(--track-size) / 2);
-    margin: 0;
-    background: none;
-    outline: none;
-    visibility: hidden;
-}*/
-
-/* animation/ transition*/
-/*#transition{
-    position: absolute;
-    max-width: 100%;
-    /*max-height:100%;*/ /*
-    z-index: 0;
-    margin-left: auto;
-    margin-right: auto;
-}*/
-
-/*
-.page1 {
-    height: 100%;
-    background-color: var(--bgc);
-    z-index: 1;
-}
-
-#page2{
-    height: 100%;
-    background-color: var(--bgc);
-    z-index: 3;
-    
-}*/
-
-#page2{
-    height: 100%;}
-
-
 
 .init {
+    padding: 10px;
     display: inline-block;
-    padding-top: 12%;
-    padding-left: 20%;
-    padding-right: 20%;
-    margin: auto;
     text-align: justify;
     font-size: 15pt;
     height: 100%;
     color : white;
     background-color: var(--bgc);
 }
-
-.AudioDesc{
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    left: 10px;
-    top: 30px;
-}
-
 img{
     width: 50px;
     height: 50px;
 }
-
 .button_scroll{
     display: flex;
     justify-content: center;
     margin: auto;
     margin-top: 45px;
-    padding-top: 20px;
+    padding-top: 40px;
     transition: padding-top 0.8s;
 }
-
+.button_scroll2 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 45px;
+    padding-bottom: 20px;
+    transition: padding-bottom 0.8s;
+}
 .button_scroll:hover{
     padding-top: 45px;
 }
-
+.button_scroll2:hover {
+    margin-bottom: 45px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: var(--bgc);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: white;
+    height: 25px;
+    width: 175px;
+    margin: auto;
+}
+.button:hover {
+        color: #1d2630;
+        background-color: white;
+        border-color: white;
+    }
 
 @keyframes opacity {
     0%   { opacity: 0; }
     100% { opacity: 1; }
 }
-.button_scroll {opacity:0;animation: opacity 2.5s ease-in-out 3s forwards;}
-.page1 p {opacity: 0; animation: opacity 1.5s ease-in-out 1s forwards;}
-
-/*@-webkit-keyframes transition1 {
-    0% {background-image: url(transition/1.png); background-position: center;}
-    5% {background-image: url(transition/2.png); background-position: center;}
-    10% {background-image: url(transition/3.png); background-position: center;}
-    15% {background-image: url(transition/4.png); background-position: center;}
-    20% {background-image: url(transition/5.png); background-position: center;}
-    25% {background-image: url(transition/6.png); background-position: center;}
-    30% {background-image: url(transition/7.png); background-position: center;}
-    35% {background-image: url(transition/8.png); background-position: center;}
-    40% {background-image: url(transition/9.png); background-position: center;}
-    45% {background-image: url(transition/10.png); background-position: center;}
-    50% {background-image: url(transition/11.png); background-position: center;}
-    55% {background-image: url(transition/12.png); background-position: center;}
-    60% {background-image: url(transition/13.png); background-position: center;}
-    65% {background-image: url(transition/14.png); background-position: center;}
-    70% {background-image: url(transition/15.png); background-position: center;}
-    75% {background-image: url(transition/16.png); background-position: center;}
-    80% {background-image: url(transition/17.png); background-position: center;}
-    85% {background-image: url(transition/18.png); background-position: center;}
-    90% {background-image: url(transition/19.png); background-position: center;}
-    95% {background-image: url(transition/20.png); background-position: center;}
-    100% {background-image: url(transition/21.png); background-position: center;}
-} 
-
-@keyframes transition1 {
-    0% {background-image: url(transition/1.png); background-position: center;}
-    5% {background-image: url(transition/2.png); background-position: center;}
-    10% {background-image: url(transition/3.png); background-position: center;}
-    15% {background-image: url(transition/4.png); background-position: center;}
-    20% {background-image: url(transition/5.png); background-position: center;}
-    25% {background-image: url(transition/6.png); background-position: center;}
-    30% {background-image: url(transition/7.png); background-position: center;}
-    35% {background-image: url(transition/8.png); background-position: center;}
-    40% {background-image: url(transition/9.png); background-position: center;}
-    45% {background-image: url(transition/10.png); background-position: center;}
-    50% {background-image: url(transition/11.png); background-position: center;}
-    55% {background-image: url(transition/12.png); background-position: center;}
-    60% {background-image: url(transition/13.png); background-position: center;}
-    65% {background-image: url(transition/14.png); background-position: center;}
-    70% {background-image: url(transition/15.png); background-position: center;}
-    75% {background-image: url(transition/16.png); background-position: center;}
-    80% {background-image: url(transition/17.png); background-position: center;}
-    85% {background-image: url(transition/18.png); background-position: center;}
-    90% {background-image: url(transition/19.png); background-position: center;}
-    95% {background-image: url(transition/20.png); background-position: center;}
-    100% {background-image: url(transition/21.png); background-position: center;}
+.button_scroll {
+    opacity: 0;
+    animation: opacity 2.5s ease-in-out 3s forwards;
 }
-
-.page1{background-image: url(transition/22.png); animation: transition1 0.5s; background-position: center;}*/
+.button_scroll2 {
+    opacity: 0;
+    animation: opacity 2.5s ease-in-out 3s forwards;
+}
+.page1 p {opacity: 0; animation: opacity 1.5s ease-in-out 1s forwards;}
 
 
 
@@ -179,14 +134,36 @@ img{
     .init {padding-left: 5% ;}
     .init {padding-right: 5%;}
     .init {text-align: center;}
-    .init{font-size: 13pt;}
+    .init {font-size: 13pt;}
     .button_scroll{width: 50px;}
+    .button_scroll2 {width: 50px;}
+
+    }  
+@media only screen and (min-width: 700px) {
+    /* For desktop:*/
+    .init {
+        padding-top: 12%;
     }
-    
-  @media only screen and (min-width: 700px) {
-    /* For desktop: */
-    .init {padding-top: 12%;}
-    .init {padding-left: 20% ;}
-    .init {padding-right: 20%;}
-    .init{text-align: justify;}
+    .init {
+        padding-left: 20%;
+    }
+    .init {
+        padding-right: 20%;
+    }
+    .init {
+        text-align: justify;
+    }
+}
+
+#page1 
+{
+    height: 100%;
+}
+#page2
+{
+    height: 100%;
+}
+#page3 
+{
+    height: 100%;
 }
