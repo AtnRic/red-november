@@ -2,15 +2,17 @@
     --bgc:#1d2630;
     --afficheur:#c8b89f;
     --gris:#393c47; 
+    --bomb:#f6d731;
 }
+
 *{
     font-family: 'Courier New', Courier, monospace;
 }
 
-
+/* css popup perdu*/
 .popupbtn {
     margin: 70px auto;
-    color: #f6d731;
+    color: var(--bomb);
     font-family: 'Courier New';
     padding: 20px;
     background-color: black;
@@ -18,12 +20,11 @@
     width: 30%;
     position: relative;
     visibility: hidden;
-    /*transition: all 5s ease-in-out;*/
 }
 
 .popupbtn h2 {
     margin-top: 0;
-    color: #f6d731;
+    color: var(--bomb);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -34,13 +35,13 @@
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
-    color: #f6d731;
+    color: var(--bomb);
     border-style: solid;
     border-width: 1px;
     border-radius: 100px;
 }
 .popupbtn .close:hover {
-    background-color: #f6d731;
+    background-color: var(--bomb);
     color: black;
     font-weight: bold;
 }
@@ -69,7 +70,7 @@
     }
 }
 
-
+/*css tableau de commandes*/
 
 #tableau{
     display: flex;
@@ -111,10 +112,6 @@
     background-color: var(--afficheur);
 }
 
-/*#last_screen{
-    margin-right: 0%;
-}*/
-
 .light_btn{
     display: flex;
     
@@ -126,18 +123,11 @@
     margin: 1% 1%;
     width: 200px;
     height: 110px;
-    
 }
 
 form{
     display: grid;
     grid-template-rows: auto auto;
-    /*border-style: solid;
-    border-width: 5px;
-    border-radius: 10px;*/
-    
-    /*width: 220px;
-    height: 100px;*/
     background-color: var(--gris);
 }
 
@@ -158,8 +148,14 @@ form{
     margin-top: 1%;
     width: 186px;
     height: 37px;
+    /*box-shadow: 2px 5px #999;*/
+    cursor: pointer;
 }
 
+.button:active{
+    box-shadow: 1px 3px #666;
+    transform: translateY(4px);
+}
 
 
 .light{
@@ -274,7 +270,6 @@ form{
 }
 
 
-
 #trad{
     border-style: solid;
     margin-bottom: 1%;
@@ -283,9 +278,6 @@ form{
     width: 83vw;
     background-color: var(--afficheur);
 }
-
-
-
 
 #trad p {
     display: inline-block;
@@ -306,9 +298,7 @@ form{
     margin: 1% 1%;
     width: 200px;
     height: 110px;
-    
     background-color: var(--afficheur);
-    
 }
 
 #unlock{

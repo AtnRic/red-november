@@ -44,7 +44,7 @@ h1{
   }
 
 .button:hover{
-    color: #1d2630;
+    color: var(--bgc);
     background-color: white;
     border-color: white;
   }
