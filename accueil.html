@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="description" content="RED November">
     <meta name="keywords" content="red november, novembre rouge, escape game, game">
     <meta name="author" content="Antoine RICHARD, Adrien VERHAEGHE">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RED November</title>
     <link rel="stylesheet" href="css/accueil.css">
-    <link rel="icon" type="image/png" href="icon/red november.png"/>
-    
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="icon" type="image/png" href="icon/red november.png" />
+
 </head>
 <body>
-    <audio autoplay muted controls>
-        <source src="audio/ambiance 2.mp3" type="audio/mp3">
-    </audio><span class="AudioDesc"><br />  Veuillez activer le son.</span>
-    <div class="page1">
-        <!--
-        <video autoplay muted id="transition">
-            <source src="css/transition/transition4.mp4" type="video/mp4">
-        </video> -->
+        <audio autoplay muted controls>
+            <source src="audio/ambiance 2.mp3" type="audio/mp3">
+        </audio><span class="AudioDesc">Veuillez activer le son.</span>
+    <div class="page1" style="height: 100%;">
         <div class="init">
             <p>
-                Vous vous apprêtez à jouer à un escape game, RED-November. Pour une expérience de jeu optimale nous vous conseillions d’activer l’autoplay de votre navigateur ainsi que le son.
-                Le bût du jeu est de vous échapper du Red-November en résolvant les différentes énigmes qui se présentent à vous.
-                Vous avez un temps défini dans chaque salle avant que celle-ci ne soit inondé.
-                <br/><br />
-                <img id="logo" src="icon/red november.png" />
+                <span class="important">Vous vous apprêtez à jouer à un escape game, RED-November.</span> <br /><br />
+                Pour une meilleure expérience de jeu, nous vous conseillons d'utiliser des écouteurs ou un casque et d'activer la lecture automatique de l'audio sur votre navigateur.
+                Pour cela aller dans vos paramètres de confidentialités de votre navigateur et activé "lecture automatique des médias". <br />
+                Sur smartphone et tablette, la fonction autoplay n'étant pas disponible, un menu de contrôle audio sera affiché en bas de votre écran.<br />
+                L'audio est facultatif, hormis dans les salles dans lesquelles il sera explicitement mentionné "énigme audio" ainsi que cet icône :
+                <br /><br /> <img id="logo" src="icon/red november.png" />                      
 
             </p>
             <a class="button_scroll" href="#page2"><img src="icon/fleche-vers-le-bas.png"></a>
@@ -36,22 +34,27 @@
     <div id="page2">
         <div class="init">
             <p>
-                Voici le plan du Red November :<br><br><br>
-                Vous êtes dans la salle des commandes. Cette salle a été verrouillée automatiquement à cause des multiples incendies et voies d'eau.<br>
 
-                Devant vous se trouve de tableau de bord. Il vous informe que vous devez vous rendre le plus rapidement possible dans la salle des machines car le réacteur nucléaire servant à la propulsion de l'appareil est en surchauffe.
+                Le bût du jeu est de vous échapper du Red-November en résolvant les différentes énigmes qui se présentent à vous.
+                Vous avez un temps défini dans chaque salle avant que celle-ci ne soit inondé.<br />
+                Vous avez au total un peu moins d'une heure pour compléter l'ensemble des énigmes.<br />
+                Voici le plan du <span class="important">Red November</span> :<br>
 
                 <br /><br />
                 <img id="plan" src="icon/plan.png" />
+                <br /><br />
+
+                Vous êtes dans la salle des commandes. Cette salle a été verrouillée automatiquement à cause des multiples incendies et voies d'eau.<br>
+                Devant vous se trouve de tableau de bord. Il vous informe que vous devez vous rendre le plus rapidement possible dans la salle des machines car le réacteur nucléaire servant à la propulsion de l'appareil est en surchauffe.
+                <a class="button_scroll" href="#page3"><img src="icon/fleche-vers-le-bas.png"></a>
+
             </p>
-            <a class="button_scroll" href="#page3"><img src="icon/fleche-vers-le-bas.png"></a>
-
-
         </div>
     </div>
 
     <div id="page3">
         <div class="init">
+            <a class="button_scroll2" href="#page2"><img src="icon/fleche-vers-le-haut.png"></a>
             <p>
                 Mer d'Okhotsk, N56°34'43" ; E146°8'39"<br><br>
 
@@ -74,6 +77,8 @@
                 <br /><br />
                 <br /><br />
                 <br /><br />
+                <a class="button" href="red-november.html">Démarrage du jeu</a>
+
                 <br /><br />
                 <br /><br />
                 <br /><br />
