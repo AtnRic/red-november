@@ -45,7 +45,7 @@ audio {
     margin: auto;
     display: flex;
     height: auto;
-    width: 50%;
+    width: 100%;
     border-style: dotted;
     border-width: 5px;
     border-radius: 50px;
@@ -142,7 +142,7 @@ img{
 @media only screen and (min-width: 700px) {
     /* For desktop:*/
     .init {
-        padding-top: 12%;
+        padding-top: 5%;
     }
     .init {
         padding-left: 20%;
