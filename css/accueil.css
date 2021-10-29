@@ -171,7 +171,7 @@ img{
 @media only screen and (min-width: 700px) {
     /* For desktop:*/
     .init {
-        margin-top: 3%;
+        padding-top: 0;
     }
     .init {
         padding-left: 20%;
