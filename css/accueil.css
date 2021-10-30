@@ -14,7 +14,7 @@ html, body{
 audio {
     display: block;
     margin: auto;
-    opacity: 0; animation: opacity 1.5s ease-in-out 1s forwards;
+    opacity: 0; animation: opacity 1.5s ease-in-out 3s forwards;
 }
 
 .page1{
@@ -74,18 +74,17 @@ audio {
     margin: auto;
     display: flex;
     height: auto;
-    width: 100%;
+    width: 80%;
     border-style: dotted;
     border-width: 5px;
     border-radius: 50px;
 }
 
 .init {
-    /*padding: 10px;*/
+    
     display: inline-block;
     text-align: justify;
     font-size: 1em;
-    /*height: 100vh;*/
     color : white;
     background-color: var(--bgc);
 }
@@ -98,22 +97,24 @@ img{
     justify-content: center;
     margin: auto;
     margin-top: 45px;
-    
     transition: padding-top 0.8s;
 }
 .button_scroll2 {
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-bottom: 45px;
-    padding-bottom: 20px;
+    
+    padding-bottom: 0px;
+    /*transition: padding-top 0.8s;*/
     transition: padding-bottom 0.8s;
+    
 }
 .button_scroll:hover{
     padding-top: 45px;
 }
 .button_scroll2:hover {
-    margin-bottom: 45px;
+    /*padding-top: 0px;*/
+    padding-bottom: 45px;
 }
 .button {
     display: flex;
@@ -147,13 +148,15 @@ img{
 }
 .button_scroll {
     opacity: 0;
-    animation: opacity 2.5s ease-in-out 3s forwards;
+    animation: opacity 2s ease-in-out 5s forwards;
 }
 .button_scroll2 {
     opacity: 0;
-    animation: opacity 2.5s ease-in-out 3s forwards;
+    animation: opacity 2s ease-in-out 2s forwards;
 }
-.page1 p {opacity: 0; animation: opacity 1.5s ease-in-out 1s forwards;}
+.page1 p {opacity: 0; animation: opacity 1.5s ease-in-out 3s forwards;}
+.important p {opacity: 0; animation: opacity 1.5s ease-in-out 1s forwards;}
+/*.init p {opacity: 0; animation: opacity 1.5s ease-in-out 2s forwards;}*/
 
 
 

@@ -9,7 +9,7 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* css popup perdu*/
+/*css popup perdu*/
 .popupbtn {
     margin: 70px auto;
     color: var(--bomb);
@@ -79,7 +79,7 @@
     border-style: solid;
     border-width: 5px;
     border-radius: 20px;
-    margin: 1%;
+    margin: 0.5%;
     max-width: 96vw;
     min-height: 74vh;
     background-color: var(--gris);
@@ -92,7 +92,7 @@
     border-style: solid;
     border-width: 5px;
     border-radius: 10px;
-    margin: 1% 1%;
+    margin: 0.5% 1%;
     width: 200px;
     height: 110px;
     background-image: url(images/galvanometre1.png);
@@ -120,7 +120,7 @@
     border-color: var(--gris);
     border-width: 5px;
     border-radius: 10px;
-    margin: 1% 1%;
+    margin: 0.5% 1%;
     width: 200px;
     height: 110px;
 }
@@ -295,7 +295,7 @@ form{
     border-color: black;
     border-width: 5px;
     border-radius: 10px;
-    margin: 1% 1%;
+    margin: 0.5% 1%;
     width: 200px;
     height: 110px;
     background-color: var(--afficheur);
