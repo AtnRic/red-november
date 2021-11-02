@@ -10,7 +10,7 @@ body{
     width: 100%;
     height: auto;
     margin: auto;
-    font-size: xx-large;
+    font-size: xxx-large;
     padding-inline-start: 10px;
 }
 
@@ -26,7 +26,7 @@ body{
     position: sticky;
     top: 5px;
     width: 150px;
-    height: 100px;
+    height: 70px;
     display: flex;
     background-color: black;   
     font-family: Arial, Helvetica, sans-serif;
@@ -65,6 +65,59 @@ body{
     font-family: 'Courier New';
 }
 
+.overlay:target {
+    visibility: visible;
+    opacity: 1;    
+}
+.popup {
+    margin: 70px auto;
+    color: #f6d731;
+    font-family: 'Courier New';
+    padding: 20px;
+    background-color: black;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popup h2 {
+        margin-top: 0;
+        color: #f6d731;
+        font-family: Arial, Helvetica, sans-serif;
+}
+.popup .close {
+    position:relative;
+    margin-left: 70%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f6d731;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100px;
+}
+.popup .close:hover {
+    background-color: #f6d731;
+    color: black;
+    font-weight: bold;
+}
+.popup .content {
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;        
+    animation: made 10s forwards;
+}
 
 @keyframes countdown {
     0% {
@@ -111,61 +164,7 @@ body{
         content: "0";
     }
 }
-.overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;        
-    animation: made 10s forwards;
-}
-.overlay:target {
-    visibility: visible;
-    opacity: 1;    
-}
-.popup {
-    margin: 70px auto;
-    color: #f6d731;
-    font-family: 'Courier New';
-    padding: 20px;
-    background-color: black;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    transition: all 5s ease-in-out;
-}
-.popup h2 {
-        margin-top: 0;
-        color: #f6d731;
-        font-family: Arial, Helvetica, sans-serif;
-}
-.popup .close {
-        position:relative;
-        margin-left: 70%;
-        padding: 10px;
-        font-size: 20px;
-        font-weight: bold;
 
-        text-decoration: none;
-
-        color: #f6d731;
-
-        border-style: solid;
-        border-width: 1px;
-        border-radius: 100px;
-}
-    .popup .close:hover {
-        background-color: #f6d731;
-        color: black;
-        font-weight: bold;
-    }
-    .popup .content {
-        overflow: hidden;
-    }
 
 @keyframes made {
     99% {
