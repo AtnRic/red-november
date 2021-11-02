@@ -11,6 +11,7 @@ body{
     height: auto;
     margin: auto;
     font-size: xx-large;
+    padding-inline-start: 10px;
 }
 
 .bombe {
@@ -18,12 +19,13 @@ body{
     height: 50%;
     margin: auto;
     display: flex;
+    padding: 10px;
 }
 .cadre {
     position: -webkit-sticky;
     position: sticky;
     top: 5px;
-    width: 250px;
+    width: 150px;
     height: 100px;
     display: flex;
     background-color: black;   
