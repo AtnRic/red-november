@@ -10,7 +10,7 @@ body{
     width: 100%;
     height: auto;
     margin: auto;
-    font-size: xxx-large;
+    font-size: xx-large;
     padding-inline-start: 10px;
 }
 
@@ -116,7 +116,7 @@ body{
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;        
-    animation: made 10s forwards;
+    animation: made 999s forwards;
 }
 
 @keyframes countdown {
