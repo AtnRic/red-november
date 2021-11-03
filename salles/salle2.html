@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RED November</title>
     <link rel="stylesheet" href="css/salle2.css">
-    <link rel="stylesheet" href="timer/timer.css"/>
+    <link rel="stylesheet" href="timer/timer.css" />
+    <link rel="icon" type="image/png" href="../icon/red november.png" />
+
 </head>
 <body>
     <span class="cadre">
@@ -17,78 +19,38 @@
         </p>
         <img class="bombe" src="timer/gif/BOMB.gif" />
     </span>
-    <div class="scroll">
-        <p>
-            ||_______||_______||_______||_______||_______||_______||_______||_______||_______||_______||_______||_______||_______||<br>
-            ||___1___||______||_______||___2___||_______||_______||___3___||_______||_______||_______||___4___||_______||_______||<br>
-            ||_______||______||_______||_______||_______||_______||_______||_______||_______||_______||_______||_______||_______||<br>
-        </p>
+    <div id=tableau>
+        <span class="ordergroup">
+                <p id="red">I</p>
+                <p id="yellow">II</p>
+                <p id="rose">III</p>
+        </span>
+
+        <span class="code">
+           <div class="scroll" id="first">
+                <p>
+                <span class="red">_______________</span><span class="rose">_______________</span><span class="yellow">_______________</span><span class="orange">_______________</span><br>
+                <span class="red">|_6_||-1_||_4_|</span><span class="rose">|_7_||_0_||_5_|</span><span class="yellow">|_9_||_2_||_7_|</span><span class="orange">|10_||_3_||_8_|</span><br>
+                <span class="red">|_1_||_3_||_5_|</span><span class="rose">|_2_||_4_||_6_|</span><span class="yellow">|_4_||_6_||_8_|</span><span class="orange">|_5_||_7_||_9_|</span><br>
+                <span class="red">|_2_||_7_||_0_|</span><span class="rose">|_3_||_8_||_1_|</span><span class="yellow">|_5_||10_||_3_|</span><span class="orange">|_6_||11_||_4_|</span><br>
+                </p>
+           </div>
+           <div class="scroll" id="second">
+                <p>
+                <span class="orange">_______________</span><span class="rose">_______________</span><span class="yellow">_______________</span><span class="red">_______________</span><br>
+                <span class="orange">|_7_||_0_||_5_|</span><span class="rose">|_6_||-1_||_4_|</span><span class="yellow">|_9_||_2_||_7_|</span><span class="red">|10_||_3_||_8_|</span><br>
+                <span class="orange">|_2_||_4_||_6_|</span><span class="rose">|_1_||_3_||_5_|</span><span class="yellow">|_4_||_6_||_8_|</span><span class="red">|_5_||_7_||_9_|</span><br>
+                <span class="orange">|_3_||_8_||_1_|</span><span class="rose">|_2_||_7_||_0_|</span><span class="yellow">|_5_||10_||_3_|</span><span class="red">|_6_||11_||_4_|</span><br>
+                </p>
+           </div>
+           <div class="scroll" id="third">
+                <p>
+                <span class="yellow">_______________</span><span class="red">_______________</span><span class="rose">_______________</span><span class="orange">___________________________</span><br>
+                <span class="yellow">|10_||_3_||_8_|</span><span class="red">|_9_||_2_||_7_|</span><span class="rose">|_6_||-1_||_4_|</span><span class="orange">|_______||_______||_______|</span><br>
+                <span class="yellow">|_5_||_7_||_9_|</span><span class="red">|_4_||_6_||_8_|</span><span class="rose">|_1_||_3_||_5_|</span><span class="orange">|_______||_______||_______|</span><br>
+                <span class="yellow">|_6_||11_||_4_|</span><span class="red">|_5_||10_||_3_|</span><span class="rose">|_2_||_7_||_0_|</span><span class="orange">|_______||_______||_______|</span>
+                </p>
+           </div>
+        </span>
     </div>
-
-    <div class="scroll">
-        <p>
-            ||_______||_______||_______||_______||_______||_______||_______||_______||_______||_______||_______||_______||_______||<br>
-            ||___1___||______||_______||___2___||_______||_______||___3___||_______||_______||_______||___4___||_______||_______||<br>
-            ||_______||_______||_______||______||_______||_______||_______||_______||_______||_______||_______||_______||_______||<br>
-        </p>
-    </div>
-
-    <div class="scroll">
-        <p>
-            ||_______||_______||_______||_______||_______||_______||_______||_______||_______||_______||_______||_______||_______||<br>
-            ||___1___||______||_______||___2___||_______||_______||___3___||_______||_______||_______||___4___||_______||_______||<br>
-            ||_______||______||_______||_______||_______||_______||_______||_______||_______||_______||_______||_______||_______||<br>
-        </p>
-    </div>
-
-    <p class="lorem">
-
-        Lorem ipsum dolor sit amet. Id sint ducimus rem corrupti illo nam repudiandae recusandae sit provident voluptatem sit ipsum sapiente eos velit porro. Non voluptas sint ea accusamus officia et autem doloremque qui consequatur animi sed tempore odio.
-
-        Qui nostrum odio vel ratione sunt ut omnis veritatis qui quia consequatur! Sed omnis quas ut beatae nisi ut consequatur quis. Sit beatae officia quo labore debitis est repellendus alias qui quia consequatur et suscipit inventore aut possimus iste. Aut temporibus iste sit modi iure et minus tenetur est aliquam earum aut nobis quibusdam?
-
-        Quo magnam dolorem in ratione natus et minus accusantium sit doloribus fugiat ut omnis tenetur. Ea sunt commodi a placeat laudantium qui ratione doloremque qui voluptas dicta. Et voluptas eveniet et voluptates enim qui fugiat nulla est debitis deleniti?
-
-
-        Lorem ipsum dolor sit amet. Id sint ducimus rem corrupti illo nam repudiandae recusandae sit provident voluptatem sit ipsum sapiente eos velit porro. Non voluptas sint ea accusamus officia et autem doloremque qui consequatur animi sed tempore odio.
-
-        Qui nostrum odio vel ratione sunt ut omnis veritatis qui quia consequatur! Sed omnis quas ut beatae nisi ut consequatur quis. Sit beatae officia quo labore debitis est repellendus alias qui quia consequatur et suscipit inventore aut possimus iste. Aut temporibus iste sit modi iure et minus tenetur est aliquam earum aut nobis quibusdam?
-
-        Quo magnam dolorem in ratione natus et minus accusantium sit doloribus fugiat ut omnis tenetur. Ea sunt commodi a placeat laudantium qui ratione doloremque qui voluptas dicta. Et voluptas eveniet et voluptates enim qui fugiat nulla est debitis deleniti?
-
-
-        Lorem ipsum dolor sit amet. Id sint ducimus rem corrupti illo nam repudiandae recusandae sit provident voluptatem sit ipsum sapiente eos velit porro. Non voluptas sint ea accusamus officia et autem doloremque qui consequatur animi sed tempore odio.
-
-        Qui nostrum odio vel ratione sunt ut omnis veritatis qui quia consequatur! Sed omnis quas ut beatae nisi ut consequatur quis. Sit beatae officia quo labore debitis est repellendus alias qui quia consequatur et suscipit inventore aut possimus iste. Aut temporibus iste sit modi iure et minus tenetur est aliquam earum aut nobis quibusdam?
-
-        Quo magnam dolorem in ratione natus et minus accusantium sit doloribus fugiat ut omnis tenetur. Ea sunt commodi a placeat laudantium qui ratione doloremque qui voluptas dicta. Et voluptas eveniet et voluptates enim qui fugiat nulla est debitis deleniti?
-
-
-        Lorem ipsum dolor sit amet. Id sint ducimus rem corrupti illo nam repudiandae recusandae sit provident voluptatem sit ipsum sapiente eos velit porro. Non voluptas sint ea accusamus officia et autem doloremque qui consequatur animi sed tempore odio.
-
-        Qui nostrum odio vel ratione sunt ut omnis veritatis qui quia consequatur! Sed omnis quas ut beatae nisi ut consequatur quis. Sit beatae officia quo labore debitis est repellendus alias qui quia consequatur et suscipit inventore aut possimus iste. Aut temporibus iste sit modi iure et minus tenetur est aliquam earum aut nobis quibusdam?
-
-        Quo magnam dolorem in ratione natus et minus accusantium sit doloribus fugiat ut omnis tenetur. Ea sunt commodi a placeat laudantium qui ratione doloremque qui voluptas dicta. Et voluptas eveniet et voluptates enim qui fugiat nulla est debitis deleniti?
-
-
-        Lorem ipsum dolor sit amet. Id sint ducimus rem corrupti illo nam repudiandae recusandae sit provident voluptatem sit ipsum sapiente eos velit porro. Non voluptas sint ea accusamus officia et autem doloremque qui consequatur animi sed tempore odio.
-
-        Qui nostrum odio vel ratione sunt ut omnis veritatis qui quia consequatur! Sed omnis quas ut beatae nisi ut consequatur quis. Sit beatae officia quo labore debitis est repellendus alias qui quia consequatur et suscipit inventore aut possimus iste. Aut temporibus iste sit modi iure et minus tenetur est aliquam earum aut nobis quibusdam?
-
-        Quo magnam dolorem in ratione natus et minus accusantium sit doloribus fugiat ut omnis tenetur. Ea sunt commodi a placeat laudantium qui ratione doloremque qui voluptas dicta. Et voluptas eveniet et voluptates enim qui fugiat nulla est debitis deleniti?
-
-
-        Lorem ipsum dolor sit amet. Id sint ducimus rem corrupti illo nam repudiandae recusandae sit provident voluptatem sit ipsum sapiente eos velit porro. Non voluptas sint ea accusamus officia et autem doloremque qui consequatur animi sed tempore odio.
-
-        Qui nostrum odio vel ratione sunt ut omnis veritatis qui quia consequatur! Sed omnis quas ut beatae nisi ut consequatur quis. Sit beatae officia quo labore debitis est repellendus alias qui quia consequatur et suscipit inventore aut possimus iste. Aut temporibus iste sit modi iure et minus tenetur est aliquam earum aut nobis quibusdam?
-
-        Quo magnam dolorem in ratione natus et minus accusantium sit doloribus fugiat ut omnis tenetur. Ea sunt commodi a placeat laudantium qui ratione doloremque qui voluptas dicta. Et voluptas eveniet et voluptates enim qui fugiat nulla est debitis deleniti?
-
-
-        Lorem ipsum dolor sit amet. Id sint ducimus rem corrupti illo nam repudiandae recusandae sit provident voluptatem sit ipsum sapiente eos velit porro. Non voluptas sint ea accusamus officia et autem doloremque qui consequatur animi sed tempore odio.
-
-        Qui nostrum odio vel ratione sunt ut omnis veritatis qui quia consequatur! Sed omnis quas ut beatae nisi ut consequatur quis. Sit beatae officia quo labore debitis est repellendus alias qui quia consequatur et suscipit inventore aut possimus iste. Aut temporibus iste sit modi iure et minus tenetur est aliquam earum aut nobis quibusdam?
-
-        Quo magnam dolorem in ratione natus et minus accusantium sit doloribus fugiat ut omnis tenetur. Ea sunt commodi a placeat laudantium qui ratione doloremque qui voluptas dicta. Et voluptas eveniet et voluptates enim qui fugiat nulla est debitis deleniti?
-    </p>
 </body>
