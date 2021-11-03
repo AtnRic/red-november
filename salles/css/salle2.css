@@ -1,13 +1,41 @@
-:root{
-    --bgc:#1d2630;
+:root {
+    --bgc: #1d2630;
+    --bgc: #1d2630;
+    --afficheur: #c8b89f;
+    --gris: #393c47;
+    --bomb: #f6d731;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: yellow;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+        background: #b30000;
+    }
 
 body {
     background-color: var(--bgc);
     
-
 }
 
+#tableau {
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+    margin: 0.5%;
+    background-color: var(--gris);
+    justify-content: center;
+}
 span {
     width:100%;
     text-align: center;
@@ -15,29 +43,99 @@ span {
     font-weight: bold;
     font-family: 'Courier New';
 }
-
-iframe{
-    margin: auto;
-    width: 100%;
-    position: static;
-}
-
-h1:hover{
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-weight: normal;
-    content: "affligeant.";
-    font-family: 'Courier New';
-}
-
 .scroll{
-    position: static;
-    max-width: 150px;
-    height: 70px;
+    max-width: 300px;
+    height: auto;
     margin: auto;
     overflow-x: scroll;
     overflow-y: hidden;
-    padding: 20px;
-    color: white;
+    padding: 50px;
 }
+
+#first, #second, #third{
+    font-weight: bold;
+    text-align: center;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    background-color: var(--afficheur);
+    font-size: 30px;
+}
+.order {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+    background-color: var(--afficheur);
+    width: 100px;
+    height: auto;
+    font-size: 25px;
+}
+#rose, #red, #yellow {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+    background-color: var(--afficheur);
+    width: 100px;
+    height: auto;
+    font-size: 25px;
+}
+#rose{
+    border-color: red;
+    color: red;
+}
+#red{
+    border-color: purple;
+    color: yellow;
+}
+#yellow{
+    border-color: darkblue;
+    color: pink;
+}
+
+.ordergroup {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.code{
+    padding: 40px 0 40px 0;
+    display: flex;
+}
+#first {
+    border-color: purple;
+    color: red;
+}
+#second {
+    border-color: darkblue;
+    color: yellow;
+}
+#third {
+    border-color: brown;
+    color: pink;
+}
+
+.yellow{
+    color: yellow;
+    font-weight: bold;
+}
+.red {
+    color: red;
+    font-weight: bold;
+}
+.rose {
+    color: pink;
+    font-weight: bold;
+}
+.orange {
+    color: orange;
+    font-weight: bold;
+}
+
