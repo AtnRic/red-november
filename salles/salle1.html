@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="utf-8"/>
     <meta name="description" content="RED November">
@@ -7,16 +9,16 @@
     <title>RED November</title>
     <link rel="stylesheet" href="css/salle1.css">
     <link rel="stylesheet" href="timer/timer.css"/>
-    <link rel="icon" type="image/png" href="../icon/red november.png"/>
+    <link rel="icon" type="image/png" href="../icon/red_november.png"/>
 </head>
 <body>
     <!--timer-->
     <span class="cadre">
-        <p class="Timer">
+        <a class="Timer">
             <span class="Timer2">
             </span>
-        </p>
-        <img class="bombe" src="timer/gif/BOMB.gif" />
+        </a>
+        <img class="bombe" src="timer/gif/BOMB.gif" alt="gif nucléaire"/>
     </span>
 
     <div id="popup1" class="overlay">
@@ -140,7 +142,7 @@
         
         <div class=unlock>
             <form id="unlock" action="salle2.html">
-                <label for="code">код :</label><br> <!--trad : code :-->
+                <label for="Code">код :</label><br> <!--trad : code :-->
                 <input type="text" id="Code" name="Code" required pattern="35176"><br>
                 <input type="submit" value="подтвердить"><!--trad : valider-->
               </form> 
@@ -159,3 +161,4 @@
         </div>
     </div>
 </body>
+</html>

@@ -1,4 +1,4 @@
-:root {
+:root{
     --bgc: #1d2630;
 }
 
@@ -11,7 +11,7 @@ html, body{
     scroll-behavior: smooth; 
 }
 
-audio {
+audio{
     display: block;
     margin: auto;
     opacity: 0; animation: opacity 1.5s ease-in-out 3s forwards;
@@ -28,7 +28,7 @@ audio {
 
 
 
-@keyframes typing {
+@keyframes typing{
     from {
       width: 0
     }
@@ -40,7 +40,7 @@ audio {
       
     }
 }
-@keyframes blinking-cursor {
+@keyframes blinking-cursor{
     from,
     to {
        border-color: transparent
@@ -51,7 +51,7 @@ audio {
   }
 
 
-.AudioDesc {
+.AudioDesc{
     color: black;
     font-weight: bolder;
     position: fixed;
@@ -68,7 +68,7 @@ audio {
     height: 25%;
 }
 
-#plan {
+#plan{
     text-align: center;
     display: inline-block;
     margin: auto;
@@ -80,7 +80,7 @@ audio {
     border-radius: 50px;
 }
 
-.init {
+.init{
     
     display: inline-block;
     text-align: justify;
@@ -102,12 +102,10 @@ img{
 .button_scroll2 {
     display: flex;
     justify-content: center;
-    margin: auto;
-    
+    margin: auto; 
     padding-bottom: 0px;
-    /*transition: padding-top 0.8s;*/
     transition: padding-bottom 0.8s;
-    
+
 }
 .button_scroll:hover{
     padding-top: 45px;
@@ -155,7 +153,7 @@ img{
     animation: opacity 2s ease-in-out 2s forwards;
 }
 .page1 p {opacity: 0; animation: opacity 1.5s ease-in-out 3s forwards;}
-.important p {opacity: 0; animation: opacity 1.5s ease-in-out 1s forwards;}
+.important a {opacity: 0; animation: opacity 1.5s ease-in-out 1s forwards;}
 /*.init p {opacity: 0; animation: opacity 1.5s ease-in-out 2s forwards;}*/
 
 
