@@ -68,7 +68,7 @@ audio {
     height: 25%;
 }
 
-#plan {
+#plan{
     text-align: center;
     display: inline-block;
     margin: auto;
@@ -78,9 +78,10 @@ audio {
     border-style: dotted;
     border-width: 5px;
     border-radius: 50px;
+    padding: 2%;
 }
 
-.init {
+.init{
     
     display: inline-block;
     text-align: justify;
