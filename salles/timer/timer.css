@@ -6,28 +6,29 @@ body{
     display: flex;
     color: #f6d731;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: black;
     font-weight: bold;
-    overflow: hidden;
+    width: 100%;
+    height: auto;
     margin: auto;
-    
+    font-size: xx-large;
+    padding-inline-start: 10px;
 }
+
 .bombe {
-    width: 29%;
-    height: 70%;
+    width: auto;
+    height: 50%;
     margin: auto;
     display: flex;
+    padding: 10px;
 }
 .cadre {
     position: -webkit-sticky;
     position: sticky;
     top: 5px;
-    width: 250px;
-    height: 100px;
+    width: 150px;
+    height: 70px;
     display: flex;
     background-color: black;   
-    font-size: 400%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     border-style: solid;
@@ -36,6 +37,7 @@ body{
     border-color: #f6d731;
     margin: auto;
 }
+
 .Timer::before, .Timer::after {
     content: "";
     font-family: Arial, Helvetica, sans-serif;
@@ -56,11 +58,67 @@ body{
     font-weight: bold;
     color: #f6d731;
 }
+
 .lorem{
     font-size: 50px;
     color: white;
     font-family: 'Courier New';
 }
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;    
+}
+.popup {
+    margin: 70px auto;
+    color: #f6d731;
+    font-family: 'Courier New';
+    padding: 20px;
+    background-color: black;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popup h2 {
+        margin-top: 0;
+        color: #f6d731;
+        font-family: Arial, Helvetica, sans-serif;
+}
+.popup .close {
+    position:relative;
+    margin-left: 70%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f6d731;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100px;
+}
+.popup .close:hover {
+    background-color: #f6d731;
+    color: black;
+    font-weight: bold;
+}
+.popup .content {
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;        
+    animation: made 999s forwards;
+}
+
 @keyframes countdown {
     0% {
         content: "9";
@@ -107,70 +165,6 @@ body{
     }
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;        
-    animation: made 10s forwards;
-
-}
-
-.overlay:target {
-    visibility: visible;
-    opacity: 1;    
-}
-
-.popup {
-    margin: 70px auto;
-    color: #f6d731;
-    font-family: 'Courier New';
-    padding: 20px;
-    background-color: black;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    transition: all 5s ease-in-out;
-}
-
-.popup h2 {
-        margin-top: 0;
-        color: #f6d731;
-        font-family: Arial, Helvetica, sans-serif;
-}
-
-.popup .close {
-        position:relative;
-        /*float: right;*/
-        /*top: 50%;*/
-        /*margin: auto;*/
-        margin-left: 70%;
-        padding: 10px;
-        font-size: 20px;
-        font-weight: bold;
-
-        text-decoration: none;
-
-        color: #f6d731;
-
-        border-style: solid;
-        border-width: 1px;
-        border-radius: 100px;
-}
-    .popup .close:hover {
-        background-color: #f6d731;
-        color: black;
-        font-weight: bold;
-    }
-
-    .popup .content {
-        overflow: hidden;
-    }
 
 @keyframes made {
     99% {
