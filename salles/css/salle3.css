@@ -1,0 +1,257 @@
+:root{
+    --bgc:#1d2630;
+    --afficheur:#c8b89f;
+    --gris:#393c47; 
+    --bomb:#f6d731;
+    --player:#7f817e;
+}
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+/*body{
+    height:100vh;
+}*/
+
+.screen{
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+#player{
+    margin: auto;
+    width: 350px;
+    height: 260px;
+    background-image: url(../../salles/css/images/salle3/player.gif);
+    background-size: cover;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+}
+
+audio{
+    margin-left: 22px;
+    margin-top: 190px;
+    background-color: black;
+}
+
+
+.player-boutons{
+    margin: auto;
+}
+.ensemble-bouton{
+    display: inline-block;
+    margin: auto;
+}
+
+.bouton{
+    margin: auto;
+    display: inline-block;
+    background-image: url(../../salles/css/images/salle3/bouton.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    transition-property: transform;
+    transition-duration: 0.8s;
+    cursor: pointer;
+}
+
+#btn1:hover{
+    -ms-transform: rotate(130deg); /* IE 9 */
+    transform: rotate(130deg);
+}
+
+#btn2:hover{
+    -ms-transform: rotate(-60deg); /* IE 9 */
+    transform: rotate(-60deg);
+}
+
+#btn3:hover{
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    transform: rotate(-90deg);
+}
+
+#btn4:hover{
+    -ms-transform: rotate(60deg); /* IE 9 */
+    transform: rotate(60deg);
+}
+
+#btn5:hover{
+    -ms-transform: rotate(1000deg); /* IE 9 */
+    transform: rotate(100deg);
+}
+
+#btn6:hover{
+    -ms-transform: rotate(-130deg); /* IE 9 */
+    transform: rotate(-130deg);
+}
+
+
+.group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5%;
+    margin-left: 2%;
+}
+
+
+#group1{
+    grid-column: 1;
+    grid-row: 1;
+}
+#group2{
+    grid-column: 1;
+    grid-row: 2;
+}
+#group3{
+    grid-column: 1;
+    grid-row: 3;
+}
+#group4{
+    grid-column: 2;
+    grid-row: 1;
+}
+#group5{
+    grid-column: 2;
+    grid-row: 2;
+}
+#group6{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.light-legende{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.light{
+    margin: auto;
+    grid-row: 1;
+    background-image: url(../../salles/css/images/salle1/fresnel.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.legende{
+    grid-row: 2;
+    margin: auto;
+    margin-top: 1%;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    padding-top: 8.5px;
+    padding-bottom: 8.5px;
+    font-weight: bold;
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    vertical-align: center;
+    background-color: var(--afficheur);
+    width: 150px;
+    
+    cursor: pointer;
+}
+
+.legende p{
+    font-size: 1em;
+    text-align: center;
+}
+
+.galvanomètres{
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin: auto;
+}
+
+.galva{
+    background-image: url(../css/images/salle3/galva2.png);
+    background-size: cover;
+    height: 160px;
+    width: 240px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+#galva1{
+    grid-column: 1;
+    grid-row: 1;
+}
+#galva2{
+    grid-column: 1;
+    grid-row: 2;
+}
+#galva3{
+    grid-column: 2;
+    grid-row: 1;
+}
+#galva4{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+input[type="text"]{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+input[type="submit"]{
+    margin-top: 2px;
+    margin-bottom:5px;
+    background-color: #e9e9ed;
+    font-weight: bold;
+}
+
+input[type="submit"], input[type="text"]{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: var(--bgc);
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+.unlock{
+    clear: both;
+    margin: auto;
+    color:black;
+    font-size: 20px ;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 10px;
+    width: 200px;
+    height: 110px;
+    background-color: var(--afficheur);
+    margin-top: 5%;
+}
+
+#unlock{
+    
+    background-color: var(--afficheur);
+    margin: auto;
+}
+
+/*************************************************************************/
+/*responsive*/
+
+@media only screen and (max-width: 600px) {
+    
+    .galvanomètres{display: none;}
+  }
+  

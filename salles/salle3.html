@@ -9,9 +9,85 @@
     <title>RED November</title>
     <link rel="stylesheet" href="css/salle3.css">
     <link rel="stylesheet" href="timer/timer.css"/>
+    <link rel="stylesheet" href="../css/cursor.css">
     <link rel="icon" type="image/png" href="../icon/red_november.png"/>
 </head>
 <body>
+    <!--timer-->
+    <span class="cadre">
+        <a class="Timer">
+            <span class="Timer2">
+            </span>
+        </a>
+        <img class="bombe" src="timer/gif/BOMB.gif" alt="gif nucléaire"/>
+    </span>
 
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>La bombe a explosé !</h2>
+            <div class="content">
+                Le temps est écoulé, vous avez perdu. <br>Vous allez être redirigé vers la page d'accueil.
+            </div>            
+            <a class="close" href="../red-november.html">Accueil</a>
+
+        </div>
+    </div>
+    <div class="screen">
+        <div id="player-boutons">
+            <div id="player">
+                <audio controls>
+                    <source src="../audio/ambiance2.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div class="ensemble-boutons">
+                <div class="bouton" id="btn1"></div>
+                <div class="bouton" id="btn2"></div>
+                <div class="bouton" id="btn3"></div>
+                <div class="bouton" id="btn4"></div>
+                <div class="bouton" id="btn5"></div>
+                <div class="bouton" id="btn6"></div>
+            </div>
+        </div> 
+        <div class="group">
+            <div class="light-legende" id="group1">
+                <div class="light" id="light1"></div>
+                <div class="legende">частота</div><!--fréquence-->
+            </div>
+            <div class="light-legende" id="group2">
+                <div class="light" id="light2"></div>
+            <div class="legende">сигнал</div><!--signal-->
+            </div>
+            <div class="light-legende" id="group3">
+                <div class="light" id="light3"></div>
+                <div class="legende">приемная</div><!--réception-->
+            </div>
+            <div class="light-legende" id="group4">
+                <div class="light" id="light4"></div>
+                <div class="legende">эмиссия</div><!--émission-->
+            </div>
+            <div class="light-legende" id="group5">
+                <div class="light" id="light5"></div>
+            <div class="legende">лечение</div><!--traitement-->
+            </div>
+            <div class="light-legende" id="group6">
+                <div class="light" id="light6"></div>
+                <div class="legende">фильтр</div><!--filtre-->
+            </div>    
+        </div>
+        <div class="galvanomètres">
+            <div class="galva" id="galva1"></div>
+            <div class="galva" id="galva2"></div>
+            <div class="galva" id="galva3"></div>
+            <div class="galva" id="galva4"></div>
+        </div>
+        <div class=unlock>
+            <form id="unlock" action="salle2.html">
+                <label for="Code">Code :</label><br>
+                <input type="text" id="Code" name="Code" required pattern="35176"><br>
+                <input type="submit" value="Valider">
+          </form> 
+        </div>
+
+    </div>
 </body>
 </html>

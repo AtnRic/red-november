@@ -141,7 +141,6 @@ body{
 
 .light_btn{
     display: flex;
-    
     justify-content: center;
     border-style: solid;
     border-color: var(--gris);
