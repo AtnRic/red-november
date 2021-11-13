@@ -30,37 +30,24 @@
         </div>
     </div>
     <div id=tableau>
-        <span class="ordergroup">
-            <p id="red">I</p>
-            <p id="yellow">II</p>
-            <p id="rose">III</p>
-        </span>
+        <div class="scroll">
+            <img src="css\images\salle2\ligne1.png" />
+        </div>
+        <br />
+        <div class="scroll">
+            <img src="css\images\salle2\ligne2.png" />
+        </div>
+        <br />
+        <div class="scroll">
+            <img src="css\images\salle2\ligne3.png" />
+        </div>
+    </div>
 
-        <span class="code">
-            <div class="scroll" id="first">
-                <p>
-                    <span class="red">_______________</span><span class="rose">_______________</span><span class="yellow">_______________</span><span class="orange">_______________</span><br>
-                    <span class="red">|_6_||-1_||_4_|</span><span class="rose">|_7_||_0_||_5_|</span><span class="yellow">|_9_||_2_||_7_|</span><span class="orange">|10_||_3_||_8_|</span><br>
-                    <span class="red">|_1_||_3_||_5_|</span><span class="rose">|_2_||_4_||_6_|</span><span class="yellow">|_4_||_6_||_8_|</span><span class="orange">|_5_||_7_||_9_|</span><br>
-                    <span class="red">|_2_||_7_||_0_|</span><span class="rose">|_3_||_8_||_1_|</span><span class="yellow">|_5_||10_||_3_|</span><span class="orange">|_6_||11_||_4_|</span><br>
-                </p>
-            </div>
-            <div class="scroll" id="second">
-                <p>
-                    <span class="orange">_______________</span><span class="rose">_______________</span><span class="yellow">_______________</span><span class="red">_______________</span><br>
-                    <span class="orange">|_7_||_0_||_5_|</span><span class="rose">|_6_||-1_||_4_|</span><span class="yellow">|_9_||_2_||_7_|</span><span class="red">|10_||_3_||_8_|</span><br>
-                    <span class="orange">|_2_||_4_||_6_|</span><span class="rose">|_1_||_3_||_5_|</span><span class="yellow">|_4_||_6_||_8_|</span><span class="red">|_5_||_7_||_9_|</span><br>
-                    <span class="orange">|_3_||_8_||_1_|</span><span class="rose">|_2_||_7_||_0_|</span><span class="yellow">|_5_||10_||_3_|</span><span class="red">|_6_||11_||_4_|</span><br>
-                </p>
-            </div>
-            <div class="scroll" id="third">
-                <p>
-                    <span class="yellow">_______________</span><span class="red">_______________</span><span class="rose">_______________</span><span class="orange">___________________________</span><br>
-                    <span class="yellow">|10_||_3_||_8_|</span><span class="red">|_9_||_2_||_7_|</span><span class="rose">|_6_||-1_||_4_|</span><span class="orange">|_______||_______||_______|</span><br>
-                    <span class="yellow">|_5_||_7_||_9_|</span><span class="red">|_4_||_6_||_8_|</span><span class="rose">|_1_||_3_||_5_|</span><span class="orange">|_______||_______||_______|</span><br>
-                    <span class="yellow">|_6_||11_||_4_|</span><span class="red">|_5_||10_||_3_|</span><span class="rose">|_2_||_7_||_0_|</span><span class="orange">|_______||_______||_______|</span>
-                </p>
-            </div>
-        </span>
+    <div class=unlock>
+        <form id="unlock" action="salle2.html">
+            <label for="Code">код :</label><br> <!--trad : code :-->
+            <input type="text" id="Code" name="Code" required pattern="7915"><br>
+            <input type="submit" value="подтвердить"><!--trad : valider-->
+        </form>
     </div>
 </body>
