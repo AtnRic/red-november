@@ -15,77 +15,80 @@
     <audio autoplay loop>
         <source src="audio/audio-vide.wav" type="audio/wav"> <!--pour que la fonction autoplay soit active sur la page-->
     </audio>
-    <span class="AudioDesc">Veuillez activer le son.</span>
-    <div class="page1">
-        <div class="init">
-            <span class="important"><a>Bonjour et bienvenue dans l'escape-game RED-November.</a></span> 
-            <p>
-                Pour une meilleure expérience de jeu, nous vous conseillons d'utiliser des écouteurs ou un casque et d'activer la lecture automatique de l'audio sur votre navigateur.
-                Pour cela allez dans les paramètres de confidentialités de votre navigateur et activez "lecture automatique des médias". <br />
-                Sur smartphone et tablette, la fonction autoplay n'étant pas disponible, un menu de contrôle audio comme celui-ci sera affiché en bas de votre écran.</p><br />
-                <audio controls preload="auto">
-                    <source src="audio/ambiance2.wav" type="audio/wav">
-                </audio>
-                <br/>
-                <p>L'audio est facultatif, hormis dans les salles dans lesquelles il sera explicitement mentionné "énigme audio" ainsi que cet icône : <br />
-                <img id="logo" src="icon/red_november.png" alt="logo red november"/>                      
-            </p>
-            <a class="button_scroll" href="#page2"><img src="icon/fleche-vers-le-bas.png" alt="flèche vers le bas"></a>
-        </div>
+
+    <div id="page1">
+        <span class="top-left">
+            <span class="AudioDesc">Veuillez activer le son.</span>
+        </span>
+        <span class="top-middle">
+            <span class="important"><a>Bonjour et bienvenue dans l'escape-game RED-November.</a></span>
+        </span>
+        <span class="middle-top">
+            Pour une meilleure expérience de jeu, nous vous conseillons d'utiliser des écouteurs ou un casque et d'activer la lecture automatique de l'audio sur votre navigateur.
+            Pour cela allez dans les paramètres de confidentialités de votre navigateur et activez "lecture automatique des médias". <br />
+            Sur smartphone et tablette, la fonction autoplay n'étant pas disponible, un menu de contrôle audio comme celui-ci sera affiché en bas de votre écran.
+        </span>
+        <span class="middle-down">
+
+            <br />
+            L'audio est facultatif, hormis dans les salles dans lesquelles il sera explicitement mentionné "énigme audio" ainsi que cet icône : <br />
+           <br />
+            <audio controls preload="auto">
+                <source src="audio/ambiance2.wav" type="audio/wav">
+            </audio>
+            <br />
+            <img id="logo" src="icon/red_november.png" alt="logo red november" />
+        </span>
+        <span class="down-middle">
+            <a class="button_scroll" href="#page2">
+            <img src="icon/fleche-vers-le-bas.png" alt="flèche vers le bas"></a>
+        </span>
     </div>
-
-
     <div id="page2">
-        <div class="init">
-            
-            <p>
-                Mer d'Okhotsk, N56°34'43" ; E146°8'39"<br><br><br>
+        <span class="top-middle">
+            <a class="button_scroll" href="#page1"><img src="icon/fleche-vers-le-haut.png" alt="flèche vers le bas"></a>
+        </span>
+        <span class="middle-top">
+            Mer d'Okhotsk, N56°34'43" ; E146°8'39"<br><br><br>
 
-                Vous êtes le camarade <strong>Dmitri Kolesnikov</strong>, capitaine du <strong>RED November</strong>, un sous-marin nucléaire lanceur d'engin de la marine Soviétique.<br><br>
+            Vous êtes le camarade <strong>Dmitri Kolesnikov</strong>, capitaine du <strong>RED November</strong>, un sous-marin nucléaire lanceur d'engin de la marine Soviétique.<br><br>
 
-                Dans les eaux de la Mer d'Okhotsk, la bataille fait rage et votre submersible est touché par une torpille ennemie.<br><br>
+            Dans les eaux de la Mer d'Okhotsk, la bataille fait rage et votre submersible est touché par une torpille ennemie.<br><br>
 
-                Sur vos écrans de contrôle, tous les voyants passent au rouge, les sirènes d'alarme retentissent : le fleuron de la marine Soviétique est en train de sombrer.<br><br>
+            Sur vos écrans de contrôle, tous les voyants passent au rouge, les sirènes d'alarme retentissent : le fleuron de la marine Soviétique est en train de sombrer.<br><br>
 
-                Vous avez appelé à l'aide par radio mais les secours ne seront pas là avant une heure.<br>
+            Vous avez appelé à l'aide par radio mais les secours ne seront pas là avant une heure.<br>
 
-                Vous devez donc tenir soixante longues minutes à bord, la pression d'eau sur les structures du bâtiment augmentant dangereusement, le réacteur nucléaire surchauffant, les incendies et voies d'eau se multipliant. <br>
-                Le tout sans compter le niveau d'oxygène devenant critique...
-                <a class="button_scroll" href="#page3"><img src="icon/fleche-vers-le-bas.png" alt="flèche vers le bas"></a>
-            </p>
-
-        </div>
+            Vous devez donc tenir soixante longues minutes à bord, la pression d'eau sur les structures du bâtiment augmentant dangereusement, le réacteur nucléaire surchauffant, les incendies et voies d'eau se multipliant. <br>
+            Le tout sans compter le niveau d'oxygène devenant critique...
+        </span>
+        <span class="down-middle">
+            <a class="button_scroll" href="#page3"><img src="icon/fleche-vers-le-bas.png" alt="flèche vers le bas"></a>
+        </span>
     </div>
-
     <div id="page3">
-        <div class="init">
+        <span class="top-middle">
             <a class="button_scroll2" href="#page2"><img src="icon/fleche-vers-le-haut.png" alt="flèche vers le haut"></a>
-            <p>
-                Le but du jeu est de vous échapper du Red-November en résolvant les différentes énigmes qui se présentent à vous.
-                Vous avez un temps défini dans chaque salle avant que celle-ci ne soit inondé.<br />
-                Vous avez au total un peu moins d'une heure pour compléter l'ensemble des énigmes.<br />
-                Voici le plan du <span class="important">Red November</span> :<br>
+        </span>
+        <span class="middle-top">
+            Le but du jeu est de vous échapper du Red-November en résolvant les différentes énigmes qui se présentent à vous.
+            Vous avez un temps défini dans chaque salle avant que celle-ci ne soit inondé.<br />
+            Vous avez au total un peu moins d'une heure pour compléter l'ensemble des énigmes.<br />
+            Voici le plan du <span class="important">Red November</span> :<br>
 
-                <br /><br />
-                <img id="plan" src="icon/plan.png" alt="plan red november"/>
-                <br /><br />
+            <br /><br />
+            <img id="plan" src="icon/plan.png" alt="plan red november" />
+            <br /><br />
+        </span>
+        <span class="middle-down">
+            Vous êtes dans la salle des commandes. Cette salle a été verrouillée automatiquement à cause des multiples incendies et voies d'eau.<br>
+            Devant vous se trouve de tableau de bord. Il vous informe que vous devez vous rendre le plus rapidement possible dans la salle des machines car le réacteur nucléaire servant à la propulsion de l'appareil est en surchauffe.
 
-                Vous êtes dans la salle des commandes. Cette salle a été verrouillée automatiquement à cause des multiples incendies et voies d'eau.<br>
-                Devant vous se trouve de tableau de bord. Il vous informe que vous devez vous rendre le plus rapidement possible dans la salle des machines car le réacteur nucléaire servant à la propulsion de l'appareil est en surchauffe.
-                
-
-                
-                <br /><br />
-                
-                <a class="button" href="red-november.html">Commencer le jeu</a>
-                <br /><br />
-                <br /><br />
-                
-
-                <p class="noms">Créé par Antoine Richard et Adrien Verhaeghe.</p>
-
-            </p>
-        </div>
+        </span>
+        <span class="down-middle">
+            <p class="noms">Créé par Antoine Richard et Adrien Verhaeghe.</p>           
+            <a class="button" href="red-november.html">Commencer le jeu</a>
+        </span>
     </div>
 </body>
 

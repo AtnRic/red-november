@@ -6,9 +6,9 @@ html, body{
     height: 100%;
     background-color: var(--bgc);
     font-family: 'Courier New', Courier, monospace;
-    overflow: hidden;
     margin: 0;
     scroll-behavior: smooth; 
+    color: white;
 }
 
 audio{
@@ -17,39 +17,101 @@ audio{
     opacity: 0; animation: opacity 1.5s ease-in-out 3s forwards;
 }
 
-.page1{
+#page1 {
     height: 100vh;
+    margin: 10px;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 20% 40% 30%;
+    grid-template-areas:
+        "t o p"
+        "n b x"
+        "w e h"
+        "s u v";
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+}
+#page2 {
+    height: 100vh;
+    margin: 10px;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-areas:
+        "t o p"
+        "n b x"
+        "s u v";
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+}
+#page3 {
+    height: 100vh;
+    margin: 10px;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 50% 10% 30%;
+    grid-template-areas:
+        "t o p"
+        "n b x"
+        "w e h"
+        "s u v";
+    display: grid;
+    gap: 30px;
+    justify-content: center;
 }
 
+.top-left{
+    grid-area: t;
+}
+.top-middle {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    grid-area: o;
+    text-align: center;
+}
+.middle-top {
+    text-align: center;
+    grid-area: b;
+    margin: auto;
+    opacity: 0;
+    animation: opacity 1.5s ease-in-out 3s forwards;
+}
+.middle-down {
+    grid-area: e;
+    opacity: 0;
+    animation: opacity 1.5s ease-in-out 3s forwards;
+    text-align: center;
+}
+.middle-down audio{
+    position: static;
+}
+.down-middle{
+    grid-area: u;
+    margin:auto;
+}
 .important{
     font-weight:bold;
     font-size: 1.5em;
 }
 
-
-
 .AudioDesc{
     color: black;
     font-weight: bolder;
-    position: fixed;
-    float: left;
     background-color: #f2f3f5;
-    padding: 15px;
+    margin:auto;
 }
+
 #logo {
     text-align: center;
     margin: auto;
     margin-top: 5%;
     display: flex;
-    width: 25%;
-    height: 25%;
+    height: 50%;
+    width: auto;
 }
 
 #plan{
     text-align: center;
-    display: inline-block;
     margin: auto;
-    display: flex;
     height: auto;
     width: 80%;
     border-style: dotted;
@@ -58,50 +120,28 @@ audio{
     padding: 2%;
 }
 
-.init{
-    display: inline-block;
-    text-align: justify;
-    font-size: 1em;
-    color : white;
-    background-color: var(--bgc);
-}
 img{
     width: 50px;
     height: 50px;
 }
-.button_scroll{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 45px;
+.button_scroll {
+    grid-area: a;
     transition: padding-top 0.8s;
 }
 .button_scroll2 {
-    display: flex;
-    justify-content: center;
-    margin: auto; 
-    padding-bottom: 0px;
     transition: padding-bottom 0.8s;
+}
 
-}
-.button_scroll:hover{
-    padding-top: 45px;
-}
-.button_scroll2:hover {
-    /*padding-top: 0px;*/
-    padding-bottom: 45px;
-}
 .button {
-    display: flex;
-    justify-content: center;
+    color: white;
+    display: block;
+    margin: auto;
     text-align: center;
     overflow: hidden;
     text-decoration: none;
     padding: 3px 10px 3px 10px;
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: white;
     background-color: var(--bgc);
     border-style: solid;
     border-width: 2px;
@@ -109,8 +149,8 @@ img{
     border-color: white;
     height: 25px;
     width: 175px;
-    margin: auto;
 }
+
 .button:hover {
         color: #1d2630;
         background-color: white;
@@ -131,46 +171,50 @@ img{
 }
 .page1 p {opacity: 0; animation: opacity 1.5s ease-in-out 3s forwards;}
 .important a {opacity: 0; animation: opacity 1.5s ease-in-out 1s forwards;}
-/*.init p {opacity: 0; animation: opacity 1.5s ease-in-out 2s forwards;}*/
 
 
+@media only screen and (max-width: 720px) {
 
-@media only screen and (min-width: 320px) {
-    /* For tablets: */
-    .init {padding-top: 3%; margin-top: 40px;}
-    .init {padding-left: 5% ;}
-    .init {padding-right: 5%;}
-    .init {text-align: center;}
-    .init {font-size: 0.95em;}
-   
-    .button_scroll{width: 50px;}
-    .button_scroll2 {width: 50px;}
-    }  
-@media only screen and (min-width: 700px) {
-    /* For desktop:*/
-    .init {
-        padding-top: 0;
+    #page2 {
+        height: 100vh;
+        margin: 10px;
+        grid-template-columns: 0% 100% 0%;
+        grid-template-rows: 20% 50% 30%;
+        grid-template-areas:
+            "t o p"
+            "n b x"
+            "s u v";
+        display: grid;
+        gap: 30px;
+        justify-content: center;
     }
-    .init {
-        padding-left: 20%;
+    #page1 {
+        height: 100vh;
+        margin: 10px;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 10% 25% 35% 30%;
+        grid-template-areas:
+            "t o p"
+            "n b x"
+            "w e h"
+            "s u v";
+        display: grid;
+        gap: 30px;
+        justify-content: center;
     }
-    .init {
-        padding-right: 20%;
-    }
-    .init {
-        text-align: justify;
-    }
-}
 
-#page1 
-{
-    height: 100vh;
-}
-#page2
-{
-    height: 100vh;
-}
-#page3 
-{
-    height: 100vh;
-}
+    #page3 {
+        height: 100vh;
+        margin: 10px;
+        grid-template-columns: 0% 100% 0%;
+        grid-template-rows: 10% 50% 10% 30%;
+        grid-template-areas:
+            "t o p"
+            "n b x"
+            "w e h"
+            "s u v";
+        display: grid;
+        gap: 30px;
+        justify-content: center;
+    }
+}  
