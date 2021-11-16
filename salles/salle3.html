@@ -32,9 +32,11 @@
 
         </div>
     </div>
-    <div class="screen">
+    <div id=tableau>
+        <!--magnéto + boutons-->
         <div id="player-boutons">
             <div id="player">
+                <!--magnéto-->
                 <audio controls>
                     <source src="../audio/ambiance2.wav" type="audio/wav">
                 </audio>
@@ -47,47 +49,138 @@
                 <div class="bouton" id="btn5"></div>
                 <div class="bouton" id="btn6"></div>
             </div>
-        </div> 
-        <div class="group">
-            <div class="light-legende" id="group1">
-                <div class="light" id="light1"></div>
-                <div class="legende">частота</div><!--fréquence-->
-            </div>
-            <div class="light-legende" id="group2">
-                <div class="light" id="light2"></div>
-            <div class="legende">сигнал</div><!--signal-->
-            </div>
-            <div class="light-legende" id="group3">
-                <div class="light" id="light3"></div>
-                <div class="legende">приемная</div><!--réception-->
-            </div>
-            <div class="light-legende" id="group4">
-                <div class="light" id="light4"></div>
-                <div class="legende">эмиссия</div><!--émission-->
-            </div>
-            <div class="light-legende" id="group5">
-                <div class="light" id="light5"></div>
-            <div class="legende">лечение</div><!--traitement-->
-            </div>
-            <div class="light-legende" id="group6">
-                <div class="light" id="light6"></div>
-                <div class="legende">фильтр</div><!--filtre-->
-            </div>    
         </div>
-        <div class="galvanomètres">
-            <div class="galva" id="galva1"></div>
-            <div class="galva" id="galva2"></div>
-            <div class="galva" id="galva3"></div>
-            <div class="galva" id="galva4"></div>
+        <div class="ensemble-galva">
+            <div class=screen id="sc1">
+            <!--image galvanomètre-->
+            </div>
+            <div class=screen id="sc2">
+            <!--image galvanomètre-->
+            </div>
+            <div class=screen id="sc3">
+            <!--image galvanomètre-->
+            </div>
+            <div class=screen id="sc4">
+            <!--image galvanomètre-->
+            </div>
+            <div class=screen id="sc5">
+            <!--image galvanomètre-->
+            </div>
+            <div class=screen id="sc6">
+            <!--image galvanomètre-->
+            </div>
+            <div class=screen id="sc7">
+            <!--image galvanomètre-->
+            </div>
+            <div class=screen id="sc8">
+            <!--image galvanomètre-->
+            </div>
         </div>
+        
+        <!--boutons + lumières-->
+        <div class=light_btn>
+            <form action="#">
+                <label class="button" for="b1">частота</label> <!--trad : fréquence--> 
+                <input type="checkbox" class="btn" id="b1">
+                <div class=light id="light1"></div>
+            </form> 
+        </div>
+        <div class=light_btn>
+            <form action="#popupbtn"><!--lancer popup "perdu"-->
+                <label class="button" id="button2" for="b2">сигнал</label> <!--trad : signal--> 
+                <input type="checkbox" class="btn" id="b2">
+                <div class=light id="light2"></div>
+            </form> 
+        </div>
+        <div class=light_btn>
+            <form action="#popup1"><!--lancer popup "perdu"-->
+                <label class="button" for="b3">приемная</label> <!--trad : réception--> 
+                <input type="checkbox" class="btn" id="b3">
+                <div class=light id="light3"></div>
+            </form> 
+        </div>
+        <div class=light_btn>
+            <form action="#">
+                <label class="button" for="b4">эмиссия</label> <!--trad : émission--> 
+                <input type="checkbox" class="btn" id="b4">
+                <div class=light id="light4"></div>
+            </form> 
+        </div>
+        <div class=light_btn>
+            <form action="#popup1"><!--lancer popup "perdu"-->
+                <label class="button" for="b5">лечение</label> <!--trad : traitement--> 
+                <input type="checkbox" class="btn" id="b5">
+                <div class=light id="light5"></div>
+            </form> 
+        </div>
+        <div class=light_btn>
+            <form action="#popup1"><!--lancer popup "perdu"-->
+                <label class="button" for="b6">фильтр</label> <!--trad : filtre--> 
+                <input type="checkbox" class="btn" id="b6">
+                <div class=light id="light6"></div>
+            </form> 
+        </div>
+        <div class=light_btn>
+            <form action="#popup1"><!--lancer popup "perdu"-->
+                <label class="button" for="b7">лечение</label> <!--trad : traitement--> 
+                <input type="checkbox" class="btn" id="b7">
+                <div class=light id="light7"></div>
+            </form> 
+        </div>
+        <div class=light_btn>
+            <form action="#popup1"><!--lancer popup "perdu"-->
+                <label class="button" for="b8">фильтр</label> <!--trad : filtre--> 
+                <input type="checkbox" class="btn" id="b8">
+                <div class=light id="light8"></div>
+            </form> 
+        </div>
+        <div class=light_btn id="bt3">
+            <form action="#popup1"><!--lancer popup "perdu"-->
+                <label class="button" for="b9">лечение</label> <!--trad : traitement--> 
+                <input type="checkbox" class="btn" id="b9">
+                <div class=light id="light9"></div>
+            </form> 
+        </div>
+        <div class=light_btn id="bt2">
+            <form action="#popup1"><!--lancer popup "perdu"-->
+                <label class="button" for="b10">фильтр</label> <!--trad : filtre--> 
+                <input type="checkbox" class="btn" id="b10">
+                <div class=light id="light10"></div>
+            </form> 
+        </div>
+        <div class=light_btn id="bt1">
+            <form action="#popup1"><!--lancer popup "perdu"-->
+                <label class="button" for="b11">лечение</label> <!--trad : traitement--> 
+                <input type="checkbox" class="btn" id="b11">
+                <div class=light id="light11"></div>
+            </form> 
+        </div>
+        
+       
+        
+        <!--champ pour rentrer le code et sortir-->
+        
         <div class=unlock>
             <form id="unlock" action="salle2.html">
-                <label for="Code">Code :</label><br>
+                <label for="Code">код :</label><br> <!--trad : code :-->
                 <input type="text" id="Code" name="Code" required pattern="35176"><br>
-                <input type="submit" value="Valider">
-          </form> 
+                <input type="submit" value="подтвердить"><!--trad : valider-->
+              </form> 
         </div>
-
+        
+        <!--carnet de traduction-->
+        <div id="trad">
+            <p class="col1"><strong>1 : </strong>·----</p>
+            <p class="col2"><strong>2 : </strong>··---</p>
+            <p class="col1"><strong>3 : </strong>···--</p>
+            <p class="col2"><strong>4 : </strong>····-</p>
+            <p class="col1"><strong>5 : </strong>·····</p>
+            <p class="col2"><strong>6 : </strong>-····</p>
+            <p class="col1"><strong>7 : </strong>--···</p>
+            <p class="col2"><strong>8 : </strong>---··</p>
+            <p class="col1"><strong>9 : </strong>----·</p>
+            <p class="col2"><strong>0 : </strong>-----</p>
+        </div>
     </div>
 </body>
 </html>

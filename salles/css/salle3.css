@@ -10,19 +10,25 @@
     font-family: 'Courier New', Courier, monospace;
     
 }
-/*body{
-    height:100vh;
-}*/
-
-.screen{
+#tableau{
     display: flex;
     flex: auto;
     flex-wrap: wrap;
-    margin-top: 5%;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+    margin: auto;
+    max-width: 94vw;
+    min-height: 74vh;
+    background-color: var(--gris);
+    justify-content: center;
+    padding: 10px;
 }
 
+
+
 #player{
-    margin: auto;
+    margin-bottom: 2px;
     width: 350px;
     height: 260px;
     background-image: url(../../salles/css/images/salle3/player.gif);
@@ -41,14 +47,17 @@ audio{
 
 .player-boutons{
     margin: auto;
+
 }
 .ensemble-bouton{
+    margin-left: 10px;
     display: inline-block;
-    margin: auto;
+   
 }
 
 .bouton{
     margin: auto;
+
     display: inline-block;
     background-image: url(../../salles/css/images/salle3/bouton.png);
     background-size: cover;
@@ -90,56 +99,82 @@ audio{
 }
 
 
-.group{
+.ensemble-galva{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 5%;
-    margin-left: 2%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap:10px;
+    row-gap: 10px;
+    margin: auto;
 }
 
-
-#group1{
+#sc1{
     grid-column: 1;
     grid-row: 1;
 }
-#group2{
-    grid-column: 1;
-    grid-row: 2;
-}
-#group3{
-    grid-column: 1;
-    grid-row: 3;
-}
-#group4{
+#sc2{
     grid-column: 2;
     grid-row: 1;
 }
-#group5{
+#sc3{
+    grid-column: 3;
+    grid-row: 1;
+}
+#sc4{
+    grid-column: 4;
+    grid-row: 1;
+}
+#sc5{
+    grid-column: 1;
+    grid-row: 2;
+}
+#sc6{
     grid-column: 2;
     grid-row: 2;
 }
-#group6{
-    grid-column: 2;
-    grid-row: 3;
+#sc7{
+    grid-column: 3;
+    grid-row: 2;
+}
+#sc8{
+    grid-column: 4;
+    grid-row: 2;
 }
 
-.light-legende{
+.screen{
+    display: flex;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    margin: 0.5% 1%;
+    width: 200px;
+    height: 110px;
+    background-image: url(images/salle1/galvanometre1.png);
+    background-color: var(--afficheur);
+    background-size: cover;
+}
+
+
+
+.light_btn{
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: var(--gris);
+    border-width: 5px;
+    border-radius: 10px;
+    margin: 0.5% 1%;
+    width: 200px;
+    height: 110px;
+}
+
+form{
     display: grid;
     grid-template-rows: auto auto;
+    background-color: var(--gris);
 }
 
-.light{
-    margin: auto;
-    grid-row: 1;
-    background-image: url(../../salles/css/images/salle1/fresnel.png);
-    background-size: cover;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-}
-
-.legende{
+.button{
     grid-row: 2;
     margin: auto;
     margin-top: 1%;
@@ -154,51 +189,112 @@ audio{
     text-align: center;
     vertical-align: center;
     background-color: var(--afficheur);
-    width: 150px;
-    
+    width: 186px;
+    height: 25px;
+    /*box-shadow: 2px 5px #999;*/
     cursor: pointer;
 }
 
-.legende p{
-    font-size: 1em;
-    text-align: center;
+/*pour centrer le texte dans le 2e bouton (texte plus long -> cas particulier)*/
+#button2{
+    height: 37px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px; 
 }
 
-.galvanomètres{
-    display: grid;
-    grid-gap: 2%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    margin: auto;
+.button:active{
+    box-shadow: 1px 3px #666;
+    transform: translateY(4px);
 }
 
-.galva{
-    background-image: url(../css/images/salle3/galva2.png);
-    background-size: cover;
-    height: 160px;
-    width: 240px;
+
+.light{
+    grid-row: 1;
+    margin-left: 0%;
     border-style: solid;
     border-width: 5px;
+    border-radius: 100px;
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    background-color: white;
+    background-image: url(images/salle1/fresnel.png);
+    background-size: cover;
+}
+
+.light_btn p{
+    font-size: 2em;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    
+}
+
+.btn{
+    display: none;
+}
+
+#b1:checked ~ #light1 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#b2:checked ~ #light2 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#b3:checked ~ #light3 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover; 
+}
+#b4:checked ~ #light4 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover; 
+}
+#b5:checked ~ #light5 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover; 
+}
+#b6:checked ~ #light6 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#b7:checked ~ #light7 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#b8:checked ~ #light8 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#b9:checked ~ #light9 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#b10:checked ~ #light10 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#b11:checked ~ #light11 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+
+#trad{
+    border-style: solid;
+    margin-bottom: 1%;
+    border-width: 5px;
     border-radius: 10px;
+    width: 83vw;
+    background-color: var(--afficheur);
 }
 
-#galva1{
-    grid-column: 1;
-    grid-row: 1;
+#trad p {
+    display: inline-block;
+    margin: 1%;
+    font-size: 1em;
 }
-#galva2{
-    grid-column: 1;
-    grid-row: 2;
-}
-#galva3{
-    grid-column: 2;
-    grid-row: 1;
-}
-#galva4{
-    grid-column: 2;
-    grid-row: 2;
-}
-
 
 input[type="text"]{
     margin-top: 5px;
@@ -224,8 +320,6 @@ input[type="submit"], input[type="text"]{
 
 
 .unlock{
-    clear: both;
-    margin: auto;
     color:black;
     font-size: 20px ;
     font-weight: bold;
@@ -235,23 +329,52 @@ input[type="submit"], input[type="text"]{
     border-color: black;
     border-width: 5px;
     border-radius: 10px;
+    margin: 0.5% 1%;
     width: 200px;
     height: 110px;
     background-color: var(--afficheur);
-    margin-top: 5%;
 }
 
 #unlock{
-    
     background-color: var(--afficheur);
     margin: auto;
 }
 
-/*************************************************************************/
+
 /*responsive*/
 
-@media only screen and (max-width: 600px) {
-    
-    .galvanomètres{display: none;}
-  }
-  
+@media only screen and (max-width: 920px) {
+    .ensemble-galva{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #sc4, #sc8{
+        display: none;
+    }
+    #bt1{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .ensemble-galva{
+        grid-template-columns: 1fr 1fr;
+    }
+    #sc3, #sc7{
+        display: none;
+    }
+    #bt2{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 472px) {
+    .ensemble-galva{
+        grid-template-columns: 1fr;
+    }
+    #sc2, #sc6{
+        display: none;
+    }
+    #bt3{
+        display: none;
+    }
+}
