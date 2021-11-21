@@ -2,6 +2,10 @@
     --bgc: #1d2630;
 }
 
+*{
+    overflow: hidden;
+}
+
 html, body{
     height: 100%;
     background-color: var(--bgc);
@@ -189,7 +193,7 @@ img{
         margin: 0;
         scroll-behavior: smooth;
         color: white;
-        font-size: 80%;
+        font-size: 90%;
     }
 
     #page2 {
