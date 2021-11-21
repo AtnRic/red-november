@@ -10,11 +10,61 @@
 }
 
 body{
-    background-color: var(--bgc);
+    background-color: var(--gris);
     height: 100vh;
     width: 100vw;
     margin: 0;
 }
+
+.ensemble_fils{
+    position: relative;
+    left: calc(50%-35%);
+    top: 50px;
+    height: 70%;
+    z-index: -2;
+    /*cursor: url(ping/1.png) 48 48, auto;    changer curseur  pour mettre pince*/
+}
+
+.rouge{
+    border-style: solid;
+    border-width: 10px;
+    border-color: red;
+    border-radius: 22px;
+    position: relative;
+    left: calc(50%-35%);
+    top: 45px;
+    height: 70%;
+    width: 70%;
+    height: 50%;
+    margin: auto;
+}
+
+.vert{
+    border-style: solid;
+    border-width: 10px;
+    border-color: green;
+    border-radius: 18px;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    left: calc(50%-35%);
+    top: 20px;
+}
+.bleu{
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgb(0, 132, 255);
+    border-radius: 14px;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    left: calc(50%-35%);
+    top: 20px;
+}
+
+
 
 
 #ensemble_missiles{
@@ -22,9 +72,15 @@ body{
     flex: auto;
     flex-wrap: wrap;
     position: absolute;
+    background-color: var(--bgc);
     bottom: calc(3% + 130px);
-    width: 100%;
-    
+    width: 94vw;
+    margin-left: calc(50% - 47.2vw);
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    z-index: -1;
+    padding: 3px;
 }
 .missile{
     background-image: url(images/salle4/missile.png);
@@ -82,4 +138,44 @@ input[type="submit"], input[type="text"]{
 #unlock{
     background-color: var(--afficheur);
     margin: auto;
+}
+
+
+/*responsive*/
+
+@media only screen and (max-width: 1840px) {
+    #m1{display:none;}
+    #m2{display: none;}
+    #m3{display: none;}
+}
+
+@media only screen and (max-width: 1612px) {
+    #m4{display:none;}
+    #m5{display: none;}
+    #m6{display: none;}
+}
+@media only screen and (max-width: 1380px) {
+    #m7{display:none;}
+    #m8{display: none;}
+    #m9{display: none;}
+}
+@media only screen and (max-width: 1160px) {
+    #m10{display:none;}
+    #m11{display: none;}
+    #m12{display: none;}
+}
+@media only screen and (max-width: 925px) {
+    #m13{display:none;}
+    #m14{display: none;}
+    #m15{display: none;}
+}
+@media only screen and (max-width: 695px) {
+    #m16{display:none;}
+    #m17{display: none;}
+    #m18{display: none;}
+}
+@media only screen and (max-width: 463px) {
+    #m19{display:none;}
+    #m20{display: none;}
+    #m21{display: none;}
 }
