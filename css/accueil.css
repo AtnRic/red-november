@@ -62,7 +62,7 @@ audio{
 #page4 {
     height: 100vh;
     margin: 10px;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 0% 100% 0%;
     grid-template-rows: 10% 60% 30%;
     grid-template-areas:
         "t o p"
@@ -119,8 +119,7 @@ audio{
 #logo {
     text-align: center;
     margin: auto;
-    position: relative; 
-    bottom: -50%;
+    margin-top: 5%;
     display: flex;
     height: 50%;
     width: auto;
@@ -140,7 +139,6 @@ audio{
 img{
     width: 50px;
     height: 50px;
-    padding-top: 100px;
 }
 .button_scroll {
     grid-area: a;
