@@ -20,7 +20,7 @@ audio{
 
 #page1 {
     height: 100vh;
-    margin: 10px;
+    margin: 5%;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 10% 60% 30%;
     grid-template-areas:
