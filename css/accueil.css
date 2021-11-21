@@ -9,7 +9,7 @@ html, body{
     margin: 0;
     scroll-behavior: smooth; 
     color: white;
-    font-size: 1em;
+    font-size: 100%;
 }
 
 audio{
@@ -181,6 +181,16 @@ img{
 
 
 @media only screen and (max-width: 740px) {
+
+    html, body {
+        height: 100%;
+        background-color: var(--bgc);
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0;
+        scroll-behavior: smooth;
+        color: white;
+        font-size: 90%;
+    }
 
     #page2 {
         height: 100vh;
