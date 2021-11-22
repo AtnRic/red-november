@@ -17,7 +17,7 @@ whiteDiv {
 }
 body {
     margin: 0;
-    height: 500%;
+    height: 250%;
 }
 audio {
     position: relative;
@@ -151,7 +151,12 @@ p {
     .underline {
         text-decoration: underline;
     }
-
+.bt {
+    position:absolute;
+    margin: auto;
+    font-weight: bolder;
+    font-size: 200%;
+}
 
 @keyframes blinking-cursor {
     from, to {
