@@ -26,12 +26,12 @@ audio{
     height: 100vh;
     margin: 5%;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 10% 60% 30%;
+   /* grid-template-rows: 10% 60% 30%;
     grid-template-areas:
         "t o p"
         "n b x"
         "s u v";
-    display: grid;
+    display: grid;*/
     gap: 30px;
     justify-content: center;
 }
@@ -166,7 +166,7 @@ img{
         color: #1d2630;
         background-color: white;
         border-color: white;
-    }
+}
 
 @keyframes opacity {
     0%   { opacity: 0; }

@@ -57,20 +57,20 @@ body {
     overflow-y: hidden;
 }
 
-input[type="text"] {
+input[type="text"]{
     margin-top: 5px;
     margin-bottom: 5px;
     background-color: white;
 }
 
-input[type="submit"] {
+input[type="submit"]{
     margin-top: 2px;
-    margin-bottom: 5px;
+    margin-bottom:5px;
     background-color: #e9e9ed;
     font-weight: bold;
 }
 
-input[type="submit"], input[type="text"] {
+input[type="submit"], input[type="text"]{
     border-style: solid;
     border-width: 1px;
     border-radius: 3px;
@@ -80,11 +80,9 @@ input[type="submit"], input[type="text"] {
 }
 
 
-.unlock {
-    margin: auto;
-    margin-top: 20px;
-    color: black;
-    font-size: 20px;
+.unlock{
+    color:black;
+    font-size: 20px ;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -92,12 +90,13 @@ input[type="submit"], input[type="text"] {
     border-color: black;
     border-width: 5px;
     border-radius: 10px;
+    margin: auto;
     width: 200px;
     height: 110px;
-    background-color: var(--gris);
+    background-color: var(--afficheur);
 }
 
-#unlock {
-    background-color: var(--gris);
+#unlock{
+    background-color: var(--afficheur);
     margin: auto;
 }
