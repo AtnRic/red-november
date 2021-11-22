@@ -8,8 +8,12 @@
 
 *{
     font-family: 'Courier New', Courier, monospace;
-    
 }
+
+body{
+    background-color: #1D2630;
+}
+
 #tableau{
     display: flex;
     flex: auto;

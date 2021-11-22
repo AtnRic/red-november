@@ -9,7 +9,9 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-
+body{
+    background-color: #1D2630;
+}
 
 /****************************************************************************/
 /*transition style morphing svg à faire si on a le temps plus tard*/

@@ -2,6 +2,10 @@
     --bgc: #1d2630;
 }
 
+*{
+    overflow: hidden;
+}
+
 html, body{
     height: 100%;
     background-color: var(--bgc);
@@ -9,7 +13,7 @@ html, body{
     margin: 0;
     scroll-behavior: smooth; 
     color: white;
-    font-size: 1em;
+    font-size: 100%;
 }
 
 audio{
@@ -20,13 +24,12 @@ audio{
 
 #page1 {
     height: 100vh;
-    margin: 10px;
+    margin: 5%;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 10% 20% 40% 30%;
+    grid-template-rows: 10% 60% 30%;
     grid-template-areas:
         "t o p"
         "n b x"
-        "w e h"
         "s u v";
     display: grid;
     gap: 30px;
@@ -49,11 +52,24 @@ audio{
     height: 100vh;
     margin: 10px;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 10% 50% 10% 30%;
+    grid-template-rows: 10% 60% 30%;
     grid-template-areas:
         "t o p"
         "n b x"
-        "w e h"
+        "s u v";
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+}
+
+#page4 {
+    height: 100vh;
+    margin: 10px;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 60% 30%;
+    grid-template-areas:
+        "t o p"
+        "n b x"
         "s u v";
     display: grid;
     gap: 30px;
@@ -83,7 +99,7 @@ audio{
     animation: opacity 1.5s ease-in-out 3s forwards;
     text-align: center;
 }
-.middle-down audio{
+.middle-top audio{
     position: static;
 }
 .down-middle{
@@ -101,15 +117,6 @@ audio{
     background-color: #f2f3f5;
     margin:auto;
     margin-left: 25px;
-}
-
-#logo {
-    text-align: center;
-    margin: auto;
-    margin-top: 5%;
-    display: flex;
-    height: 50%;
-    width: auto;
 }
 
 #plan{
@@ -179,6 +186,16 @@ img{
 
 @media only screen and (max-width: 740px) {
 
+    html, body {
+        height: 100%;
+        background-color: var(--bgc);
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0;
+        scroll-behavior: smooth;
+        color: white;
+        font-size: 90%;
+    }
+
     #page2 {
         height: 100vh;
         margin: 10px;
@@ -211,11 +228,24 @@ img{
         height: 100vh;
         margin: 10px;
         grid-template-columns: 0% 100% 0%;
-        grid-template-rows: 10% 50% 10% 30%;
+        grid-template-rows: 10% 60% 30%;
         grid-template-areas:
             "t o p"
             "n b x"
-            "w e h"
+            "s u v";
+        display: grid;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    #page4 {
+        height: 100vh;
+        margin: 10px;
+        grid-template-columns: 0% 100% 0%;
+        grid-template-rows: 10% 60% 30%;
+        grid-template-areas:
+            "t o p"
+            "n b x"
             "s u v";
         display: grid;
         gap: 30px;
