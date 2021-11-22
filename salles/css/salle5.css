@@ -1,0 +1,40 @@
+:root{
+    --bgc:#1d2630;
+    --afficheur:#c8b89f;
+    --gris:#393c47; 
+    --bomb:#f6d731;
+}
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: var(--gris);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.code{
+    border-style: solid;    
+    position: relative;
+    margin: auto;
+    height: 100%;
+
+}
+.center {
+    height: 300.5px;
+    width: 480.5px;
+    background-image: url(images/salle5/img.png);
+    background-size: cover;
+    text-align: center;
+    margin: auto;
+    border-style: solid;
+}
+
+#unlock{
+    position: absolute;
+    top: 23.3%;
+    left: 28%;
+}

@@ -1,0 +1,163 @@
+:root {
+    --bgc: #1d2630;
+    --afficheur: #c8b89f;
+    --gris: #393c47;
+    --bomb: #f6d731;
+    --player: #7f817e;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0;
+}
+audio {
+    position: relative;
+    background-color: rgba(29, 38, 48, 1);
+    margin: auto;
+}
+.header {
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    background: rgba(29, 38, 48, 1);
+    z-index: 0;
+}
+
+.flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 0;
+}
+
+.HEAD {
+    height: 60vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;    
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px; /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+    z-index: 10;
+}
+.content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: var(--gris);
+}
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.75,.45,.5) infinite;
+}
+    .parallax > use:nth-child(1) {
+        animation-delay: -2s;
+        animation-duration: 7s;
+    }
+    .parallax > use:nth-child(2) {
+        animation-delay: -3s;
+        animation-duration: 10s;
+    }
+    .parallax > use:nth-child(3) {
+        animation-delay: -4s;
+        animation-duration: 13s;
+    }
+    .parallax > use:nth-child(4) {
+        animation-delay: -5s;
+        animation-duration: 20s;
+    }
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px,0px,0);
+    }
+    50% {
+        transform: translate3d(0px,-10%,0);
+    }
+    100% {
+        transform: translate3d(85px,0px,0);
+    }
+}
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+
+    .content {
+        height: 30vh;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+:root {
+    --bgc: #1d2630;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: red;
+    letter-spacing: .20em;
+    /*margin: 0 auto; /*à choisir si avec ou sans*/
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .17em solid red;
+    animation: blinking-cursor 1s step-end infinite; /*la fonction "step" n'a pas été utilisée pour l'animation typing car elle n'était pas assez précise (chaque lettre ne faisant pas exactement la même taille) */
+}
+
+p {
+    background-color: white;
+    color: rgba(29, 38, 48, 1);
+    position: relative;
+    top: 10%;
+    text-align: center;
+    margin: auto;
+    font-weight: bolder;
+    font-size: 200%;
+}
+@keyframes blinking-cursor {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+@keyframes transition {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@media only screen and (min-width: 320px) {
+    /* For phones */
+    h1 {
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets (vertical): */
+    h1 {
+        font-size: 50px;
+    }
+}
