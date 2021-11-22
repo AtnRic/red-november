@@ -16,23 +16,29 @@ body{
     margin: 0;
 }
 
-/*.code{
-    border-style: solid;    
-    position: relative;
-    margin: auto;
-    height: 100%;
-
-}
-.center {
-    height: 300.5px;
-    width: 480.5px;
-    background-image: url(images/salle5/img.png);
-    background-size: cover;
+.FinalCode {
+    color: var(--afficheur);
+    position: fixed;
     text-align: center;
-    margin: auto;
+    top: 5px;
+    right: 0px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    background-color: var(--gris);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     border-style: solid;
-}*/
-
+    border-width: 10px;
+    border-radius: 50px;
+    border-color: var(--afficheur);
+}
+.FinalCode p {
+    margin: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
 
 .center{
     height: 438px;
