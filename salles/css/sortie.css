@@ -6,13 +6,18 @@
     --player: #7f817e;
 }
 
+
 * {
     font-family: 'Courier New', Courier, monospace;
-    overflow: hidden;
 }
 
+whiteDiv {
+    margin: auto;
+    position: absolute;
+}
 body {
     margin: 0;
+    height: 500%;
 }
 audio {
     position: relative;
@@ -123,15 +128,31 @@ h1 {
 }
 
 p {
+    padding: 0% 5%;
     background-color: white;
     color: rgba(29, 38, 48, 1);
     position: relative;
-    top: 10%;
+    top: 100px;
     text-align: center;
     margin: auto;
     font-weight: bolder;
     font-size: 200%;
 }
+
+    p .important {
+        background-color: white;
+        color: rgba(29, 38, 48, 1);
+        position: relative;
+        text-align: center;
+        margin: auto;
+        font-weight: bolder;
+        font-size: 200%;
+    }
+    .underline {
+        text-decoration: underline;
+    }
+
+
 @keyframes blinking-cursor {
     from, to {
         border-color: transparent
