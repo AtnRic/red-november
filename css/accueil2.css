@@ -141,9 +141,6 @@ audio{
 }
 
 .noms{
-    position: absolute;
-    bottom: 5px;
-    display: inline-block;
     text-align: center;
 }
 
