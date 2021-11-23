@@ -16,131 +16,109 @@ html, body{
     font-size: 100%;
 }
 
+#page1, #page2, #page3, #page4{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+.AudioDesc{
+    padding: 5px;
+    text-align: center;
+    width: 250px;
+    background-color: white;
+    color: black;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+
+
+h1{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    opacity: 0; animation: opacity 1.5s ease-in-out 1s forwards;
+}
+
+.text{
+    font-size: 1em;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 30px;
+    text-align: center;
+    opacity: 0; animation: opacity 1.5s ease-in-out 3s forwards;
+}
+
+#page1 h1{
+    font-size: 1.8em;
+}
+
+
+.button_scroll img, .button_scroll2 img{
+    width: 70px;
+    height: 70px;
+}
+
+.button_scroll {
+    opacity: 0;
+    animation: opacity 2s ease-in-out 5s forwards;
+    position: relative;
+    bottom: -10px;
+    left: calc(50% - 35px);
+    transition: bottom 0.8s;
+}
+
+.button_scroll:hover{
+    bottom: -40px;
+}
+
 audio{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    opacity: 0; animation: opacity 1.5s ease-in-out 3s forwards;
+}
+.logo img{
+    width: 15%;
+    height: 15%;
+    margin-top: 30px;
     display: block;
     margin: auto;
     opacity: 0; animation: opacity 1.5s ease-in-out 3s forwards;
 }
 
-#page1 {
-    height: 100vh;
-    margin: 5%;
-    grid-template-columns: 20% 60% 20%;
-   /* grid-template-rows: 10% 60% 30%;
-    grid-template-areas:
-        "t o p"
-        "n b x"
-        "s u v";
-    display: grid;*/
-    gap: 30px;
-    justify-content: center;
-}
-#page2 {
-    height: 100vh;
-    margin: 10px;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 20% 50% 30%;
-    grid-template-areas:
-        "t o p"
-        "n b x"
-        "s u v";
-    display: grid;
-    gap: 30px;
-    justify-content: center;
-}
-#page3 {
-    height: 100vh;
-    margin: 10px;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 10% 60% 30%;
-    grid-template-areas:
-        "t o p"
-        "n b x"
-        "s u v";
-    display: grid;
-    gap: 30px;
-    justify-content: center;
-}
-
-#page4 {
-    height: 100vh;
-    margin: 10px;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 10% 60% 30%;
-    grid-template-areas:
-        "t o p"
-        "n b x"
-        "s u v";
-    display: grid;
-    gap: 30px;
-    justify-content: center;
-}
-
-.top-left{
-    grid-column: 1/3;
-    grid-row: 1;
-}
-.top-middle {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    grid-area: o;
-    text-align: center;
-}
-.middle-top {
-    text-align: center;
-    grid-area: b;
-    margin: auto;
+.button_scroll2 {
     opacity: 0;
-    animation: opacity 1.5s ease-in-out 3s forwards;
+    animation: opacity 2s ease-in-out 2s forwards; 
+    position: relative;
+    top: 20px;
+    left: calc(50% - 35px);
+    transition: top 0.8s;  
 }
-.middle-down {
-    grid-area: e;
-    opacity: 0;
-    animation: opacity 1.5s ease-in-out 3s forwards;
-    text-align: center;
-}
-.middle-top audio{
-    position: static;
-}
-.down-middle{
-    grid-area: u;
-    margin:auto;
-}
-.important{
-    font-weight:bold;
-    font-size: 1.5em;
-}
-
-.AudioDesc{
-    color: black;
-    font-weight: bolder;
-    background-color: #f2f3f5;
-    margin:auto;
-    margin-left: 25px;
+.button_scroll2:hover{
+    top: 0px;
 }
 
 #plan{
     text-align: center;
     margin: auto;
     height: auto;
-    width: 70%;
+    margin-top: 50px;
+    width: 80%;
     border-style: dotted;
     border-width: 5px;
-    border-radius: 50px;
+    border-radius: 30px;
     padding: 2%;
 }
 
-img{
-    width: 50px;
-    height: 50px;
+@keyframes opacity {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
 }
-.button_scroll {
-    grid-area: a;
-    transition: padding-top 0.8s;
-}
-.button_scroll2 {
-    transition: padding-bottom 0.8s;
-}
+
 
 .button {
     color: white;
@@ -159,96 +137,46 @@ img{
     border-color: white;
     height: 25px;
     width: 175px;
-    margin-bottom: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .button:hover {
-        color: #1d2630;
-        background-color: white;
-        border-color: white;
+    color: #1d2630;
+    background-color: white;
+    border-color: white;
+    
 }
 
-@keyframes opacity {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
+.noms{
+    text-align: center;
 }
-.button_scroll {
-    opacity: 0;
-    animation: opacity 2s ease-in-out 5s forwards;
+
+
+
+
+@media only screen and (max-width: 510px){
+    .text{
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 14px;
+    }
+    .logo{
+        display: none;
+    }
+    #page1 h1{
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 19px;
+    }
+    #page2 .text{
+        margin-top: 10px;
+    }
+    #page2 .button_scroll{
+        bottom: 0px;
+    }
+    #page2 .button_scroll2{
+        top: 0px;
+    }
+    
 }
-.button_scroll2 {
-    opacity: 0;
-    animation: opacity 2s ease-in-out 2s forwards;
-}
-.page1 p {opacity: 0; animation: opacity 1.5s ease-in-out 3s forwards;}
-.important a {opacity: 0; animation: opacity 1.5s ease-in-out 1s forwards;}
-
-
-@media only screen and (max-width: 740px) {
-
-    html, body {
-        height: 100%;
-        background-color: var(--bgc);
-        font-family: 'Courier New', Courier, monospace;
-        margin: 0;
-        scroll-behavior: smooth;
-        color: white;
-        font-size: 90%;
-    }
-
-    #page2 {
-        height: 100vh;
-        margin: 10px;
-        grid-template-columns: 0% 100% 0%;
-        grid-template-rows: 20% 50% 30%;
-        grid-template-areas:
-            "t o p"
-            "n b x"
-            "s u v";
-        display: grid;
-        gap: 30px;
-        justify-content: center;
-    }
-    #page1 {
-        height: 100vh;
-        margin: 10px;
-        grid-template-columns: 10% 80% 10%;
-        grid-template-rows: 10% 25% 35% 30%;
-        grid-template-areas:
-            "t o p"
-            "n b x"
-            "w e h"
-            "s u v";
-        display: grid;
-        gap: 30px;
-        justify-content: center;
-    }
-
-    #page3 {
-        height: 100vh;
-        margin: 10px;
-        grid-template-columns: 0% 100% 0%;
-        grid-template-rows: 10% 60% 30%;
-        grid-template-areas:
-            "t o p"
-            "n b x"
-            "s u v";
-        display: grid;
-        gap: 30px;
-        justify-content: center;
-    }
-
-    #page4 {
-        height: 100vh;
-        margin: 10px;
-        grid-template-columns: 0% 100% 0%;
-        grid-template-rows: 10% 60% 30%;
-        grid-template-areas:
-            "t o p"
-            "n b x"
-            "s u v";
-        display: grid;
-        gap: 30px;
-        justify-content: center;
-    }
-}  

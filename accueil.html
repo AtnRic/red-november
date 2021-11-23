@@ -13,37 +13,34 @@
 </head>
 <body>
     <div id="page1">
-        <span class="top-left">
-            <span class="AudioDesc">Veuillez activer le son.</span>
-        </span>
-        <span class="top-middle">
-            <span class="important"><a>Bonjour et bienvenue dans l'escape-game RED-November.</a></span>
-        </span>
-        <span class="middle-top">
-            Pour une meilleure expérience de jeu, nous vous conseillons d'utiliser des écouteurs ou un casque et d'activer la lecture automatique de l'audio sur votre navigateur.
-            Pour cela allez dans les paramètres de confidentialités de votre navigateur et activez "lecture automatique des médias". <br />
-            Sur smartphone et tablette, la fonction autoplay n'étant pas disponible, un menu de contrôle audio comme celui-ci sera affiché en bas de votre écran.
-            <br />            <br />
-            <br />
-            <br />
-
-            L'audio est facultatif, hormis dans les salles dans lesquelles il sera explicitement mentionné "énigme audio" ainsi que cet icône : <br />
-            <br />
-            <audio controls preload="auto">
-                <source src="audio/ambiance2.wav" type="audio/wav">
-            </audio>
-        </span>
-        <span class="down-middle">
-            <a class="button_scroll" href="#page2">
+        <div class="AudioDesc">Veuillez activer le son.</div>
+        <h1>Bonjour et bienvenue dans l'escape-game RED-November.</h1>
+        <div class="text">
+            Pour une meilleure expérience de jeu, nous vous conseillons d'utiliser des écouteurs ou un casque et d'activer la lecture automatique de l'audio sur votre navigateur.<br><br/>
+            Pour cela, cliquez sur l'icone de contrôle dans la barre d'URL et autorisez "lecture automatique des médias". <br/><br/>
+            Sur smartphone et tablette, la fonction autoplay n'étant pas disponible, un menu de contrôle audio comme celui-ci sera affiché si nécessaire.<br><br/>
+            L'audio est facultatif, hormis pour les salles dans lesquelles ce menu de contrôle de l'audio est présent :
+        </div>
+        <audio controls autoplay preload="auto">
+            <source src="audio/ambiance2.wav" type="audio/wav">
+        </audio>
+        <div class="logo">
+            <img src="icon/red_november.png" alt="logo">
+        </div>
+        <div class="button_scroll">
+            <a href="#page2">
                 <img src="icon/fleche-vers-le-bas.png" alt="flèche vers le bas">
             </a>
-        </span>
+        </div>  
     </div>
     <div id="page2">
-        <span class="top-middle">
-            <a class="button_scroll" href="#page1"><img src="icon/fleche-vers-le-haut.png" alt="flèche vers le bas"></a>
-        </span>
-        <span class="middle-top">
+        <div>
+            <a class="button_scroll2" href="#page1">
+                <img src="icon/fleche-vers-le-haut.png" alt="flèche vers le haut">
+            </a>
+        </div>
+        <div class="text" id="text2">
+            <p>
             Mer d'Okhotsk, N56°34'43" ; E146°8'39"<br><br><br>
 
             Vous êtes le camarade <strong>Dmitri Kolesnikov</strong>, capitaine du <strong>RED November</strong>, un sous-marin nucléaire lanceur d'engin de la marine Soviétique.<br><br>
@@ -56,44 +53,32 @@
 
             Vous devez donc tenir soixante longues minutes à bord, la pression d'eau sur les structures du bâtiment augmentant dangereusement, le réacteur nucléaire surchauffant, les incendies et voies d'eau se multipliant. <br>
             Le tout sans compter le niveau d'oxygène devenant critique...
-        </span>
-        <span class="down-middle">
-            <a class="button_scroll" href="#page3"><img src="icon/fleche-vers-le-bas.png" alt="flèche vers le bas"></a>
-        </span>
+            </p>
+        </div>
+        <div class="button_scroll">
+            <a href="#page3">
+                <img src="icon/fleche-vers-le-bas.png" alt="flèche vers le bas">
+            </a>
+        </div> 
     </div>
     <div id="page3">
-        <span class="top-middle">
-            <a class="button_scroll2" href="#page2"><img src="icon/fleche-vers-le-haut.png" alt="flèche vers le haut"></a>
-        </span>
-        <span class="middle-top">
+        <div>
+            <a class="button_scroll2" href="#page2">
+                <img src="icon/fleche-vers-le-haut.png" alt="flèche vers le haut">
+            </a>
+        </div>
+        <div class="text">
+            <p>
             Le but du jeu est de vous échapper du Red-November en résolvant les différentes énigmes qui se présentent à vous.
-            Vous avez un temps défini dans chaque salle avant que celle-ci ne soit inondé.<br />
-            Vous avez au total un peu moins d'une heure pour compléter l'ensemble des énigmes.<br />
-            Voici le plan du <span class="important">Red November</span> :<br>
-
-            <br />
+            Vous avez un temps défini dans chaque salle avant que celle-ci ne soit inondé.<br/>
+            Vous avez au total un peu moins d'une heure pour compléter l'ensemble des énigmes.<br/>
+            Attention :certains indices peuvent se trouver dans les salles précédentes ! <br>
+            Voici le plan du <strong>Red November :</strong>
+            </p>
             <img id="plan" src="icon/plan.png" alt="plan red november" />
-            <br />
-        </span>
-        <span class="down-middle">
-            <a class="button_scroll" href="#page4"><img src="icon/fleche-vers-le-bas.png" alt="flèche vers le bas"></a>
-        </span>
+        </div>
+        <a class="button" href="red-november.html">Commencer le jeu</a>
+        <p class="noms">Créé par Antoine Richard et Adrien Verhaeghe.</p>
     </div>
-    <div id="page4">
-        <span class="top-middle">
-            <a class="button_scroll2" href="#page3"><img src="icon/fleche-vers-le-haut.png" alt="flèche vers le haut"></a>
-        </span>
-        <span class="middle-top">
-            Vous êtes dans la salle des commandes. Cette salle a été verrouillée automatiquement à cause des multiples incendies et voies d'eau.<br>
-            Devant vous se trouve de tableau de bord. Il vous informe que vous devez vous rendre le plus rapidement possible dans la salle des machines car le réacteur nucléaire servant à la propulsion de l'appareil est en surchauffe.
-
-        </span>
-        <span class="down-middle">
-            <a class="button" href="red-november.html">Commencer le jeu</a>
-            <p class="noms">Créé par Antoine Richard et Adrien Verhaeghe.</p>
-        </span>
-    </div>
-
 </body>
-
 </html>
