@@ -49,11 +49,9 @@ h1{
 }
 
 #page1 h1{
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
-#page1 text{
-    font-size: 0.9em;
-}
+
 
 
 
@@ -162,9 +160,12 @@ audio{
     .logo{
         display: none;
     }
-    h1{
+    #page1 h1{
         margin-left: 5%;
         margin-right: 5%;
-        
+        font-size: 1.2em;
+    }
+    #page1 .text{
+        font-size: 0.9em;
     }
 }
