@@ -32,6 +32,19 @@
 
         </div>
     </div>
+
+    <div id="popup2" class="overlay">
+        <div class="popup">
+            <h2>But de la salle : </h2>
+            <div class="content">
+                Vous êtes maintenant dans la salle radio. Résolvez l'énigme qui se présente à vous pour passez à la salle suivante !
+                <br />
+                Attention, des indices pour les salles suivantes peuvent se cacher dans cette salle.
+            </div>
+            <a class="close" href="#">&times;</a>
+        </div>
+    </div>
+
     <div id=tableau>
         <!--magnéto + boutons-->
         <div id="player-boutons">
@@ -170,7 +183,7 @@
         <!--champ pour rentrer le code et sortir-->
 
         <div class=unlock>
-            <form id="unlock" action="salle4.html">
+            <form id="unlock" action="salle4.html#popup2">
                 <label for="Code">код :</label><br> <!--trad : code :-->
                 <input type="text" id="Code" name="Code" required pattern="9265"><br>
                 <input type="submit" value="подтвердить"><!--trad : valider-->

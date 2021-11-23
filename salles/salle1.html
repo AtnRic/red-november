@@ -18,17 +18,31 @@
             <span class="Timer2">
             </span>
         </a>
-        <img class="bombe" src="timer/gif/BOMB.gif" alt="gif nucléaire"/>
+        <img class="bombe" src="timer/gif/BOMB.gif" alt="gif nucléaire" />
     </span>
-        <span class="FinalCode"><p>4</p></span>
+    <span class="FinalCode"><p>4</p></span>
     <div id="popup1" class="overlay">
         <div class="popup">
             <h2>La bombe a explosé !</h2>
             <div class="content">
                 Le temps est écoulé, vous avez perdu. <br>Vous allez être redirigé vers la page d'accueil.
-            </div>            
+            </div>
             <a class="close" href="../red-november.html">Accueil</a>
 
+        </div>
+    </div>
+
+    <div id="popup2" class="overlay">
+        <div class="popup">
+            <h2>But de la salle : </h2>
+            <div class="content">
+                Bienvenue dans la salle des commandes ! Cette salle a été verrouillée automatiquement à cause des multiples incendies et voies d'eau.
+
+                Devant vous se trouve de tableau de bord. Il vous informe que vous devez vous rendre le plus rapidement possible dans la salle des machines car le réacteur nucléaire servant à la propulsion de l'appareil est en surchauffe.
+                <br />
+                Attention, des indices pour les salles suivantes peuvent se cacher dans cette salle.
+            </div>
+            <a class="close" href="#">&times;</a>
         </div>
     </div>
 
@@ -38,7 +52,7 @@
             <h2>La bombe a explosé !</h2>
             <div class="contentbtn">
                 Vous avez cliqué sur le mauvais bouton, ce qui a entraîné la destruction du RED November.<br>Vous allez être redirigé vers la page d'accueil.
-            </div>            
+            </div>
             <a class="closebtn" href="../red-november.html">Accueil</a>
 
         </div>
@@ -62,92 +76,98 @@
         <!--boutons + lumières-->
         <div class=light_btn>
             <form action="#">
-                <label class="button" for="btn1">третий</label> <!--trad : troisième--> 
+                <label class="button" for="btn1">третий</label> <!--trad : troisième-->
                 <input type="checkbox" class="btn" id="btn1">
                 <div class=light id="light1"><p>1</p></div>
-            </form> 
+            </form>
         </div>
         <div class=light_btn>
-            <form action="#popupbtn"><!--lancer popup "perdu"-->
-                <label class="button" id="button2" for="btn2">Опорожнение балласта</label> <!--trad : vidange ballasts--> 
+            <form action="#popupbtn">
+                <!--lancer popup "perdu"-->
+                <label class="button" id="button2" for="btn2">Опорожнение балласта</label> <!--trad : vidange ballasts-->
                 <input type="checkbox" class="btn" id="btn2">
                 <div class=light id="light2"><p>8</p></div>
-            </form> 
+            </form>
         </div>
         <div class=light_btn>
-            <form action="#popup1"><!--lancer popup "perdu"-->
-                <label class="button" for="btn3">Радиосообщение</label> <!--trad : message radio--> 
+            <form action="#popup1">
+                <!--lancer popup "perdu"-->
+                <label class="button" for="btn3">Радиосообщение</label> <!--trad : message radio-->
                 <input type="checkbox" class="btn" id="btn3">
                 <div class=light id="light3"><p>9</p></div>
-            </form> 
+            </form>
         </div>
         <div class=light_btn>
             <form action="#">
-                <label class="button" for="btn4">пятыйа</label> <!--trad : cinquième--> 
+                <label class="button" for="btn4">пятыйа</label> <!--trad : cinquième-->
                 <input type="checkbox" class="btn" id="btn4">
                 <div class=light id="light4"><p>6</p></div>
-            </form> 
+            </form>
         </div>
         <div class=light_btn>
-            <form action="#popup1"><!--lancer popup "perdu"-->
-                <label class="button" for="btn5">выход</label> <!--trad : Sortie--> 
+            <form action="#popup1">
+                <!--lancer popup "perdu"-->
+                <label class="button" for="btn5">выход</label> <!--trad : Sortie-->
                 <input type="checkbox" class="btn" id="btn5">
                 <div class=light id="light5"><p>2</p></div>
-            </form> 
+            </form>
         </div>
         <div class=light_btn>
-            <form action="#popup1"><!--lancer popup "perdu"-->
-                <label class="button" for="btn6">вступать в бой</label> <!--trad : engager combat--> 
+            <form action="#popup1">
+                <!--lancer popup "perdu"-->
+                <label class="button" for="btn6">вступать в бой</label> <!--trad : engager combat-->
                 <input type="checkbox" class="btn" id="btn6">
                 <div class=light id="light6"><p>4</p></div>
-            </form> 
+            </form>
         </div>
         <div class=light_btn>
             <form action="#">
-                <label class="button" for="btn7">первый</label> <!--trad : premier--> 
+                <label class="button" for="btn7">первый</label> <!--trad : premier-->
                 <input type="checkbox" class="btn" id="btn7">
                 <div class=light id="light7"><p>3</p></div>
-            </form> 
+            </form>
         </div>
         <div class=light_btn>
-            <form action="#popup1"><!--lancer popup "perdu"-->
-                <label class="button" for="btn8">Радиосообщение</label> <!--trad : message radio--> 
+            <form action="#popup1">
+                <!--lancer popup "perdu"-->
+                <label class="button" for="btn8">Радиосообщение</label> <!--trad : message radio-->
                 <input type="checkbox" class="btn" id="btn8">
                 <div class=light id="light8"><p>9</p></div>
-            </form> 
+            </form>
         </div>
         <div class=light_btn>
             <form action="#">
-                <label class="button" for="btn9">предпоследний</label> <!--trad : avant-dernier--> 
+                <label class="button" for="btn9">предпоследний</label> <!--trad : avant-dernier-->
                 <input type="checkbox" class="btn" id="btn9">
                 <div class=light id="light9"><p>7</p></div>
-            </form> 
+            </form>
         </div>
         <div class=light_btn>
             <form action="#">
-                <label class="button" for="btn10">второй</label> <!--trad : deuxième--> 
+                <label class="button" for="btn10">второй</label> <!--trad : deuxième-->
                 <input type="checkbox" class="btn" id="btn10">
                 <div class=light id="light10"><p>5</p></div>
-            </form> 
+            </form>
         </div>
         <div class=light_btn>
-            <form action="#popup1"><!--lancer popup "perdu"-->
-                <label class="button" for="btn11">Радиосообщение</label> <!--trad : message radio--> 
+            <form action="#popup1">
+                <!--lancer popup "perdu"-->
+                <label class="button" for="btn11">Радиосообщение</label> <!--trad : message radio-->
                 <input type="checkbox" class="btn" id="btn11">
                 <div class=light id="light11"><p>0</p></div>
-            </form> 
+            </form>
         </div>
-        
+
         <!--champ pour rentrer le code et sortir-->
-        
+
         <div class=unlock>
-            <form id="unlock" action="salle2.html">
+            <form id="unlock" action="salle2.html#popup2">
                 <label for="Code">код :</label><br> <!--trad : code :-->
                 <input type="text" id="Code" name="Code" required pattern="35176"><br>
                 <input type="submit" value="подтвердить"><!--trad : valider-->
-              </form> 
+            </form>
         </div>
-        
+
         <!--carnet de traduction-->
         <div id="trad">
             <p class="col1"><strong>Опорожнение балласта :</strong> Vidange ballasts</p>

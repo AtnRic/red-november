@@ -20,6 +20,22 @@
         <img class="bombe" src="timer/gif/BOMB.gif" />
     </span>
     <span class="FinalCode"><p>7</p></span>
+
+    <div id="popup2" class="overlay">
+        <div class="popup">
+            <h2>But de la salle : </h2>
+            <div class="content">
+                Bravo Camarade !
+                Vous êtes maintenant dans la salle des machines.
+                A cause de l'explosion, le circuit électrique contrôlant le refroidissement du réacteur a été endommagé.
+                Vous devez rétablir les connexions le plus vite possible !
+                <br />
+                Attention, des indices pour les salles suivantes peuvent se cacher dans cette salle.
+            </div>
+            <a class="close" href="#">&times;</a>
+        </div>
+    </div>
+
     <div id="popup1" class="overlay">
         <div class="popup">
             <h2>La bombe a explosé !</h2>
@@ -30,6 +46,7 @@
 
         </div>
     </div>
+
     <div id=tableau>
         <div class="scroll">
             <img src="css\images\salle2\ligne1.png" />
@@ -45,7 +62,7 @@
     </div>
 
     <div class=unlock>
-        <form id="unlock" action="salle3.html">
+        <form id="unlock" action="salle3.html#popup2">
             <label for="Code">код :</label><br> <!--trad : code :-->
             <input type="text" id="Code" name="Code" required pattern="7915"><br>
             <input type="submit" value="подтвердить"><!--trad : valider-->
