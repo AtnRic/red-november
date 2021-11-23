@@ -48,6 +48,13 @@ h1{
     text-align: center;
 }
 
+#page1 h1{
+    font-size: 1.5em;
+}
+#page1 text{
+    font-size: 0.9em;
+}
+
 
 
 .button_scroll img, .button_scroll2 img{
@@ -158,5 +165,6 @@ audio{
     h1{
         margin-left: 5%;
         margin-right: 5%;
+        
     }
 }
