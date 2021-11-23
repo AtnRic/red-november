@@ -34,10 +34,13 @@ html, body{
     left: 0px;
 }
 
+
+
 h1{
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
+    opacity: 0; animation: opacity 1.5s ease-in-out 1s forwards;
 }
 
 .text{
@@ -46,19 +49,22 @@ h1{
     margin-right: 20%;
     margin-top: 30px;
     text-align: center;
+    opacity: 0; animation: opacity 1.5s ease-in-out 3s forwards;
 }
 
+#page1 h1{
+    font-size: 1.8em;
+}
 
 
 .button_scroll img, .button_scroll2 img{
     width: 70px;
     height: 70px;
-    
 }
 
 .button_scroll {
     opacity: 0;
-    animation: opacity 2s ease-in-out 2s forwards;
+    animation: opacity 2s ease-in-out 5s forwards;
     position: relative;
     bottom: -10px;
     left: calc(50% - 35px);
@@ -73,6 +79,7 @@ audio{
     display: block;
     margin: auto;
     margin-top: 30px;
+    opacity: 0; animation: opacity 1.5s ease-in-out 3s forwards;
 }
 .logo img{
     width: 15%;
@@ -80,6 +87,7 @@ audio{
     margin-top: 30px;
     display: block;
     margin: auto;
+    opacity: 0; animation: opacity 1.5s ease-in-out 3s forwards;
 }
 
 .button_scroll2 {
@@ -151,12 +159,24 @@ audio{
     .text{
         margin-left: 10%;
         margin-right: 10%;
+        font-size: 0.95em;
     }
     .logo{
         display: none;
     }
-    h1{
+    #page1 h1{
         margin-left: 5%;
         margin-right: 5%;
+        font-size: 1.2em;
     }
+    #page2 .text{
+        margin-top: 10px;
+    }
+    #page2 .button_scroll{
+        bottom: 0px;
+    }
+    #page2 .button_scroll2{
+        top: 0px;
+    }
+    
 }
