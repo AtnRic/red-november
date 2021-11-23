@@ -169,10 +169,14 @@ audio{
         margin-right: 5%;
         font-size: 1.2em;
     }
+    #page2 .text{
+        margin-top: 10px;
+    }
     #page2 .button_scroll{
         bottom: 0px;
     }
     #page2 .button_scroll2{
         top: 0px;
     }
+    
 }
