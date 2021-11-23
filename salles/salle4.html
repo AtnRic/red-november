@@ -9,7 +9,7 @@
     <title>RED November</title>
     <link rel="stylesheet" href="css/salle4.css">
     <link rel="stylesheet" href="timer/timer.css"/>
-    <link rel="stylesheet" href="../css/cursor.css">
+    <!--<link rel="stylesheet" href="../css/cursor.css">-->
     <link rel="icon" type="image/png" href="../icon/red_november.png"/>
 </head>
 <body>
@@ -20,7 +20,7 @@
         </a>
         <img class="bombe" src="timer/gif/BOMB.gif" alt="gif nucléaire" />
     </span>
-    <span class="FinalCode"><p>2</p></span>
+    <span class="FinalCode"><p>3</p></span>
     <div id="popup1" class="overlay">
         <div class="popup">
             <h2>La bombe a explosé !</h2>
@@ -54,12 +54,10 @@
         </div>
     </div>
 
-    <div class="ensemble_fils">
-        <div class="fils"><a href="salle4.html#popup3"></a></div>
-        <div class="fil-bleu"><a href="salle5.html#popup2"></a></div>
-
-
-    </div>
+    
+    
+    <a href="salle4.html#popup3"><div class="fils"></div></a>
+    <a href="salle5.html#popup2"><div class="fil-bleu"></div></a>
 
     <div id="ensemble_missiles">
         <div class="missile" id="m1"></div>
@@ -93,7 +91,7 @@
     <div class=unlock>
         <form id="unlock" action="salle5.html#popup2">
             <label for="Code">код :</label><br> <!--trad : code :-->
-            <input type="text" id="Code" name="Code" required pattern="35176"><br>
+            <input type="text" id="Code" name="Code" required pattern="bleu"><br>
             <input type="submit" value="подтвердить"><!--trad : valider-->
         </form>
     </div>

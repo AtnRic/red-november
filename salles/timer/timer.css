@@ -82,15 +82,15 @@
         color: #f6d731;
         font-family: Arial, Helvetica, sans-serif;
 }
-    .popup .close {
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        transition: all 200ms;
-        font-size: 30px;
-        font-weight: bold;
-        text-decoration: none;
-        color: #f6d731;
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f6d731;
     }
 .popup .close:hover {
     background-color: #f6d731;
