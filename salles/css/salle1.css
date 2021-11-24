@@ -183,6 +183,10 @@ form{
     background-color: var(--gris);
 }
 
+form#unlock{
+    display: block;
+}
+
 .button{
     grid-row: 2;
     margin: auto;
