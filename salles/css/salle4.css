@@ -178,7 +178,7 @@ input[type="submit"], input[type="text"]{
     #m17{display: none;}
     #m18{display: none;}
     .fils{height: 107px;width: 300px;bottom: -80px;}
-    .fil-bleu{height: 8px;width: 295px; top: 25px;} 
+    .fil-bleu{height: 8px;width: 210px; top: 25px;} 
 }
 @media only screen and (max-width: 463px) {
     #m19{display:none;}
