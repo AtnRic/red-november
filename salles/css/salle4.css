@@ -54,18 +54,17 @@ body{
     width: 415px;
     margin: auto;
     position: relative;
-    bottom: -30px;
+    bottom: -40px;
     z-index: -1;
 }
 .fil-bleu{
     background-image: url(images/salle4/fil-bleu.png);
     background-size: auto;
-
     height: 10px;
     width: 290px;
     margin: auto;
     position: relative;
-    top: -45px;
+    top: -33px;
     z-index: 0;
 }
 
@@ -79,7 +78,7 @@ body{
     background-color: var(--bgc);
     bottom: calc(3% + 130px);
     width: 94vw;
-    margin-left: calc(50% - 47.2vw);
+    margin-left: calc(50% - 47.5vw);
     border-style: solid;
     border-width: 5px;
     border-radius: 10px;
