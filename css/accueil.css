@@ -157,8 +157,8 @@ audio{
 
 @media only screen and (max-width: 510px){
     .text{
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 9%;
+        margin-right: 9%;
         font-size: 14px;
     }
     .logo{
@@ -178,5 +178,8 @@ audio{
     #page2 .button_scroll2{
         top: 0px;
     }
-    
+    *{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
 }
