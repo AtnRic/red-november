@@ -155,7 +155,7 @@ audio{
 
 
 
-@media only screen and (max-width: 510px){
+@media only screen and (max-width: 650px){ /*510*/
     .text{
         margin-left: 9%;
         margin-right: 9%;
