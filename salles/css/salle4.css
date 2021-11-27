@@ -7,7 +7,7 @@
 
 
 *{
-    cursor: url(images/salle4/cursor.png), auto; 
+    cursor: url(images/salle4/cursor.png) 5 5, auto; 
 }
 .FinalCode {
     color: var(--afficheur);
