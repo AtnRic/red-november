@@ -54,7 +54,7 @@ body{
     width: 415px;
     margin: auto;
     position: relative;
-    bottom: -40px;
+    bottom: -55px;
     z-index: -1;
 }
 .fil-bleu{
@@ -64,7 +64,7 @@ body{
     width: 290px;
     margin: auto;
     position: relative;
-    top: -33px;
+    top: -20px;
     z-index: 0;
 }
 
