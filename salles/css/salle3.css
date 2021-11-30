@@ -7,6 +7,7 @@
 }
 
 
+/*indice en haut à droite*/
 .FinalCode {
     color: var(--afficheur);
     position: fixed;
@@ -79,10 +80,10 @@ audio{
     margin: auto;
 
 }
+
 .ensemble-bouton{
     margin-left: 10px;
     display: inline-block;
-   
 }
 
 .bouton{
@@ -218,11 +219,9 @@ form#unlock{
     background-color: var(--afficheur);
     width: 186px;
     height: 25px;
-    /*box-shadow: 2px 5px #999;*/
     cursor: pointer;
 }
 
-/*pour centrer le texte dans le 2e bouton (texte plus long -> cas particulier)*/
 #button2{
     height: 37px;
     padding-top: 2.5px;
@@ -233,7 +232,6 @@ form#unlock{
     box-shadow: 1px 3px #666;
     transform: translateY(4px);
 }
-
 
 .light{
     grid-row: 1;
@@ -255,8 +253,7 @@ form#unlock{
     text-align: center;
     font-weight: bold;
     color: white;
-    opacity: 0;
-    
+    opacity: 0; 
 }
 
 .btn{
@@ -344,7 +341,6 @@ input[type="submit"], input[type="text"]{
     padding-top: 3px;
     padding-bottom: 3px;
 }
-
 
 .unlock{
     color:black;

@@ -17,6 +17,7 @@
     display: flex;
     padding: 10px;
 }
+
 .cadre {
     position: -webkit-sticky;
     position: sticky;
@@ -41,12 +42,14 @@
     animation: countdown 1000s step-end infinite;
     color: #f6d731;
 }
+
 .Timer::after {
     animation-duration: 10s;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #f6d731;
 }
+
 .Timer2::before {
     content: "";
     animation: countdown 100s step-end infinite;
@@ -55,11 +58,11 @@
     color: #f6d731;
 }
 
-
 .overlay:target {
     visibility: visible;
     opacity: 1;    
 }
+
 .popup {
     background-color: var(--gris);
     margin: 70px auto;
@@ -72,11 +75,13 @@
     position: relative;
     transition: all 5s ease-in-out;
 }
+
 .popup h2 {
-        margin-top: 0;
-        color: #f6d731;
-        font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    color: #f6d731;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 .popup .close {
     position: absolute;
     top: 20px;
@@ -86,12 +91,14 @@
     font-weight: bold;
     text-decoration: none;
     color: #f6d731;
-    }
+}
+
 .popup .close:hover {
     background-color: #f6d731;
     color: black;
     font-weight: bold;
 }
+
 .popup .content {
     overflow: hidden;
 }
@@ -107,7 +114,7 @@
     visibility: hidden;
     opacity: 0; 
     z-index: 2000;
-    animation: made 15s forwards;
+    animation: made 999s forwards;
 }
 
 .overlay2 {

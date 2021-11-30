@@ -1,4 +1,4 @@
-:root {
+:root{
     --bgc: #1d2630;
     --bgc: #1d2630;
     --afficheur: #c8b89f;
@@ -6,8 +6,8 @@
     --bomb: #f6d731;
 }
 
-
-.FinalCode {
+/*indice en haut à droite*/
+.FinalCode{
     color: var(--afficheur);
     position: fixed;
     text-align: center;
@@ -25,20 +25,19 @@
     border-color: var(--afficheur);
 }
 
-    .FinalCode p {
-        margin: auto;
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 40px;
-    }
+.FinalCode p{
+    margin: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
 
-
-body {
+body{
     background-color: var(--bgc);
     font-family: 'Courier New', Courier, monospace;
 }
 
-#tableau {
+#tableau{
     margin: auto;
     max-width: 400px;
     border-style: solid;
@@ -47,7 +46,7 @@ body {
     background-color: var(--gris);
     justify-content: center;
 }
-.scroll {
+.scroll{
     padding: 20px;
     margin: auto;
     display: block;
@@ -57,6 +56,7 @@ body {
     overflow-y: hidden;
 }
 
+/*formulaire*/
 input[type="text"]{
     margin-top: 5px;
     margin-bottom: 5px;
@@ -78,7 +78,6 @@ input[type="submit"], input[type="text"]{
     padding-top: 3px;
     padding-bottom: 3px;
 }
-
 
 .unlock{
     color:black;

@@ -5,10 +5,12 @@
     --bomb:#f6d731;
 }
 
-
 *{
     cursor: url(images/salle4/cursor.png) 5 5, auto; 
 }
+
+
+/*indice en haut à droite*/
 .FinalCode {
     color: var(--afficheur);
     position: fixed;

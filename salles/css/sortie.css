@@ -11,19 +11,17 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-whiteDiv {
-    margin: auto;
-    position: absolute;
-}
 body {
     margin: 0;
     height: 250%;
 }
+
 audio {
     position: relative;
     background-color: rgba(29, 38, 48, 1);
     margin: auto;
 }
+
 .header {
     font-weight: 300;
     letter-spacing: 2px;
@@ -34,7 +32,7 @@ audio {
     z-index: 0;
 }
 
-.flex { /*Flexbox for containers*/
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +51,7 @@ audio {
     position: relative;
     width: 100%;
     height: 15vh;
-    margin-bottom: -7px; /*Fix for safari gap*/
+    margin-bottom: -7px;
     min-height: 100px;
     max-height: 150px;
     z-index: 10;
@@ -65,9 +63,11 @@ audio {
     background-color: var(--gris);
 }
 
+/*mouvement des vagues*/
 .parallax > use {
     animation: move-forever 25s cubic-bezier(.55,.75,.45,.5) infinite;
 }
+/*delai pour chaque vague + vitesse diffÃ©rente*/
     .parallax > use:nth-child(1) {
         animation-delay: -2s;
         animation-duration: 7s;
@@ -96,6 +96,7 @@ audio {
         transform: translate3d(85px,0px,0);
     }
 }
+
 @media (max-width: 768px) {
     .waves {
         height: 40px;
@@ -111,20 +112,18 @@ audio {
     }
 }
 
-:root {
-    --bgc: #1d2630;
-}
+
 
 h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
     color: red;
     letter-spacing: .20em;
-    /*margin: 0 auto; /*à choisir si avec ou sans*/
+    
     overflow: hidden;
     white-space: nowrap;
     border-right: .17em solid red;
-    animation: blinking-cursor 1s step-end infinite; /*la fonction "step" n'a pas été utilisée pour l'animation typing car elle n'était pas assez précise (chaque lettre ne faisant pas exactement la même taille) */
+    animation: blinking-cursor 1s step-end infinite;
 }
 
 p {
@@ -139,18 +138,20 @@ p {
     font-size: 200%;
 }
 
-    p .important {
-        background-color: white;
-        color: rgba(29, 38, 48, 1);
-        position: relative;
-        text-align: center;
-        margin: auto;
-        font-weight: bolder;
-        font-size: 200%;
-    }
-    .underline {
-        text-decoration: underline;
-    }
+p .important {
+    background-color: white;
+    color: rgba(29, 38, 48, 1);
+    position: relative;
+    text-align: center;
+    margin: auto;
+    font-weight: bolder;
+    font-size: 200%;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 .bt {
     position:absolute;
     margin: auto;
@@ -158,6 +159,7 @@ p {
     font-size: 200%;
 }
 
+/*animation curseur*/
 @keyframes blinking-cursor {
     from, to {
         border-color: transparent
@@ -167,15 +169,7 @@ p {
         border-color: white;
     }
 }
-@keyframes transition {
-    0% {
-        opacity: 0;
-    }
 
-    100% {
-        opacity: 1;
-    }
-}
 @media only screen and (min-width: 320px) {
     /* For phones */
     * {

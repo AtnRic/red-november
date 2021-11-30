@@ -16,6 +16,8 @@ body{
     margin: 0;
 }
 
+
+/*indice en haut à droite*/
 .FinalCode {
     color: var(--afficheur);
     position: fixed;
@@ -48,20 +50,6 @@ body{
     position: relative;
     bottom: -80px;
     margin-left: calc(50% - 170px);
-}
-
-.verrou{
-    height: 150px;
-    width: 150px;
-    background-image: url(images/salle5/verrou.png);
-    background-size: cover;
-    margin: auto;
-    position: absolute;
-    margin-top: 45%;
-    margin-left: 85px;
-    transition-property: transform;
-    transition-duration: 1.3s;
-    cursor: pointer;
 }
 
 input[type="text"]{
