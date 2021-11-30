@@ -8,45 +8,7 @@
     cursor: url(ping/1.png) 48 48, auto;
     animation: cursor 2s infinite;
 }
-/*
-@-webkit-keyframes cursor {
-    0% {
-        cursor: url(ping/1.png) 48 48, auto;
-    }
 
-    5% {
-        cursor: url(ping/2.png) 48 48, auto;
-    }
-
-    10% {
-        cursor: url(ping/3.png) 48 48, auto;
-    }
-
-    15% {
-        cursor: url(ping/4.png) 48 48, auto;
-    }
-
-    20% {
-        cursor: url(ping/5.png) 48 48, auto;
-    }
-
-    25% {
-        cursor: url(ping/6.png) 48 48, auto;
-    }
-
-    30% {
-        cursor: url(ping/7.png) 48 48, auto;
-    }
-
-    35% {
-        cursor: url(ping/1.png) 48 48, auto;
-    }
-
-    100% {
-        cursor: url(ping/1.png) 48 48, auto;
-    }
-}
-*/
 @keyframes cursor {
     0% {
         cursor: url(ping/1.png) 48 48, auto;
