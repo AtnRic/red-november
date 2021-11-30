@@ -107,7 +107,24 @@
     visibility: hidden;
     opacity: 0; 
     z-index: 2000;
-    animation: made 999s forwards;
+    animation: made 15s forwards;
+}
+
+.overlay2 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2000;
+}
+.overlay2:target {
+    visibility: visible;
+    opacity: 1;
 }
 
 @keyframes countdown {
