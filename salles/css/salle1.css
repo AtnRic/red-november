@@ -13,6 +13,7 @@ body{
     background-color: #1D2630;
 }
 
+/*indice en haut à droite*/
 .FinalCode {
     color: var(--afficheur);
     position: fixed;
@@ -38,29 +39,8 @@ body{
     font-size: 40px;
 }
 
-/****************************************************************************/
-/*transition style morphing svg à faire si on a le temps plus tard*/
 
-
-/*html{
-    background-image: url(../../css/transition/transition4.mp4);
-    background-size: cover;
-}
-body{
-    opacity: 0; animation: opacity 1.5s ease-in-out 2s forwards;
-}
-
-@keyframes opacity {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-}*/
-
-/****************************************************************************/
-
-
-
-/****************************************************************************/
-/*css popup perdu -> à modifier*/
+/*css popup perdu -> à modifier
 .popupbtn {
     margin: 70px auto;
     color: var(--bomb);
@@ -100,7 +80,6 @@ body{
 .popupbtn .content {
     overflow: hidden;
 }
-
 
 /*************************************************************************/
 
@@ -205,11 +184,9 @@ form#unlock{
     background-color: var(--afficheur);
     width: 186px;
     height: 25px;
-    /*box-shadow: 2px 5px #999;*/
     cursor: pointer;
 }
 
-/*pour centrer le texte dans le 2e bouton (texte plus long -> cas particulier)*/
 #button2{
     height: 37px;
     padding-top: 2.5px;
@@ -220,7 +197,6 @@ form#unlock{
     box-shadow: 1px 3px #666;
     transform: translateY(4px);
 }
-
 
 .light{
     grid-row: 1;
@@ -242,13 +218,14 @@ form#unlock{
     text-align: center;
     font-weight: bold;
     color: white;
-    opacity: 0;
-    
+    opacity: 0;  
 }
 
 .btn{
     display: none;
 }
+
+/*pour allumer le voyant quand le bouton correspondant est cliqué*/
 
 #btn1:checked ~ #light1 {
     background-image: url(images/salle1/fresnel2.png);
@@ -295,7 +272,7 @@ form#unlock{
     background-size: cover;
 }
 
-
+/*pour que le chiffre soit visible quand le bouton est cliqué*/
 #btn1:checked ~ #light1 p{
     opacity: 1;
 }
@@ -346,6 +323,8 @@ form#unlock{
     font-size: 1em;
 }
 
+/*formulaire */
+
 input[type="text"]{
     margin-top: 5px;
     margin-bottom: 5px;
@@ -392,7 +371,7 @@ input[type="submit"], input[type="text"]{
 
 
 
-/*************************************************************************/
+/************/
 /*responsive*/
 
 @media only screen and (min-width: 320px) {
