@@ -64,11 +64,6 @@ body{
     cursor: pointer;
 }
 
-.verrou:hover{
-    -ms-transform: rotate(120deg); /* IE 9 */
-    transform: rotate(120deg);
-}
-
 input[type="text"]{
     position: absolute;
     left: 75px;
@@ -99,6 +94,5 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-    -ms-transform: rotate(120deg); /* IE 9 */
     transform: rotate(120deg);
 }
