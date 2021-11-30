@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="../icon/red_november.png"/>
 </head>
 <body>
-    <!--timer-->
+    <!-- Code utilisé pour le timer. -->
     <span class="cadre">
         <a class="Timer">
             <span class="Timer2">
@@ -21,7 +21,11 @@
         </a>
         <img class="bombe" src="timer/gif/BOMB.gif" alt="gif nucléaire" />
     </span>
+
+    <!-- Numéro pour le code de la dernière salle. -->
     <div class="FinalCode"><p>4</p></div>
+
+    <!-- Pop-up d'echec, il s'affiche quand le joueur echoue. -->
     <div id="popup1" class="overlay">
         <div class="popup">
             <h2>La bombe a explosé !</h2>
@@ -33,6 +37,7 @@
         </div>
     </div>
 
+    <!-- Pop-up d'accueil, il s'affiche quand le joueur arrive dans la salle. -->
     <div id="popup2" class="overlay">
         <div class="popup">
             <h2>But de la salle : </h2>
@@ -47,10 +52,12 @@
         </div>
     </div>
 
+    <!-- Musique d'ambiance de la salle. -->
     <audio autoplay loop>
         <source src="../audio/ambiance2.wav" type="audio/wav">
     </audio>
 
+    <!-- Contenu de l'enigme. -->
     <div id=tableau>
         <div class=screen>
             <!--image galvanomètre-->
@@ -147,8 +154,7 @@
             </form>
         </div>
 
-        <!--champ pour rentrer le code et sortir-->
-
+        <!-- Form à completer pour sortir de la salle. -->
         <div class=unlock>
             <form id="unlock" action="salle2.html#popup2">
                 <label for="Code">код :</label><br> <!--trad : code :-->
