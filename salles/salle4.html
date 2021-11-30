@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" href="../icon/red_november.png">
 </head>
 <body>
+    <!-- Code utilisé pour le timer. -->
     <span class="cadre">
         <a class="Timer">
             <span class="Timer2">
@@ -19,7 +20,11 @@
         </a>
         <img class="bombe" src="timer/gif/BOMB.gif" alt="gif nucléaire" />
     </span>
+
+    <!-- Numéro pour le code de la dernière salle. -->
     <span class="FinalCode"><p>3</p></span>
+
+    <!-- Pop-up d'echec, il s'affiche quand le joueur echoue. -->
     <div id="popup1" class="overlay">
         <div class="popup">
             <h2>La bombe a explosé !</h2>
@@ -30,6 +35,7 @@
         </div>
     </div>
 
+    <!-- Pop-up d'accueil, il s'affiche quand le joueur arrive dans la salle. -->
     <div id="popup2" class="overlay">
         <div class="popup">
             <h2>But de la salle : </h2>
@@ -43,6 +49,7 @@
         </div>
     </div>
 
+    <!-- Pop-up d'echec, il s'affiche quand le joueur echoue (coupe le mauvais fil). -->
     <div id="popup3" class="overlay">
         <div class="popup">
             <h2>La bombe a explosé !</h2>
@@ -52,14 +59,17 @@
             <a class="close" href="../red-november.html">&times;</a>
         </div>
     </div>
+
+    <!-- Musique d'ambiance de la salle. -->
     <audio autoplay loop>
         <source src="../audio/salle-missiles.mp3" type="audio/mp3">
     </audio>
-    
-    
+
+    <!-- Fil à couper qui link vers les différents pop-up réussite ou echec. -->
     <a href="salle4.html#popup3"><div class="fils"></div></a>
     <a href="salle5.html#popup2"><div class="fil-bleu"></div></a>
 
+    <!-- L'ensemble des missiles afficher à l'écran -->
     <div id="ensemble_missiles">
         <div class="missile" id="m1"></div>
         <div class="missile" id="m2"></div>
@@ -87,8 +97,7 @@
         <div class="missile" id="m24"></div>
     </div>
 
-    <!--champ pour rentrer le code et sortir-->
-
+    <!-- Form à completer pour sortir de la salle. -->
     <div class=unlock>
         <form id="unlock" action="salle5.html#popup2">
             <label for="Code">код :</label><br> <!--trad : code :-->
