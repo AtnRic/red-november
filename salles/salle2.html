@@ -13,6 +13,7 @@
 
 </head>
 <body>
+    <!-- Code utilisé pour le timer. -->
     <span class="cadre">
         <p class="Timer">
             <span class="Timer2">
@@ -20,8 +21,11 @@
         </p>
         <img class="bombe" src="timer/gif/BOMB.gif" />
     </span>
+
+    <!-- Numéro pour le code de la dernière salle. -->
     <span class="FinalCode"><p>7</p></span>
 
+    <!-- Pop-up d'accueil, il s'affiche quand le joueur arrive dans la salle. -->
     <div id="popup2" class="overlay">
         <div class="popup">
             <h2>But de la salle : </h2>
@@ -37,6 +41,7 @@
         </div>
     </div>
 
+    <!-- Pop-up d'echec, il s'affiche quand le joueur echoue. -->
     <div id="popup1" class="overlay">
         <div class="popup">
             <h2>La bombe a explosé !</h2>
@@ -47,9 +52,13 @@
 
         </div>
     </div>
+
+    <!-- Musique d'ambiance de la salle. -->
     <audio autoplay loop>
         <source src="../audio/salle-machines.mp3" type="audio/mp3">
     </audio>
+
+    <!-- Contenu de l'enigme. -->
     <div id=tableau>
         <div class="scroll">
             <img src="css\images\salle2\ligne1.png" />
@@ -64,6 +73,7 @@
         </div>
     </div>
 
+    <!-- Form à completer pour sortir de la salle. -->
     <div class=unlock>
         <form id="unlock" action="salle3.html#popup2">
             <label for="Code">код :</label><br> <!--trad : code :-->
