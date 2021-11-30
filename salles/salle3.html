@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="../icon/red_november.png"/>
 </head>
 <body>
-    <!--timer-->
+    <!-- Code utilisé pour le timer. -->
     <span class="cadre">
         <a class="Timer">
             <span class="Timer2">
@@ -21,7 +21,11 @@
         </a>
         <img class="bombe" src="timer/gif/BOMB.gif" alt="gif nucléaire" />
     </span>
+
+    <!-- Numéro pour le code de la dernière salle. -->
     <div class="FinalCode"><p>1</p></div>
+
+    <!-- Pop-up d'echec, il s'affiche quand le joueur echoue. -->
     <div id="popup1" class="overlay">
         <div class="popup">
             <h2>La bombe a explosé !</h2>
@@ -33,6 +37,7 @@
         </div>
     </div>
 
+    <!-- Pop-up d'accueil, il s'affiche quand le joueur arrive dans la salle. -->
     <div id="popup2" class="overlay">
         <div class="popup">
             <h2>But de la salle : </h2>
@@ -45,15 +50,17 @@
         </div>
     </div>
 
+    <!-- Contenu de l'enigme. -->
     <div id=tableau>
         <!--magnéto + boutons-->
         <div id="player-boutons">
             <div id="player">
-                <!--magnéto-->
+                <!-- Musique d'ambiance de la salle. -->
                 <audio controls>
                     <source src="../audio/salle3-audio.wav" type="audio/wav">
                 </audio>
             </div>
+            <!-- Boutons animés -->
             <div class="ensemble-boutons">
                 <div class="bouton" id="btn1"></div>
                 <div class="bouton" id="btn2"></div>
@@ -63,6 +70,7 @@
                 <div class="bouton" id="btn6"></div>
             </div>
         </div>
+        <!-- Image de décoration sur la salle. -->
         <div class="ensemble-galva">
             <div class=screen id="sc1">
                 <!--image galvanomètre-->
@@ -178,10 +186,7 @@
             </form>
         </div>
 
-
-
         <!--champ pour rentrer le code et sortir-->
-
         <div class=unlock>
             <form id="unlock" action="salle4.html#popup2">
                 <label for="Code">код :</label><br> <!--trad : code :-->
