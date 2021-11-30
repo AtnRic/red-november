@@ -55,12 +55,6 @@
     color: #f6d731;
 }
 
-.lorem{
-    font-size: 50px;
-    color: white;
-    font-family: 'Courier New';
-}
-
 .overlay:target {
     visibility: visible;
     opacity: 1;    
