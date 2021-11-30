@@ -98,32 +98,26 @@ audio{
 }
 
 #btn1:hover{
-    -ms-transform: rotate(130deg); /* IE 9 */
     transform: rotate(130deg);
 }
 
 #btn2:hover{
-    -ms-transform: rotate(-60deg); /* IE 9 */
     transform: rotate(-60deg);
 }
 
 #btn3:hover{
-    -ms-transform: rotate(-90deg); /* IE 9 */
     transform: rotate(-90deg);
 }
 
 #btn4:hover{
-    -ms-transform: rotate(60deg); /* IE 9 */
     transform: rotate(60deg);
 }
 
 #btn5:hover{
-    -ms-transform: rotate(1000deg); /* IE 9 */
     transform: rotate(100deg);
 }
 
 #btn6:hover{
-    -ms-transform: rotate(-130deg); /* IE 9 */
     transform: rotate(-130deg);
 }
 
