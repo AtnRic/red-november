@@ -8,7 +8,7 @@
     cursor: url(ping/1.png) 48 48, auto;
     animation: cursor 2s infinite;
 }
-
+/*
 @-webkit-keyframes cursor {
     0% {
         cursor: url(ping/1.png) 48 48, auto;
@@ -46,7 +46,7 @@
         cursor: url(ping/1.png) 48 48, auto;
     }
 }
-
+*/
 @keyframes cursor {
     0% {
         cursor: url(ping/1.png) 48 48, auto;
