@@ -55,6 +55,7 @@
     color: #f6d731;
 }
 
+
 .overlay:target {
     visibility: visible;
     opacity: 1;    
