@@ -6,6 +6,9 @@
     --player:#7f817e;
 }
 
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
 
 /*indice en haut à droite*/
 .FinalCode {
@@ -25,16 +28,12 @@
     border-radius: 50px;
     border-color: var(--afficheur);
 }
+
 .FinalCode p {
     margin: auto;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-}
-
-
-*{
-    font-family: 'Courier New', Courier, monospace;
 }
 
 body{
@@ -57,7 +56,6 @@ body{
 }
 
 
-
 #player{
     margin-bottom: 2px;
     width: 350px;
@@ -78,7 +76,6 @@ audio{
 
 .player-boutons{
     margin: auto;
-
 }
 
 .ensemble-bouton{
@@ -177,8 +174,6 @@ audio{
     background-color: var(--afficheur);
     background-size: cover;
 }
-
-
 
 .light_btn{
     display: flex;

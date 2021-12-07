@@ -39,7 +39,7 @@ body{
     font-size: 40px;
 }
 
-/*************************************************************************/
+/**************************/
 /*css tableau de commandes*/
 
 #tableau{
@@ -311,22 +311,15 @@ input[type="submit"], input[type="text"]{
 /*responsive*/
 
 @media only screen and (min-width: 320px) {
-  /* For phones*/
   #trad{display: inline-block;}
 }
 
 @media only screen and (min-width: 600px) {
-  /* For tablets (vertical): */
   #trad{display: inline-block;}
 }
 
 @media only screen and (min-width: 700px) {
     #trad{display: grid; grid-template-columns: 50% 50%;}
-    .col1{
-        grid-column: 1;
-    }
-    
-    .col2{
-        grid-column: 2;
-    }  
+    .col1{grid-column: 1;}
+    .col2{grid-column: 2;}  
 }

@@ -21,8 +21,6 @@ html, body{
     width: 100vw;
 }
 
-
-
 .AudioDesc{
     padding: 5px;
     text-align: center;
@@ -33,8 +31,6 @@ html, body{
     top: 0px;
     left: 0px;
 }
-
-
 
 h1{
     text-align: center;
@@ -98,6 +94,7 @@ audio{
     left: calc(50% - 35px);
     transition: top 0.8s;  
 }
+
 .button_scroll2:hover{
     top: 0px;
 }
@@ -113,12 +110,6 @@ audio{
     border-radius: 30px;
     padding: 2%;
 }
-
-@keyframes opacity {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-}
-
 
 .button {
     color: white;
@@ -153,9 +144,12 @@ audio{
 }
 
 
+@keyframes opacity {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
 
-
-@media only screen and (max-width: 650px){ /*510*/
+@media only screen and (max-width: 650px){
     .text{
         margin-left: 9%;
         margin-right: 9%;
@@ -178,6 +172,7 @@ audio{
     #page2 .button_scroll2{
         top: 0px;
     }
+
     *{
         overflow-x: hidden;
         overflow-y: auto;

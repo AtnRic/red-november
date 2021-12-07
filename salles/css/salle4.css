@@ -7,6 +7,7 @@
 
 *{
     cursor: url(images/salle4/cursor.png) 5 5, auto; 
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -36,18 +37,12 @@
     font-size: 40px;
 }
 
-*{
-    font-family: 'Courier New', Courier, monospace;
-}
-
 body{
     background-color: var(--gris);
     height: 100vh;
     width: 100vw;
     margin: 0;
 }
-
-
 
 .fils{
     background-image: url(images/salle4/fils.png);
@@ -59,6 +54,7 @@ body{
     bottom: -55px;
     z-index: -1;
 }
+
 .fil-bleu{
     background-image: url(images/salle4/fil-bleu.png);
     background-size: auto;
@@ -69,8 +65,6 @@ body{
     top: -20px;
     z-index: 0;
 }
-
-
 
 #ensemble_missiles{
     display: flex;
@@ -87,6 +81,7 @@ body{
     z-index: -1;
     padding: 3px;
 }
+
 .missile{
     background-image: url(images/salle4/missile.png);
     background-size: cover;
@@ -95,7 +90,6 @@ body{
     margin: auto;
     margin-top: 5px;
 }
-
 
 input[type="text"]{
     margin-top: 5px;
@@ -118,7 +112,6 @@ input[type="submit"], input[type="text"]{
     padding-top: 3px;
     padding-bottom: 3px;
 }
-
 
 .unlock{
     position: absolute;
