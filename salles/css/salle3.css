@@ -1,0 +1,398 @@
+:root{
+    --bgc:#1d2630;
+    --afficheur:#c8b89f;
+    --gris:#393c47; 
+    --bomb:#f6d731;
+    --player:#7f817e;
+}
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*indice en haut à droite*/
+.FinalCode {
+    color: var(--afficheur);
+    position: fixed;
+    text-align: center;
+    top: 5px;
+    right: 0px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    background-color: var(--gris);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 50px;
+    border-color: var(--afficheur);
+}
+
+.FinalCode p {
+    margin: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+body{
+    background-color: #1D2630;
+}
+
+#tableau{
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+    margin: auto;
+    max-width: 94vw;
+    min-height: 74vh;
+    background-color: var(--gris);
+    justify-content: center;
+    padding: 10px;
+}
+
+
+#player{
+    margin-bottom: 2px;
+    width: 350px;
+    height: 260px;
+    background-image: url(../../salles/css/images/salle3/player.gif);
+    background-size: cover;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+}
+
+audio{
+    margin-left: 22px;
+    margin-top: 190px;
+    background-color: black;
+}
+
+
+.player-boutons{
+    margin: auto;
+}
+
+.ensemble-bouton{
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.bouton{
+    margin: auto;
+    display: inline-block;
+    background-image: url(../../salles/css/images/salle3/bouton.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    transition-property: transform;
+    transition-duration: 0.8s;
+    cursor: pointer;
+}
+
+#btn1:hover{
+    transform: rotate(130deg);
+}
+
+#btn2:hover{
+    transform: rotate(-60deg);
+}
+
+#btn3:hover{
+    transform: rotate(-90deg);
+}
+
+#btn4:hover{
+    transform: rotate(60deg);
+}
+
+#btn5:hover{
+    transform: rotate(100deg);
+}
+
+#btn6:hover{
+    transform: rotate(-130deg);
+}
+
+
+.ensemble-galva{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap:10px;
+    row-gap: 10px;
+    margin: auto;
+}
+
+#sc1{
+    grid-column: 1;
+    grid-row: 1;
+}
+#sc2{
+    grid-column: 2;
+    grid-row: 1;
+}
+#sc3{
+    grid-column: 3;
+    grid-row: 1;
+}
+#sc4{
+    grid-column: 4;
+    grid-row: 1;
+}
+#sc5{
+    grid-column: 1;
+    grid-row: 2;
+}
+#sc6{
+    grid-column: 2;
+    grid-row: 2;
+}
+#sc7{
+    grid-column: 3;
+    grid-row: 2;
+}
+#sc8{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.screen{
+    display: flex;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    margin: 0.5% 1%;
+    width: 200px;
+    height: 110px;
+    background-image: url(images/salle1/galvanometre1.png);
+    background-color: var(--afficheur);
+    background-size: cover;
+}
+
+.light_btn{
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: var(--gris);
+    border-width: 5px;
+    border-radius: 10px;
+    margin: 0.5% 1%;
+    width: 200px;
+    height: 110px;
+}
+
+form{
+    display: grid;
+    grid-template-rows: auto auto;
+    background-color: var(--gris);
+}
+
+form#unlock{
+    display: block;
+}
+
+.button{
+    grid-row: 2;
+    margin: auto;
+    margin-top: 1%;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    padding-top: 8.5px;
+    padding-bottom: 8.5px;
+    font-weight: bold;
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    vertical-align: center;
+    background-color: var(--afficheur);
+    width: 186px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#button2{
+    height: 37px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px; 
+}
+
+.button:active{
+    box-shadow: 1px 3px #666;
+    transform: translateY(4px);
+}
+
+.light{
+    grid-row: 1;
+    margin-left: 0%;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 100px;
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    background-color: white;
+    background-image: url(images/salle1/fresnel.png);
+    background-size: cover;
+}
+
+.light_btn p{
+    font-size: 2em;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    opacity: 0; 
+}
+
+.btn{
+    display: none;
+}
+
+#b1:checked ~ #light1 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#b2:checked ~ #light2 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#b3:checked ~ #light3 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover; 
+}
+#b4:checked ~ #light4 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover; 
+}
+#b5:checked ~ #light5 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover; 
+}
+#b6:checked ~ #light6 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#b7:checked ~ #light7 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#b8:checked ~ #light8 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#b9:checked ~ #light9 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#b10:checked ~ #light10 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#b11:checked ~ #light11 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+
+#trad{
+    border-style: solid;
+    margin-bottom: 1%;
+    border-width: 5px;
+    border-radius: 10px;
+    width: 83vw;
+    background-color: var(--afficheur);
+}
+
+#trad p {
+    display: inline-block;
+    margin: 1%;
+    font-size: 1em;
+}
+
+input[type="text"]{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+input[type="submit"]{
+    margin-top: 2px;
+    margin-bottom:5px;
+    background-color: #e9e9ed;
+    font-weight: bold;
+}
+
+input[type="submit"], input[type="text"]{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: var(--bgc);
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.unlock{
+    color:black;
+    font-size: 20px ;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 10px;
+    margin: 0.5% 1%;
+    width: 200px;
+    height: 110px;
+    background-color: var(--afficheur);
+}
+
+#unlock{
+    background-color: var(--afficheur);
+    margin: auto;
+}
+
+
+/*responsive*/
+
+@media only screen and (max-width: 920px) {
+    .ensemble-galva{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #sc4, #sc8{
+        display: none;
+    }
+    #bt1{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .ensemble-galva{
+        grid-template-columns: 1fr 1fr;
+    }
+    #sc3, #sc7{
+        display: none;
+    }
+    #bt2{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 472px) {
+    .ensemble-galva{
+        grid-template-columns: 1fr;
+    }
+    #sc2, #sc6{
+        display: none;
+    }
+    #bt3{
+        display: none;
+    }
+}

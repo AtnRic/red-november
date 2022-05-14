@@ -1,0 +1,202 @@
+.Timer {
+    display: flex;
+    color: #f6d731;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    font-size: xx-large;
+    padding-inline-start: 10px;
+}
+
+.bombe {
+    width: auto;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+}
+
+.cadre {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5px;
+    width: 150px;
+    height: 70px;
+    display: flex;
+    background-color: black;   
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    border-color: #f6d731;
+    margin: auto;
+}
+
+.Timer::before, .Timer::after {
+    content: "";
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    animation: countdown 1000s step-end infinite;
+    color: #f6d731;
+}
+
+.Timer::after {
+    animation-duration: 10s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #f6d731;
+}
+
+.Timer2::before {
+    content: "";
+    animation: countdown 100s step-end infinite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #f6d731;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;    
+}
+
+.popup {
+    background-color: var(--gris);
+    margin: 70px auto;
+    color: #f6d731;
+    font-family: 'Courier New';
+    padding: 20px;
+    background-color: black;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #f6d731;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f6d731;
+}
+
+.popup .close:hover {
+    background-color: #f6d731;
+    color: black;
+    font-weight: bold;
+}
+
+.popup .content {
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0; 
+    z-index: 2000;
+    animation: made 999s forwards;
+}
+
+.overlay2 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2000;
+}
+.overlay2:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+@keyframes countdown {
+    0% {
+        content: "9";
+    }
+
+    10% {
+        content: "8";
+    }
+
+    20% {
+        content: "7";
+    }
+
+    30% {
+        content: "6";
+    }
+
+    40% {
+        content: "5";
+    }
+
+    50% {
+        content: "4";
+    }
+
+    60% {
+        content: "3";
+    }
+
+    70% {
+        content: "2";
+    }
+
+    80% {
+        content: "1";
+    }
+
+    90% {
+        content: "0";
+    }
+
+    100% {
+        content: "0";
+    }
+}
+
+
+@keyframes made {
+    99% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
+}

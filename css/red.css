@@ -1,0 +1,137 @@
+:root{
+    --bgc:#1d2630;
+}
+
+body {
+    background-color: var(--bgc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: red;
+    letter-spacing: .30em;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .17em solid red;
+    animation: typing2 4.5s, blinking-cursor 1s step-end infinite; /*la fonction "steps" n'a pas été utilisée pour l'animation typing car elle n'était pas assez précise (chaque lettre ne faisant pas exactement la même taille) */
+}
+
+.button{
+    text-decoration: none;
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: var(--bgc);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: white;
+    height: 25px;
+    width: 150px;
+    transition: padding 1s;
+    transition: background-color 0.8s;
+    transition: color 0.8s; 
+  }
+
+.button:hover{
+    color: var(--bgc);
+    background-color: white;
+    border-color: white;
+  }
+
+
+
+/*chaque lettre est séparé (dans le temps et l'espace) pour avoir une animation la plus précise possible*/
+@keyframes typing2{
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+
+  0%{width: 0%;}
+/*R*/
+  5.44%{width: 0%;}
+  5.45%{width: 6.7%;}
+/*E*/
+  10.8%{width: 6.7%;}
+  10.9%{width: 14.78%;}
+/*D*/
+  16.2%{width: 14.78%;}
+  16.3%{width: 22.6%;}
+/*_*/
+  21.7%{width: 22.6%;}
+  21.8%{width: 28%;}
+/*N*/
+  27.24%{width: 28%;}
+  27.25%{width: 37%;}
+/*O*/
+  32.6%{width: 37%;}
+  32.7%{width: 44%;}
+/*V*/
+  38.14%{width: 44%;}
+  38.15%{width: 53%;}
+/*E*/
+  43.5%{width: 53%;}
+  43.6%{width: 60%;}
+/*M*/
+  48.9%{width: 60%;}
+  49%{width: 67%;}
+/*B*/
+  54.4%{width: 67%;}
+  54.5%{width: 75%;}
+/*E*/
+  59.9%{width: 75%;}
+  60.0%{width: 83%;}
+/*R*/
+  64.9%{width: 83%;}
+  65%{width: 91%;} 
+/*pause*/
+  65%{width: 91%;}
+  90%{width: 91%;}
+/*.*/
+  99.9%{width: 91%;}
+  100%{width: 100%;}
+}
+
+
+@keyframes blinking-cursor {
+  from,
+  to {
+     border-color: transparent
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+@keyframes transition {
+  0%   { opacity:0; }
+  100% { opacity:1; }
+}
+.button {opacity:0;animation: transition 2.5s ease-in-out 7s forwards;}
+
+
+/*responsive*/
+@media only screen and (min-width: 320px) {
+  h1{font-size: 30px;}
+  .button {opacity:0;animation: transition 2.5s ease-in-out 4.5s forwards;}
+}
+
+@media only screen and (min-width: 600px) {
+  h1{font-size: 50px;}
+}
+
+@media only screen and (min-width: 700px) {
+  .button {opacity:0;animation: transition 2.5s ease-in-out 7s forwards;}
+}

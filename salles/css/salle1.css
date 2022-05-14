@@ -1,0 +1,325 @@
+:root{
+    --bgc:#1d2630;
+    --afficheur:#c8b89f;
+    --gris:#393c47; 
+    --bomb:#f6d731;
+}
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: #1D2630;
+}
+
+/*indice en haut à droite*/
+.FinalCode {
+    color: var(--afficheur);
+    position: fixed;
+    text-align: center;
+    top: 5px;
+    right: 0px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    background-color: var(--gris);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 50px;
+    border-color: var(--afficheur);
+}
+
+.FinalCode p{
+    margin: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+/**************************/
+/*css tableau de commandes*/
+
+#tableau{
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+    margin: 0.5%;
+    max-width: 96vw;
+    min-height: 74vh;
+    background-color: var(--gris);
+    justify-content: center;
+}
+
+.screen{
+    display: flex;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    margin: 0.5% 1%;
+    width: 200px;
+    height: 110px;
+    background-image: url(images/salle1/galvanometre1.png);
+    background-color: var(--afficheur);
+    background-size: cover;
+}
+
+.screen img{
+    display: flex;
+
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    margin: 1% 1%;
+    width: 200px;
+    height: 110px;
+    background-color: var(--afficheur);
+}
+
+.light_btn{
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: var(--gris);
+    border-width: 5px;
+    border-radius: 10px;
+    margin: 0.5% 1%;
+    width: 200px;
+    height: 110px;
+}
+
+form{
+    display: grid;
+    grid-template-rows: auto auto;
+    background-color: var(--gris);
+}
+
+form#unlock{
+    display: block;
+}
+
+.button{
+    grid-row: 2;
+    margin: auto;
+    margin-top: 1%;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    padding-top: 8.5px;
+    padding-bottom: 8.5px;
+    font-weight: bold;
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    vertical-align: center;
+    background-color: var(--afficheur);
+    width: 186px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#button2{
+    height: 37px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px; 
+}
+
+.button:active{
+    box-shadow: 1px 3px #666;
+    transform: translateY(4px);
+}
+
+.light{
+    grid-row: 1;
+    margin-left: 0%;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 100px;
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    background-color: white;
+    background-image: url(images/salle1/fresnel.png);
+    background-size: cover;
+}
+
+.light_btn p{
+    font-size: 2em;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    opacity: 0;  
+}
+
+.btn{
+    display: none;
+}
+
+/*pour allumer le voyant quand le bouton correspondant est cliqué*/
+
+#btn1:checked ~ #light1 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#btn2:checked ~ #light2 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#btn3:checked ~ #light3 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover; 
+}
+#btn4:checked ~ #light4 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover; 
+}
+#btn5:checked ~ #light5 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover; 
+}
+#btn6:checked ~ #light6 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#btn7:checked ~ #light7 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#btn8:checked ~ #light8 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#btn9:checked ~ #light9 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#btn10:checked ~ #light10 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+#btn11:checked ~ #light11 {
+    background-image: url(images/salle1/fresnel2.png);
+    background-size: cover;
+}
+
+/*pour que le chiffre soit visible quand le bouton est cliqué*/
+#btn1:checked ~ #light1 p{
+    opacity: 1;
+}
+#btn2:checked ~ #light2 p{
+    opacity: 1;
+}
+#btn3:checked ~ #light3 p{
+    opacity: 1;
+}
+#btn4:checked ~ #light4 p{
+    opacity: 1;
+}
+#btn5:checked ~ #light5 p{
+    opacity: 1;
+}
+#btn6:checked ~ #light6 p{
+    opacity: 1;
+}
+#btn7:checked ~ #light7 p{
+    opacity: 1;
+}
+#btn8:checked ~ #light8 p{
+    opacity: 1;
+}
+#btn9:checked ~ #light9 p{
+    opacity: 1;
+}
+#btn10:checked ~ #light10 p{
+    opacity: 1;
+}
+#btn11:checked ~ #light11 p{
+    opacity: 1;
+}
+
+
+#trad{
+    border-style: solid;
+    margin-bottom: 1%;
+    border-width: 5px;
+    border-radius: 10px;
+    width: 83vw;
+    background-color: var(--afficheur);
+}
+
+#trad p {
+    display: inline-block;
+    margin: 1%;
+    font-size: 1em;
+}
+
+/*formulaire */
+
+input[type="text"]{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+input[type="submit"]{
+    margin-top: 2px;
+    margin-bottom:5px;
+    background-color: #e9e9ed;
+    font-weight: bold;
+}
+
+input[type="submit"], input[type="text"]{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: var(--bgc);
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+.unlock{
+    color:black;
+    font-size: 20px ;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 10px;
+    margin: 0.5% 1%;
+    width: 200px;
+    height: 110px;
+    background-color: var(--afficheur);
+}
+
+#unlock{
+    background-color: var(--afficheur);
+    margin: auto;
+}
+
+
+
+/************/
+/*responsive*/
+
+@media only screen and (min-width: 320px) {
+  #trad{display: inline-block;}
+}
+
+@media only screen and (min-width: 600px) {
+  #trad{display: inline-block;}
+}
+
+@media only screen and (min-width: 700px) {
+    #trad{display: grid; grid-template-columns: 50% 50%;}
+    .col1{grid-column: 1;}
+    .col2{grid-column: 2;}  
+}

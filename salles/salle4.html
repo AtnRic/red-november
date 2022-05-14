@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="RED November">
+    <meta name="keywords" content="red november, novembre rouge, escape game, game">
+    <meta name="author" content="Antoine RICHARD, Adrien VERHAEGHE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED November</title>
+    <!-- Link vers les différentes feuilles de style. (cursor.css pour le
+    curseur, timer.css pour le temps de jeu et salle.css le style global
+       de la page.) -->
+    <link rel="stylesheet" href="css/salle4.css">
+    <link rel="stylesheet" href="timer/timer.css">
+    <link rel="icon" type="image/png" href="../icon/red_november.png">
+</head>
+<body>
+    <!-- Code utilisé pour le timer. -->
+    <span class="cadre">
+        <a class="Timer">
+            <span class="Timer2">
+            </span>
+        </a>
+        <img class="bombe" src="timer/gif/BOMB.gif" alt="gif nucléaire" />
+    </span>
+
+    <!-- Numéro pour le code de la dernière salle. -->
+    <div class="FinalCode"><p>3</p></div>
+
+    <!-- Pop-up d'echec, il s'affiche quand le joueur echoue. -->
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>La bombe a explosé !</h2>
+            <div class="content">
+                Le temps est écoulé, vous avez perdu. <br>Vous allez être redirigé vers la page d'accueil.
+            </div>
+            <a class="close" href="../red-november.html">&times;</a>
+        </div>
+    </div>
+
+    <!-- Pop-up d'accueil, il s'affiche quand le joueur arrive dans la salle. -->
+    <div id="popup2" class="overlay2">
+        <div class="popup">
+            <h2>But de la salle : </h2>
+            <div class="content">
+                Bravo Camarade, vous avez réussi à déchiffrer le message radio et à rentrer dans la salle des missiles.
+                La mise à feu des missiles à été déclenchée par accident. Arrêtez les avant leur explosion !
+                <br />
+                Attention, des indices pour les salles suivantes peuvent se cacher dans cette salle.
+            </div>
+            <a class="close" href="#">&times;</a>
+        </div>
+    </div>
+
+    <!-- Pop-up d'echec, il s'affiche quand le joueur echoue (coupe le mauvais fil). -->
+    <div id="popup3" class="overlay">
+        <div class="popup">
+            <h2>La bombe a explosé !</h2>
+            <div class="content">
+                Vous avez coupé le mauvais fil.
+            </div>
+            <a class="close" href="../red-november.html">&times;</a>
+        </div>
+    </div>
+
+    <!-- Musique d'ambiance de la salle. -->
+    <audio autoplay loop>
+        <source src="../audio/salle-missiles.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Fil à couper qui link vers les différents pop-up réussite ou echec. -->
+    <a href="salle4.html#popup3"><div class="fils"></div></a>
+    <a href="salle5.html#popup2"><div class="fil-bleu"></div></a>
+
+    <!-- L'ensemble des missiles afficher à l'écran -->
+    <div id="ensemble_missiles">
+        <div class="missile" id="m1"></div>
+        <div class="missile" id="m2"></div>
+        <div class="missile" id="m3"></div>
+        <div class="missile" id="m4"></div>
+        <div class="missile" id="m5"></div>
+        <div class="missile" id="m6"></div>
+        <div class="missile" id="m7"></div>
+        <div class="missile" id="m8"></div>
+        <div class="missile" id="m9"></div>
+        <div class="missile" id="m10"></div>
+        <div class="missile" id="m11"></div>
+        <div class="missile" id="m12"></div>
+        <div class="missile" id="m13"></div>
+        <div class="missile" id="m14"></div>
+        <div class="missile" id="m15"></div>
+        <div class="missile" id="m16"></div>
+        <div class="missile" id="m17"></div>
+        <div class="missile" id="m18"></div>
+        <div class="missile" id="m19"></div>
+        <div class="missile" id="m20"></div>
+        <div class="missile" id="m21"></div>
+        <div class="missile" id="m22"></div>
+        <div class="missile" id="m23"></div>
+        <div class="missile" id="m24"></div>
+    </div>
+
+    <!-- Form à completer pour sortir de la salle. -->
+    <div class=unlock>
+        <form id="unlock" action="salle5.html#popup2">
+            <label for="Code">код :</label><br> <!--trad : code :-->
+            <input type="text" id="Code" name="Code" required pattern="bleu"><br>
+            <input type="submit" value="подтвердить"><!--trad : valider-->
+        </form>
+    </div>
+
+</body>
+</html>

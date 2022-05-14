@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="RED November">
+    <meta name="keywords" content="red november, novembre rouge, escape game, game">
+    <meta name="author" content="Antoine RICHARD, Adrien VERHAEGHE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED November</title>
+    <!-- Link vers les différentes feuilles de style. (cursor.css pour le
+    curseur, timer.css pour le temps de jeu et salle.css le style global
+       de la page.) -->
+    <link rel="stylesheet" href="css/salle3.css">
+    <link rel="stylesheet" href="timer/timer.css" />
+    <link rel="stylesheet" href="../css/cursor.css">
+    <link rel="icon" type="image/png" href="../icon/red_november.png" />
+</head>
+<body>
+    <!-- Code utilisé pour le timer. -->
+    <span class="cadre">
+        <a class="Timer">
+            <span class="Timer2">
+            </span>
+        </a>
+        <img class="bombe" src="timer/gif/BOMB.gif" alt="gif nucléaire" />
+    </span>
+
+    <!-- Numéro pour le code de la dernière salle. -->
+    <div class="FinalCode"><p>1</p></div>
+
+    <!-- Pop-up d'echec, il s'affiche quand le joueur echoue. -->
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>La bombe a explosé !</h2>
+            <div class="content">
+                Le temps est écoulé, vous avez perdu. <br>Vous allez être redirigé vers la page d'accueil.
+            </div>
+            <a class="close" href="../red-november.html">&times;</a>
+
+        </div>
+    </div>
+
+    <!-- Pop-up d'accueil, il s'affiche quand le joueur arrive dans la salle. -->
+    <div id="popup2" class="overlay2">
+        <div class="popup">
+            <h2>But de la salle : </h2>
+            <div class="content">
+                Vous êtes maintenant dans la salle radio. Résolvez l'énigme qui se présente à vous pour passez à la salle suivante !
+                <br />
+                Attention, des indices pour les salles suivantes peuvent se cacher dans cette salle.
+            </div>
+            <a class="close" href="#">&times;</a>
+        </div>
+    </div>
+
+    <!-- Contenu de l'enigme. -->
+    <div id=tableau>
+        <!--magnéto + boutons-->
+        <div id="player-boutons">
+            <div id="player">
+                <!-- Musique d'ambiance de la salle. -->
+                <audio controls>
+                    <source src="../audio/salle3-audio.wav" type="audio/wav">
+                </audio>
+            </div>
+            <!-- Boutons animés -->
+            <div class="ensemble-boutons">
+                <div class="bouton" id="btn1"></div>
+                <div class="bouton" id="btn2"></div>
+                <div class="bouton" id="btn3"></div>
+                <div class="bouton" id="btn4"></div>
+                <div class="bouton" id="btn5"></div>
+                <div class="bouton" id="btn6"></div>
+            </div>
+        </div>
+        <!-- Image de décoration sur la salle. -->
+        <div class="ensemble-galva">
+            <div class=screen id="sc1">
+                <!--image galvanomètre-->
+            </div>
+            <div class=screen id="sc2">
+                <!--image galvanomètre-->
+            </div>
+            <div class=screen id="sc3">
+                <!--image galvanomètre-->
+            </div>
+            <div class=screen id="sc4">
+                <!--image galvanomètre-->
+            </div>
+            <div class=screen id="sc5">
+                <!--image galvanomètre-->
+            </div>
+            <div class=screen id="sc6">
+                <!--image galvanomètre-->
+            </div>
+            <div class=screen id="sc7">
+                <!--image galvanomètre-->
+            </div>
+            <div class=screen id="sc8">
+                <!--image galvanomètre-->
+            </div>
+        </div>
+
+        <!--boutons + lumières-->
+        <div class=light_btn>
+            <form action="#">
+                <label class="button" for="b1">частота</label> <!--trad : fréquence-->
+                <input type="checkbox" class="btn" id="b1">
+                <div class=light id="light1"></div>
+            </form>
+        </div>
+        <div class=light_btn>
+            <form action="#popupbtn">
+                <!--lancer popup "perdu"-->
+                <label class="button" id="button2" for="b2">сигнал</label> <!--trad : signal-->
+                <input type="checkbox" class="btn" id="b2">
+                <div class=light id="light2"></div>
+            </form>
+        </div>
+        <div class=light_btn>
+            <form action="#popup1">
+                <!--lancer popup "perdu"-->
+                <label class="button" for="b3">приемная</label> <!--trad : réception-->
+                <input type="checkbox" class="btn" id="b3">
+                <div class=light id="light3"></div>
+            </form>
+        </div>
+        <div class=light_btn>
+            <form action="#">
+                <label class="button" for="b4">эмиссия</label> <!--trad : émission-->
+                <input type="checkbox" class="btn" id="b4">
+                <div class=light id="light4"></div>
+            </form>
+        </div>
+        <div class=light_btn>
+            <form action="#popup1">
+                <!--lancer popup "perdu"-->
+                <label class="button" for="b5">лечение</label> <!--trad : traitement-->
+                <input type="checkbox" class="btn" id="b5">
+                <div class=light id="light5"></div>
+            </form>
+        </div>
+        <div class=light_btn>
+            <form action="#popup1">
+                <!--lancer popup "perdu"-->
+                <label class="button" for="b6">фильтр</label> <!--trad : filtre-->
+                <input type="checkbox" class="btn" id="b6">
+                <div class=light id="light6"></div>
+            </form>
+        </div>
+        <div class=light_btn>
+            <form action="#popup1">
+                <!--lancer popup "perdu"-->
+                <label class="button" for="b7">лечение</label> <!--trad : traitement-->
+                <input type="checkbox" class="btn" id="b7">
+                <div class=light id="light7"></div>
+            </form>
+        </div>
+        <div class=light_btn>
+            <form action="#popup1">
+                <!--lancer popup "perdu"-->
+                <label class="button" for="b8">фильтр</label> <!--trad : filtre-->
+                <input type="checkbox" class="btn" id="b8">
+                <div class=light id="light8"></div>
+            </form>
+        </div>
+        <div class=light_btn id="bt3">
+            <form action="#popup1">
+                <!--lancer popup "perdu"-->
+                <label class="button" for="b9">лечение</label> <!--trad : traitement-->
+                <input type="checkbox" class="btn" id="b9">
+                <div class=light id="light9"></div>
+            </form>
+        </div>
+        <div class=light_btn id="bt2">
+            <form action="#popup1">
+                <!--lancer popup "perdu"-->
+                <label class="button" for="b10">фильтр</label> <!--trad : filtre-->
+                <input type="checkbox" class="btn" id="b10">
+                <div class=light id="light10"></div>
+            </form>
+        </div>
+        <div class=light_btn id="bt1">
+            <form action="#popup1">
+                <!--lancer popup "perdu"-->
+                <label class="button" for="b11">лечение</label> <!--trad : traitement-->
+                <input type="checkbox" class="btn" id="b11">
+                <div class=light id="light11"></div>
+            </form>
+        </div>
+
+        <!--champ pour rentrer le code et sortir-->
+        <div class=unlock>
+            <form id="unlock" action="salle4.html#popup2">
+                <label for="Code">код :</label><br> <!--trad : code :-->
+                <input type="text" id="Code" name="Code" required pattern="9265"><br>
+                <input type="submit" value="подтвердить"><!--trad : valider-->
+            </form>
+        </div>
+
+        <!--carnet de traduction-->
+        <div id="trad">
+            <p class="col1"><strong>1 : </strong>·----</p>
+            <p class="col2"><strong>2 : </strong>··---</p>
+            <p class="col1"><strong>3 : </strong>···--</p>
+            <p class="col2"><strong>4 : </strong>····-</p>
+            <p class="col1"><strong>5 : </strong>·····</p>
+            <p class="col2"><strong>6 : </strong>-····</p>
+            <p class="col1"><strong>7 : </strong>--···</p>
+            <p class="col2"><strong>8 : </strong>---··</p>
+            <p class="col1"><strong>9 : </strong>----·</p>
+            <p class="col2"><strong>0 : </strong>-----</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+:root{
+    --bgc:#1d2630;
+    --afficheur:#c8b89f;
+    --gris:#393c47; 
+    --bomb:#f6d731;
+}
+
+*{
+    cursor: url(images/salle4/cursor.png) 5 5, auto; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*indice en haut à droite*/
+.FinalCode {
+    color: var(--afficheur);
+    position: fixed;
+    text-align: center;
+    top: 5px;
+    right: 0px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    background-color: var(--gris);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 50px;
+    border-color: var(--afficheur);
+}
+
+.FinalCode p {
+    margin: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+body{
+    background-color: var(--gris);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.fils{
+    background-image: url(images/salle4/fils.png);
+    background-size: cover;
+    height: 147px;
+    width: 415px;
+    margin: auto;
+    position: relative;
+    bottom: -55px;
+    z-index: -1;
+}
+
+.fil-bleu{
+    background-image: url(images/salle4/fil-bleu.png);
+    background-size: auto;
+    height: 10px;
+    width: 290px;
+    margin: auto;
+    position: relative;
+    top: -20px;
+    z-index: 0;
+}
+
+#ensemble_missiles{
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: var(--bgc);
+    bottom: calc(3% + 130px);
+    width: 94vw;
+    margin-left: calc(50% - 47.5vw);
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    z-index: -1;
+    padding: 3px;
+}
+
+.missile{
+    background-image: url(images/salle4/missile.png);
+    background-size: cover;
+    height: 100px;
+    width: 218px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+input[type="text"]{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+input[type="submit"]{
+    margin-top: 2px;
+    margin-bottom:5px;
+    background-color: #e9e9ed;
+    font-weight: bold;
+}
+
+input[type="submit"], input[type="text"]{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: var(--bgc);
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.unlock{
+    position: absolute;
+    bottom: 3%;
+    left: calc(50% - 105px);
+    right: calc(50% - 105px);
+    color:black;
+    font-size: 20px ;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 10px;
+    margin: auto;
+    width: 200px;
+    height: 110px;
+    background-color: var(--afficheur);
+}
+
+#unlock{
+    background-color: var(--afficheur);
+    margin: auto;
+}
+
+
+/*responsive*/
+
+@media only screen and (max-width: 1840px) {
+    #m1{display:none;}
+    #m2{display: none;}
+    #m3{display: none;}
+}
+
+@media only screen and (max-width: 1612px) {
+    #m4{display:none;}
+    #m5{display: none;}
+    #m6{display: none;}
+}
+@media only screen and (max-width: 1380px) {
+    #m7{display:none;}
+    #m8{display: none;}
+    #m9{display: none;}
+}
+@media only screen and (max-width: 1160px) {
+    #m10{display:none;}
+    #m11{display: none;}
+    #m12{display: none;}
+}
+@media only screen and (max-width: 925px) {
+    #m13{display:none;}
+    #m14{display: none;}
+    #m15{display: none;}
+}
+@media only screen and (max-width: 695px) {
+    #m16{display:none;}
+    #m17{display: none;}
+    #m18{display: none;}
+    .fils{height: 107px;width: 300px;bottom: -80px;}
+    .fil-bleu{height: 8px;width: 210px; top: 25px;} 
+}
+@media only screen and (max-width: 463px) {
+    #m19{display:none;}
+    #m20{display: none;}
+    #m21{display: none;}
+}
+
+

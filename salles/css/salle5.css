@@ -1,0 +1,86 @@
+:root{
+    --bgc:#1d2630;
+    --afficheur:#c8b89f;
+    --gris:#393c47; 
+    --bomb:#f6d731;
+}
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: var(--bgc);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+
+/*indice en haut à droite*/
+.FinalCode {
+    color: var(--afficheur);
+    position: fixed;
+    text-align: center;
+    top: 5px;
+    right: 0px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    background-color: var(--gris);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 50px;
+    border-color: var(--afficheur);
+}
+.FinalCode p {
+    margin: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.center{
+    height: 438px;
+    width: 300px;
+    background-image: url(images/salle5/porte.png);
+    background-size: cover;
+    position: relative;
+    bottom: -80px;
+    margin-left: calc(50% - 170px);
+}
+
+input[type="text"]{
+    position: absolute;
+    left: 75px;
+    bottom: 50px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #515559;
+    border-width: 5px;
+    height: 30px;
+    text-align: center;
+}
+
+input[type="submit"]{
+    height: 150px;
+    width: 150px;
+    background-image: url(images/salle5/verrou.png);
+    background-size: cover;
+    margin: auto;
+    position: absolute;
+    margin-top: 45%;
+    margin-left: 85px;
+    transition-property: transform;
+    transition-duration: 1.3s;
+    cursor: pointer;
+    background-color: #848482;
+    border-style: none;
+}
+
+input[type="submit"]:hover{
+    transform: rotate(120deg);
+}
